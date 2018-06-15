@@ -378,7 +378,7 @@ const dominicPAO = [
     action: " anger management",
     hints: 'no hints added yet',
     object: 'not',
-    alternatives: [],
+    alternatives: ['charlie sheen', 'Cecily Strong'],
     references: [],
   },
   {
