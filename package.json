@@ -5,7 +5,9 @@
   "scripts": {
     "develop": "gatsby develop",
     "build": "gatsby build",
-    "serve": "gatsby serve"
+    "serve": "gatsby serve",
+    "deploy": "gatsby build --prefix-paths && gh-pages -d public"
+
   },
   "dependencies": {
     "gatsby": "^1.9.250",
@@ -14,5 +16,8 @@
     "typography": "^0.16.17",
     "typography-theme-alton": "^0.15.10",
     "typography-theme-fairy-gates": "^0.15.11"
+  },
+  "devDependencies": {
+    "gh-pages": "^1.2.0"
   }
 }

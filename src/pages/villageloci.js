@@ -1,7 +1,7 @@
 import React from 'react'
 import styles from '../utils/style.module.css'
 
-import houses from './villageLociArray.js'
+import houses from '../data/villageLociArray.js'
 export default () => 
 <div>
   <h1 className={styles.pageHeader}>Village Loci</h1>

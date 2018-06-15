@@ -1,6 +1,6 @@
 import React from 'react'
 import styles from '../utils/style.module.css'
-import {dominicNumbers, dominicPAO} from './dominicArray.js'
+import {dominicNumbers, dominicPAO} from '../data/dominicArray.js'
 
 
 export default () => <div>

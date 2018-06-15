@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: `/memorysport`,
   plugins: [
     {
       resolve: `gatsby-plugin-typography`,
