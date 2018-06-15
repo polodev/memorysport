@@ -16,3 +16,9 @@
   text-align: center;
   padding-bottom: .5em;
 }
+
+.responsiveTable {
+  display: block;
+    width: 100%;
+    overflow-x: auto;
+}

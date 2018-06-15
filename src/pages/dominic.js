@@ -2,18 +2,6 @@ import React from 'react'
 import styles from '../utils/style.module.css'
 import {dominicNumbers, dominicPAO} from './dominicArray.js'
 
-const majors = [
-"0 - z, s, x",
-"1 - T, D",
-"2 - N",
-"3 - M",
-"4 - R",
-"5 - L",
-"6 - J, Ch, Sh",
-"7 - K, C",
-"8 - F V",
-"9 - p, b"
-];
 
 export default () => <div>
   <h1 className={styles.pageHeader}>Dominic system</h1>
@@ -31,4 +19,25 @@ export default () => <div>
         )
     }
   </table>
+  <h1 className={styles.pageHeader}>Dominic PAO</h1>
+  <div className={styles.responsiveTable}>
+  <table>
+    <tr>
+      <th>Number</th>
+      <th>Person</th>
+      <th>Action</th>
+      <th>Object</th>
+    </tr>
+    {
+      dominicPAO.map((dominic, index) => 
+        <tr key={index} className='hello'>
+          <td>{dominic.number}-{dominic.letter}</td>
+          <td>{dominic.person}</td>
+          <td>{dominic.action}</td>
+          <td>{dominic.object}</td>
+        </tr>
+        )
+    }
+  </table>
+  </div>
 </div>
