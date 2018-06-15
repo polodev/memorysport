@@ -36,7 +36,7 @@ export default () => <div>
     {
       dominicPAO.map((dominic, index) => 
         <tr key={index} className='hello' title={dominic.hints}>
-          <td>{dominic.number}</td>
+          <td onClick={() => console.log(dominic)}>{dominic.number}</td>
           <td>{dominic.letter}</td>
           <td>{dominic.person}</td>
           <td>{dominic.action}</td>
