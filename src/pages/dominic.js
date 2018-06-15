@@ -6,6 +6,8 @@ import {dominicNumbers, dominicPAO} from './dominicArray.js'
 export default () => <div>
   <h1 className={styles.pageHeader}>Dominic system</h1>
   <table>
+    <tbody>
+      
     <tr>
       <th>Number</th>
       <th>Letter</th>
@@ -18,26 +20,31 @@ export default () => <div>
         </tr>
         )
     }
+    </tbody>
   </table>
-  <h1 className={styles.pageHeader}>Dominic PAO</h1>
+  <h1 className={`${styles.pageHeader} ${styles.pageHeader_top}` }>Dominic PAO</h1>
   <div className={styles.responsiveTable}>
   <table>
+  <tbody>
     <tr>
       <th>Number</th>
+      <th>Letter</th>
       <th>Person</th>
       <th>Action</th>
       <th>Object</th>
     </tr>
     {
       dominicPAO.map((dominic, index) => 
-        <tr key={index} className='hello'>
-          <td>{dominic.number}-{dominic.letter}</td>
+        <tr key={index} className='hello' title={dominic.hints}>
+          <td>{dominic.number}</td>
+          <td>{dominic.letter}</td>
           <td>{dominic.person}</td>
           <td>{dominic.action}</td>
           <td>{dominic.object}</td>
         </tr>
         )
     }
+    </tbody>
   </table>
   </div>
 </div>

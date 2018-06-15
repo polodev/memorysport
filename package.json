@@ -11,6 +11,8 @@
     "gatsby": "^1.9.250",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-typography": "^1.7.18",
+    "typography": "^0.16.17",
+    "typography-theme-alton": "^0.15.10",
     "typography-theme-fairy-gates": "^0.15.11"
   }
 }

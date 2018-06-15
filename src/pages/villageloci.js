@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from '../utils/style.module.css'
-console.log(styles)
 
 import houses from './villageLociArray.js'
 export default () => 
