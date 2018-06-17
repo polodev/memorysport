@@ -638,7 +638,7 @@ const dominicPAO = [
     action: "driving",
     hints: 'driving bus in speed movie',
     object: 'bus',
-    alternatives: [],
+    alternatives: ['sandra bullock', 'Simon Baker from mentalist'],
     references: [],
   },
   {
