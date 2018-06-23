@@ -27,17 +27,17 @@ export default () => <div>
   <table>
   <tbody>
     <tr>
-      <th>Number</th>
       <th>Letter</th>
+      <th>Number</th>
       <th>Person</th>
       <th>Action</th>
       <th>Object</th>
     </tr>
     {
       dominicPAO.map((dominic, index) => 
-        <tr key={index} className='hello' title={dominic.hints}>
-          <td onClick={() => console.log(dominic)}>{dominic.number}</td>
+        <tr onClick={() => console.log(dominic)} key={index} className='hello' title={dominic.hints}>
           <td>{dominic.letter}</td>
+          <td>{dominic.number}</td>
           <td>{dominic.person}</td>
           <td>{dominic.action}</td>
           <td>{dominic.object}</td>
