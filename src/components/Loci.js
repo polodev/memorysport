@@ -4,7 +4,7 @@ import styles from '../utils/style.module.css'
 export default ({pageTitle, arr, id='test'}) => 
 <div>
   <h1 id={id} className={styles.pageHeader}>
-    <a href='#'>{pageTitle}</a>
+    <a href='#'>{pageTitle} {`(${arr.length})`}</a>
   </h1>
   <ul className={styles.uList}>
     {
