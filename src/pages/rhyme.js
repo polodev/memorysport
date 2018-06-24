@@ -17,7 +17,7 @@ const rhymes = [
 export default () => <div>
   <h1 className={styles.pageHeader}>Rhyme</h1>
 
-  <ul className={styles.unList}>
+  <ul className={styles.uList}>
   {
     rhymes.map((rhyme, index) => 
       <li key={index} className={styles.singleList}>{rhyme}</li>

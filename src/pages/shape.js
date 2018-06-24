@@ -17,7 +17,7 @@ export default () =>
 <div>
   <h1 className={styles.pageHeader}>Shape</h1>
   
-  <ul className={styles.unList}>
+  <ul className={styles.uList}>
     {
       shapes.map((shape, index) => 
         <li className={styles.singleList} key={index}>{shape}</li>

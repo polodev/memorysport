@@ -11,7 +11,7 @@ const ListLink = props =>
 
  export default () =>  
       <div style={{ marginBottom: `1.5rem` }}>
-      <ul className={styles.unList}>
+      <ul className={styles.uList}>
         <ListLink to="/villageloci/">Village-loci</ListLink>
         <ListLink to="/detailloci/">Detail Loci</ListLink>
         <ListLink to="/rhyme">Rhyme</ListLink>

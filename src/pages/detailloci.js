@@ -17,8 +17,14 @@ import {
 } from '../data/lociArray.js'
 export default () => 
 <div>
-  <Loci pageTitle="Fatepur Home" arr={fatepurHome} />
-  <Loci pageTitle="Palashpur Basudev Home" arr={palashpurBasudev} />
+  <h3>table of content</h3>
+  <ul className='uList'>
+    <li className='singleList'> <a href='#fatepurHome'>Fatepur Home</a> </li>
+    <li className='singleList'> <a href='#palashpurBasudev'>Palashpur Basudev Home</a> </li>
+  </ul>
+
+  <Loci id='fatepurHome' pageTitle="Fatepur Home" arr={fatepurHome} />
+  <Loci id='palashpurBasudev' pageTitle="Palashpur Basudev Home" arr={palashpurBasudev} />
 </div>
   
 

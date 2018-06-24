@@ -17,7 +17,7 @@ const majors = [
 export default () => <div>
   <h1 className={styles.pageHeader}>Major system</h1>
 
-  <ul className={styles.unList}>
+  <ul className={styles.uList}>
   {
     majors.map((number, index) => 
       <li key={index} className={styles.singleList}>{number}</li>
