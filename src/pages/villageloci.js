@@ -1,17 +1,11 @@
 import React from 'react'
 import styles from '../utils/style.module.css'
+import Loci from '../components/Loci'
 
 import houses from '../data/villageLociArray.js'
 export default () => 
 <div>
-  <h1 className={styles.pageHeader}>Village Loci</h1>
-  <ul className={styles.unList}>
-    {
-      houses.map((house, index) => 
-        <li className={styles.singleList} key={index}> {index + 1} -  {house}</li>
-        )
-    }
-  </ul>
+  <Loci pageTitle="Village Loci" arr={houses} />
 </div>
   
 
