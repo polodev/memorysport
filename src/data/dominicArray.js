@@ -18,16 +18,21 @@ const dominicPAO =
     letter: "oo",
     person: "ozzy osbourne",
     action: " biting",
-    hints: 'no hints added yet',
+    hints: "singer who biting bat head in a concert",
     object: 'bat',
-    alternatives: [],
+    alternatives: [
+      {
+        name: "Ozzy Osbourne",
+        intro: "singer who biting bat head in a concert"
+      }
+    ],
     references: [],
   },
   {
     number: "01",
     letter: "oa",
     person: "Quaker Oats guy",
-    action: " offering",
+    action: "offering",
     hints: 'no hints added yet',
     object: 'oats',
     alternatives: [],
@@ -81,7 +86,7 @@ const dominicPAO =
     number: "05",
     letter: "oe",
     person: "omar epps",
-    action: "acted / ",
+    action: "playing baseball",
     hints: 'no hints added yet',
     object: 'baseball',
     alternatives: [],
@@ -93,7 +98,7 @@ const dominicPAO =
     person: "oj simpson",
     action: "playing NFL",
     hints: 'no hints added yet',
-    object: 'soccer player',
+    object: "american national football",
     alternatives: [],
     references: [],
   },
@@ -166,11 +171,10 @@ const dominicPAO =
   {
     number: "12",
     letter: "ab",
-    person: "amitabh bachchan",
-    action: "pass",
-    hints: 'pappu pass ho gaya in cadbury old advertisement',
-    object: 'Cadbury',
-    alternatives: ['Alec Baldwin', 'Amitabh Bachchan'],
+    person: "Alec Baldwin",
+    action: "mocking",
+    hints: "Alec baldwin mocking trump in saturday night",
+    object: 'trump',
     alternatives: [
         {
             name: 'Alec Baldwin',
@@ -180,6 +184,7 @@ const dominicPAO =
         {
             name: 'Amitabh Bachchan',
             intro: 'Abhisek Bachchan father',
+            hints: 'pappu pass ho gaya in cadbury old advertisement',
             ao: "pass cudbery"
         },
         {
@@ -258,7 +263,7 @@ const dominicPAO =
     number: "16",
     letter: "as",
     person: "anushka sharma",
-    action: " dancing",
+    action: "dancing",
     hints: 'dancing with virat kohli',
     object: 'Virat Kohli',
     alternatives: [
@@ -350,7 +355,16 @@ const dominicPAO =
     action: "lighting",
     hints:  "lighting a match to a stick of dynamite",
     object: 'dynamite',
-    alternatives: [],
+    alternatives: [
+      {
+        name: "alfred noble",
+        intro: "Dynamite inventor",
+      },
+      {
+        name: "Akkineni Nagarjuna",
+        intro: "Telegu actor",
+      }
+    ],
     references: [],
   },
   {
@@ -369,7 +383,7 @@ const dominicPAO =
     person: "bill atkinson",
     action: "breaking",
     hints: 'bill atkinson (macintosh developer) breaking into pixel',
-    object: 'pixed',
+    object: 'pixel',
     alternatives: [],
     references: [],
   },
@@ -377,7 +391,7 @@ const dominicPAO =
     number: "22",
     letter: "bb",
     person: "banga bandhu sheikh mujibur rahman",
-    action: "founded",
+    action: "found",
     hints: 'founding father of bangladesh',
     object: 'Bangladesh',
     alternatives: [
@@ -463,8 +477,17 @@ const dominicPAO =
     person: "benny hill",
     action: "chased",
     hints: 'as a milkman being chased by naked women',
-    object: 'milkman',
-    alternatives: [],
+    object: 'naked women',
+    alternatives: [
+      {
+        name: "benny hill",
+        intro: "actor"
+      },
+      {
+        name: "Bella Hadid",
+        intro: "Gigi hadid sister",
+      }
+    ],
     references: [],
   },
   {
@@ -491,9 +514,9 @@ const dominicPAO =
     number: "31",
     letter: "ca",
     person: "Captain America",
-    action: "frisbee-throws his shield",
-    hints: 'frisbee-throws',
+    action: 'frisbee-throws',
     object: 'shield',
+    hints: "frisbee-throws his shield",
     alternatives: [
         {
             name: "Captain America",
@@ -536,7 +559,16 @@ const dominicPAO =
     action: "twirling",
     hints: "twirling cane and waddling",
     object: 'cane',
-    alternatives: [],
+    alternatives: [
+      {
+        name: "Charlie Chaplin",
+        intro: "Comedian"
+      },
+      {
+        name: "Camila Cabello",
+        intro: "sang havana, cuba american singer"
+      }
+    ],
     references: [],
   },
   {
@@ -546,7 +578,16 @@ const dominicPAO =
     action: "self defense",
     hints: 'no hints added yet',
     object: 'Zephyr',
-    alternatives: [],
+    alternatives: [
+      {
+        name: "Cameron Diaz",
+        intro: "Heroin of the musk, knight and day"
+      },
+      {
+        name: "Céline Dion",
+        intro: "sang titanic movie song",
+      }
+    ],
     references: [],
   },
   {
@@ -626,7 +667,7 @@ const dominicPAO =
     number: "40",
     letter: "do",
     person: "dominc o'brien",
-    action: " memorizing",
+    action: "memorizing",
     hints: "8th times memory champion Dominic o'brien memorizing deck of card",
     object: 'deck',
     alternatives: [],
@@ -639,7 +680,16 @@ const dominicPAO =
     action: "fighting",
     hints: 'no hints added yet',
     object: 'marshmallow man',
-    alternatives: [],
+    alternatives: [
+      {
+        name: "dan akroyd",
+        intro: "fighting with marshmallow man",
+      },
+      {
+        name: "Dianna Agron",
+        intro: "Daughter of robert d niro in family movie",
+      }
+    ],
     references: [],
   },
   {
@@ -649,8 +699,18 @@ const dominicPAO =
     action: "free kick",
     hints: "best free kick in sea beach. pointing Bin with football",
     object: 'sea beach',
-    alternatives: [],
-    references: ['Drew Barrymore', 'David Beckham'],
+    alternatives: ['Drew Barrymore', 'David Beckham'],
+    alternatives: [
+      {
+        name: "David Beckham",
+        intro: "English footballer",
+      },
+      {
+        name: "Drew Barrymore",
+        intro: "first 50 dates"
+      }
+    ]
+
   },
   {
     number: "43",
@@ -665,20 +725,29 @@ const dominicPAO =
   {
     number: "44",
     letter: "dd",
-    person: "Didier Drogba",
-    action: "playing striker",
+    person: "Dr DRe",
+    action: "creating",
     hints: 'no hints added yet',
-    object: 'Ivory Coast',
-    alternatives: [],
+    object: 'Headphone',
+    alternatives: [
+      {
+        name: "Didier Drogba",
+        intro: "former captain of Ivory Coast",
+      },
+      {
+        name: "Dr Dre",
+        intro: "Beats Headphone"
+      }
+    ],
     references: [],
   },
   {
     number: "45",
     letter: "de",
     person: "dwight eisenhower",
-    action: " 34th president being sworn into office",
+    action: " sworn",
     hints: 'no hints added yet',
-    object: 'not',
+    object: 'office',
     alternatives: [],
     references: [],
   },
@@ -686,9 +755,9 @@ const dominicPAO =
     number: "46",
     letter: "ds",
     person: "dale steyn",
-    action: " south african fastest bowler",
+    action: "bowling",
     hints: 'no hints added yet',
-    object: 'not',
+    object: 'fast',
     alternatives: [
         {
             name: "daly steyn",
@@ -714,9 +783,9 @@ const dominicPAO =
     number: "47",
     letter: "dg",
     person: "dolce gabana",
-    action: " adjusting sunglasses",
+    action: " adjusting",
     hints: 'no hints added yet',
-    object: 'not',
+    object: 'sunglasses',
     alternatives: [],
     references: [],
   },
@@ -724,9 +793,9 @@ const dominicPAO =
     number: "48",
     letter: "dh",
     person: "dustin hoffman",
-    action: " shifu fight with tai lung",
+    action: "fight",
     hints: 'Acted as shifu in Kunfu panda',
-    object: 'not',
+    object: 'tai lung',
     alternatives: [
       {
         name: "Dustin Hoffman",
@@ -743,19 +812,28 @@ const dominicPAO =
     number: "49",
     letter: "dn",
     person: "duke nukem",
-    action: 'firing a blaster and ssying "ooh, that gotta hurt"',
-    hints: 'no hints added yet',
-    object: 'not',
-    alternatives: [],
+    action: "firing",
+    hints: 'firing a blaster and ssying "ooh, that gotta hurt"',
+    object: 'blaster',
+    alternatives: [
+      {
+        name: "Duke Nukem",
+        intro: "Duke Nukem Forever is a 2011 first-person shooter video gam",
+      },
+      {
+        name: "Robert De Niro",
+        intro: "grand pa with zack efron",
+      }
+    ],
     references: [],
   },
   {
     number: "50",
     letter: "eo",
     person: "50 cent",
-    action: " opening candy shop with olivia",
+    action: "opening",
     hints: 'no hints added yet',
-    object: 'not',
+    object: 'candy shop',
     alternatives: [],
     references: [],
   },
@@ -763,9 +841,9 @@ const dominicPAO =
     number: "51",
     letter: "ea",
     person: "elizabeth arden",
-    action: " spraying perfume",
+    action: " spraying",
     hints: 'no hints added yet',
-    object: 'not',
+    object: 'perfume',
     alternatives: [],
     references: [],
   },
@@ -773,9 +851,9 @@ const dominicPAO =
     number: "52",
     letter: "eb",
     person: "emily bronte",
-    action: " writing wuthering heights",
+    action: "authoring",
     hints: 'no hints added yet',
-    object: 'not',
+    object: 'novel Wuthering height',
     alternatives: [
       {
         name: "emily bronte",
@@ -784,6 +862,10 @@ const dominicPAO =
       {
         name: "ELIZABETH BANKS",
         intro: "Hollywood actress acted on Walk of Shame, 40 years of virgin, definitely or maybe",
+      },
+      {
+        name: "Emily Blunt",
+        intro: "Edge of Tomorrow"
       }
 
     ],
@@ -794,9 +876,22 @@ const dominicPAO =
     letter: "ec",
     person: "eric clapton",
     action: " playing an electric guitar",
-    hints: 'no hints added yet',
-    object: 'not',
-    alternatives: [],
+    hints: 'Eric Clapton is a guitarist',
+    object: 'guitar',
+    alternatives: [
+      {
+        name: "Eric Clapton",
+        intro: "Guitarist"
+      },
+      {
+        name: "Elisha Cuthbert",
+        intro: "The Girl Next Door cute girl",
+      },
+      {
+        name: "Emmanuelle Chriqui",
+        intro: "Heroin in You don't mess with zohan",
+      }
+    ],
     references: [],
   },
   {
@@ -815,6 +910,10 @@ const dominicPAO =
       {
         name: "ellen degeneres",
         intro: "Ellen show, ellen tube",
+      },
+      {
+        name: "Elizabeth Debicki",
+        intro: "The great gatsby actress"
       }
     ],
     references: [],
@@ -823,19 +922,24 @@ const dominicPAO =
     number: "55",
     letter: "ee",
     person: "e e cummings",
-    action: " typing a poem",
+    action: "typing",
     hints: 'no hints added yet',
-    object: 'not',
-    alternatives: [],
+    object: 'poem',
+    alternatives: [
+      {
+        name: "EE Cummings",
+        intro: "Edward Estlin (E. E.) Cummings, often styled as e e cummings, as he sometimes signed his name, was an American poet, painter, essayist, author, and playwright"
+      }
+    ],
     references: [],
   },
   {
     number: "56",
     letter: "es",
-    person: "edward scissorhands",
-    action: "snipping the bushes with his scissor hands",
+    person: "ED Sheeran",
+    action: "exercising",
     hints: 'no hints added yet',
-    object: 'not',
+    object: 'for shape of you',
     alternatives: [
       {
         name: "Edward scissorhands",
@@ -855,10 +959,10 @@ const dominicPAO =
   {
     number: "57",
     letter: "eg",
-    person: "edvard grieg",
-    action: "conducting orchestra at the piano",
+    person: "Esha Gupta",
+    action: "participating",
     hints: 'no hints added yet',
-    object: 'not',
+    object: 'Femina miss india',
     alternatives: [
       {
         name: "edvard grieg",
@@ -867,6 +971,14 @@ const dominicPAO =
       {
         name: "Esha Gupta",
         intro: "Beautiful actress in Jannat 2, commando 2, "
+      },
+      {
+        name: "Ellie Goulding",
+        intro: "Singer song writer - loving me like you do",
+      },
+      {
+        name: "Eva green",
+        intro: "Casino royal",
       }
     ],
     references: [],
@@ -875,9 +987,9 @@ const dominicPAO =
     number: "58",
     letter: "eh",
     person: "ethan hunt",
-    action: " suspended above cia computer",
+    action: "suspended",
     hints: 'no hints added yet',
-    object: 'not',
+    object: 'cia computer',
     alternatives: [
       {
         name: "ethan hunt",
@@ -885,7 +997,7 @@ const dominicPAO =
       },
       {
         name: "EMILE HIRSCH",
-        intro: "Acted in into the wild and lone survivor costarred alongside Mark Wahlberg and Taylor Kitsch",
+        intro: "Acted in into the wild and lone survivor costarred alongside Mark Wahlberg and Taylor Kitsch, the girl next door",
       },
       {
         name: "Emraan Hashmi",
@@ -899,9 +1011,9 @@ const dominicPAO =
     letter: "en",
     person: "edward norton",
     action: "smashing",
+    object: 'hulk',
     action: "smashing while turning into hulk",
     hints: 'no hints added yet',
-    object: 'hulk',
     alternatives: [],
     references: [],
   },
@@ -909,9 +1021,9 @@ const dominicPAO =
     number: "60",
     letter: "so",
     person: "sharon osbourne",
-    action: " kissing/squeezing her pomeranian",
-    hints: 'no hints added yet',
-    object: 'not',
+    action: "kissing/squeezing",
+    hints: "Kissing / Squeezing her pomeranian dog",
+    object: 'pomeranian',
     alternatives: [],
     references: [],
   },
@@ -953,7 +1065,7 @@ const dominicPAO =
     number: "63",
     letter: "sc",
     person: "simon cowell",
-    action: " judging",
+    action: "judging",
     hints: 'x factor',
     object: 'Reality competition',
     alternatives: [
@@ -972,7 +1084,7 @@ const dominicPAO =
     number: "64",
     letter: "sd",
     person: "sanjay dutt",
-    action: " gandhi giri",
+    action: "Gandhigiri",
     hints: 'sanjoy datta showing gandhi giri in lago raho munna vi',
     object: 'munna bhai',
     alternatives: [
@@ -983,6 +1095,10 @@ const dominicPAO =
       {
         name: "Shikhar Dhawan",
         intro: "Captain of Sunrise Hyderabad",
+      },
+      {
+        name: "snoop dogg",
+        intro: "snoop dogg and pharrell williams drop it like its hot",
       }
     ],
     references: [],
@@ -1045,6 +1161,10 @@ const dominicPAO =
       {
         name: "Shilpa Shetty",
         intro: "Daadkhan movie + youtube food channel",
+      },
+      {
+        name: "Sunil Shetty",
+        intro: "Gentleman villain with Siddarth"
       }
     ],
     references: [],
@@ -1078,9 +1198,9 @@ const dominicPAO =
     number: "68",
     letter: "sh",
     person: "stephen hawking",
-    action: "spinning",
-    hints: "spinning in wheelchair, getting sucked into black hole",
-    object: 'wheelchair',
+    action: "discover",
+    hints: "discover theory of relativity",
+    object: 'theory of relativity',
     alternatives: ['salma hayek', 'Stephen Hawking'],
     alternatives: [
       {
@@ -1121,7 +1241,7 @@ const dominicPAO =
     number: "70",
     letter: "go",
     person: "gary oldman",
-    action: "ridding the city of crime",
+    action: "curbing crime",
     hints: "Lieutenant Jim Gordon police commissioner Gothom city",
     object: 'Gotham City',
     alternatives: [],
@@ -1161,9 +1281,9 @@ const dominicPAO =
     number: "74",
     letter: "gd",
     person: "gandhi",
-    action: " spinning on a wheel",
+    action: "spinning",
     hints: 'no hints added yet',
-    object: 'not',
+    object: 'wheel',
     alternatives: [],
     references: [],
   },
@@ -1181,29 +1301,51 @@ const dominicPAO =
     number: "76",
     letter: "gs",
     person: "Gene Simmons",
-    action: " Spitting Blood",
+    action: "Spitting",
     hints: 'no hints added yet',
-    object: 'not',
-    alternatives: [],
+    object: 'blood',
+    alternatives: [
+      {
+        name: "Gene simmons",
+        intro: "Spitting blood in a concert",
+      },
+      {
+        name: "Gracy Singh",
+        intro: "Cinky in Munna Bhai MBBS"
+      }
+    ],
     references: [],
   },
   {
     number: "77",
     letter: "gg",
-    person: "gautam gambhir",
-    action: " angry with virat",
-    hints: 'no hints added yet',
-    object: 'not',
-    alternatives: [],
+    person: "gal gadot",
+    action: "fighting",
+    hints: 'Princess Diana - wonder women',
+    object: 'wonder women',
+    alternatives: [
+      {
+        name: "Gulshan Grover",
+        intro: "A. R. Rehman in Dil Maange More",
+      },
+      {
+        name: "Gautam gambhir",
+        intro: "Kolkata Knight Riders captain",
+      },
+      {
+        name: "Gal Gadot",
+        intro: "Wonder women",
+      }
+    ],
     references: [],
   },
   {
     number: "78",
     letter: "gh",
-    person: "george harrison",
-    action: "playing guitar",
+    person: "gigi hadid",
+    action: "modeling",
     hints: 'no hints added yet',
-    object: 'guitar',
+    object: 'victoria secret',
     alternatives: [
       {
         name: "george harrison",
@@ -1213,6 +1355,10 @@ const dominicPAO =
         name: "Goldie Hawn",
         intro: "kate hudson mother. Acted in snatched Amy Schwimmer",
       },
+      {
+        name: "Gigi Hadid",
+        intro: "Gigi Hadid is an American fashion model, zyan malik girlfriend",
+      }
     ],
     references: [],
   },
@@ -1220,9 +1366,9 @@ const dominicPAO =
     number: "79",
     letter: "gn",
     person: "greg norman",
-    action: " swinging a golf club",
-    hints: 'no hints added yet',
-    object: 'not',
+    action: "swinging",
+    hints: "swinging a golf club",
+    object: 'golf club',
     alternatives: [],
     references: [],
   },
@@ -1230,9 +1376,9 @@ const dominicPAO =
     number: "80",
     letter: "ho",
     person: "santa claus",
-    action: " laughing until belly shakes (ho ho ho!)",
-    hints: 'no hints added yet',
-    object: 'not',
+    action: "laughing",
+    hints: "laughing until belly shakes (ho ho ho!)",
+    object: 'belly',
     alternatives: [],
     references: [],
   },
@@ -1240,9 +1386,9 @@ const dominicPAO =
     number: "81",
     letter: "ha",
     person: "humayun ahmed",
-    action: " himu wear yellow dress",
-    hints: 'no hints added yet',
-    object: 'not',
+    action: "creating",
+    hints: "himu wear yellow dress",
+    object: 'yellow dress',
     alternatives: [],
     references: [],
   },
@@ -1294,19 +1440,19 @@ const dominicPAO =
     number: "85",
     letter: "he",
     person: "herb elliott",
-    action: "running very fast",
-    hints: 'no hints added yet',
-    object: 'not',
+    action: "running",
+    hints: "running very fast",
+    object: 'very fast',
     alternatives: [],
     references: [],
   },
   {
     number: "86",
     letter: "hs",
-    person: "harbhajan singh",
-    action: "married train girl geeta basra",
+    person: "Harry style",
+    action: "formed",
     hints: 'no hints added yet',
-    object: 'not',
+    object: 'One direction',
     alternatives: [
       {
         name: "harbhajan singh",
@@ -1323,9 +1469,9 @@ const dominicPAO =
     number: "87",
     letter: "hg",
     person: "hg wells",
-    action: "driving the time machine",
-    hints: 'no hints added yet',
-    object: 'not',
+    action: "driving",
+    hints: "driving the time machine",
+    object: 'time machine',
     alternatives: [
       {
         name: "Hg Wells",
@@ -1342,9 +1488,9 @@ const dominicPAO =
     number: "88",
     letter: "hh",
     person: "hulk hogan",
-    action: " hulk hogan wrestling",
-    hints: 'no hints added yet',
-    object: 'not',
+    action: "wrestling",
+    hints: "hulk hogan wrestling",
+    object: 'www',
     alternatives: [],
     references: [],
   },
@@ -1352,7 +1498,7 @@ const dominicPAO =
     number: "89",
     letter: "hn",
     person: "horatio nelson",
-    action: " standing at the wheel of the ship",
+    action: "standing at the wheel of the ship",
     hints: 'no hints added yet',
     object: 'not',
     alternatives: [],
@@ -1362,9 +1508,9 @@ const dominicPAO =
     number: "90",
     letter: "no",
     person: "norman osbourne",
-    action: " talking to his alter ego in the mirror",
-    hints: 'no hints added yet',
-    object: 'not',
+    action: "altering",
+    hints: "talking to his alter ego in the mirror",
+    object: 'ego',
     alternatives: [],
     references: [],
   },
@@ -1372,9 +1518,9 @@ const dominicPAO =
     number: "91",
     letter: "na",
     person: "neil armstrong",
-    action: " stepping onto moon",
-    hints: 'no hints added yet',
-    object: 'not',
+    action: "stepping",
+    action: "stepping onto moon",
+    object: 'moon',
     alternatives: [],
     references: [],
   },
@@ -1382,9 +1528,9 @@ const dominicPAO =
     number: "92",
     letter: "nb",
     person: "napoleon bonaparte",
-    action: " hand in coat, standing for portrait",
-    hints: 'no hints added yet',
-    object: 'not',
+    action: "standing",
+    hints: "hand in coat, standing for portrait",
+    object: 'portrait',
     alternatives: [
       {
         name: "Napoleon Bonaparte",
@@ -1401,37 +1547,74 @@ const dominicPAO =
     number: "93",
     letter: "nc",
     person: "nicholas cage",
-    action: " conducting hallelujah in face off with gold guns",
-    hints: 'no hints added yet',
-    object: 'not',
-    alternatives: [],
+    action: "riding",
+    hints: "conducting hallelujah in face off with gold guns",
+    object: 'burning motor cyyle',
+    alternatives: [
+      {
+        name: "Nicholas cage",
+        intro: "ghost rider actor"
+      },
+      {
+        name: "Naga Chaitanya",
+        intro: "Akkineni Nagarjuna son and telegu hero",
+      }
+    ],
     references: [],
   },
   {
     number: "94",
     letter: "nd",
-    person: "neil diamond",
-    action: " forever in blue jeans",
+    person: "Nina Dobrev",
+    action: "challenging",
     hints: 'no hints added yet',
-    object: 'not',
-    alternatives: [],
+    object: 'kids in gymnastics',
+    alternatives: [
+      {
+        name: "Nancy O'Dell",
+        intro: "American television host. Donald Trump’s Lewd Remarks About Her",
+      },
+      {
+        name: "neil diamond",
+        intro: "Singer, Songwriter",
+        hints: "Forever in Blue jeans",
+      },
+      {
+        name: "Natalie Dormer",
+        intro: "the hunger games",
+        hints: "60 Seconds With...Natalie Dormer - she anticipated for photographic memory for her career"
+      },
+      {
+        name: "Neal Dodson",
+        intro: "Margin Call Producer Neal Dodson",
+      },
+      {
+        name: "Nina Dobrev",
+        intro: "xXx: Return of Xander Cage and the vampire diaries actress, flexible girl",
+      }
+    ],
     references: [],
   },
   {
     number: "95",
     letter: "ne",
     person: "noel edmunds",
-    action: " talking to the banker",
+    action: "talking",
     hints: 'no hints added yet',
-    object: 'not',
-    alternatives: [],
+    object: 'banker',
+    alternatives: [
+      {
+        name: "noel edmunds",
+        intro: "talking to the banker"
+      }
+    ],
     references: [],
   },
   {
     number: "96",
     letter: "ns",
     person: "neil sedaka",
-    action: " singing happy birthday sweet 16",
+    action: "singing happy birthday sweet 16",
     hints: 'no hints added yet',
     object: 'not',
     alternatives: [
@@ -1446,7 +1629,14 @@ const dominicPAO =
       {
         name: "Nawazuddin Siddiqui ",
         intro: "Acted in Gangs of Wasseypur, Kick",
-
+      },
+      {
+        name: "Neel Sethi",
+        intro: "child artist of The Jungle Book",
+      },
+      {
+        name: "Namrata Shirodkar",
+        intro: "Mahesh babu wife",
       }
     ],
     references: [],
@@ -1454,20 +1644,29 @@ const dominicPAO =
   {
     number: "97",
     letter: "ng",
-    person: "nell gwyn",
-    action: " long-time mistress of king charles ii",
+    person: "nancy grace",
+    action: "commenting",
     hints: 'no hints added yet',
-    object: 'not',
-    alternatives: [],
+    object: 'prosecutor',
+    alternatives: [
+      {
+        name: 'Nancy Grace',
+        intro: "Nancy Ann Grace is an American legal commentator and television journalist + actress",
+      },
+      {
+        name: "nell gwyn",
+        action: "long-time mistress of king charles ii",
+      }
+    ],
     references: [],
   },
   {
     number: "98",
     letter: "nh",
     person: "neil patrick harris",
-    action: " oooawesome from how i met your mother",
-    hints: 'no hints added yet',
-    object: 'not',
+    action: "oooawesome",
+    hints: "oooawesome",
+    object: 'How I met your mother',
     alternatives: [],
     references: [],
   },
@@ -1475,10 +1674,19 @@ const dominicPAO =
     number: "99",
     letter: "nn",
     person: "nicholas nickleby",
-    action: " dickension charcter",
-    hints: 'no hints added yet',
-    object: 'not',
-    alternatives: [],
+    action: "created",
+    hints: "dickension charcter",
+    object: 'dickension character',
+    alternatives: [
+      {
+        name: "Neil Nitin Mukesh",
+        intro: "Acted in new York, jail, players"
+      },
+      {
+        name: "nicholas nickleby",
+        intro: "Dickension character",
+      }
+    ],
     references: [],
   }
 ]
