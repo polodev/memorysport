@@ -17,7 +17,7 @@ import {
 } from '../data/lociArray.js'
 export default () => 
 <div>
-  <h3>table of content</h3>
+  <h3>Table of Content(ToC)</h3>
   <ul className='uList'>
     <li className='singleList'> <a href='#fatepurHome'>Fatepur Home</a> </li>
     <li className='singleList'> <a href='#palashpurBasudev'>Palashpur Basudev Home</a> </li>

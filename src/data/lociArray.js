@@ -1,6 +1,7 @@
 const fatepurHome = [
   "entrance of house",
-  "stair (__+pira) to main door",
+  "stair to main door",
+  "main __pira near main door",
   "chain of main door",
   "lock of main door",
   "__dhasa inside main door",
