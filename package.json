@@ -7,10 +7,9 @@
     "build": "gatsby build",
     "serve": "gatsby serve",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public"
-
   },
   "dependencies": {
-    "gatsby": "^1.9.250",
+    "gatsby": "^1.9.273",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-typography": "^1.7.18",
     "typography": "^0.16.17",
