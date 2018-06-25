@@ -15,6 +15,7 @@ const dominicPAO =
 [
   {
     number: "00",
+    image: "",
     letter: "oo",
     person: "ozzy osbourne",
     action: " biting",
@@ -30,6 +31,7 @@ const dominicPAO =
   },
   {
     number: "01",
+    image: "",
     letter: "oa",
     person: "Quaker Oats guy",
     action: "offering",
@@ -40,6 +42,7 @@ const dominicPAO =
   },
   {
     number: "02",
+    image: "",
     letter: "ob",
     person: "orlando bloom",
     action: "love",
@@ -55,6 +58,7 @@ const dominicPAO =
   },
   {
     number: "03",
+    image: "",
     letter: "oc",
     person: "oliver cromwell",
     action: " loading",
@@ -65,6 +69,7 @@ const dominicPAO =
   },
   {
     number: "04",
+    image: "",
     letter: "od",
     person: "officer dibble",
     action: "chasing",
@@ -84,6 +89,7 @@ const dominicPAO =
   },
   {
     number: "05",
+    image: "",
     letter: "oe",
     person: "omar epps",
     action: "playing baseball",
@@ -94,6 +100,7 @@ const dominicPAO =
   },
   {
     number: "06",
+    image: "",
     letter: "os",
     person: "oj simpson",
     action: "playing NFL",
@@ -104,6 +111,7 @@ const dominicPAO =
   },
   {
     number: "07",
+    image: "",
     letter: "og",
     person: "james bond",
     action: "shooting",
@@ -114,6 +122,7 @@ const dominicPAO =
   },
   {
     number: "08",
+    image: "",
     letter: "oh",
     person: "oliver hardy",
     action: "put on",
@@ -124,16 +133,18 @@ const dominicPAO =
   },
   {
     number: "09",
+    image: "/images/oliver_north.jpg",
     letter: "on",
     person: "oliver north",
-    action: " swearing",
+    action: "testifying",
     hints: 'Oliver Laurence North is an American political commentator, television host, military historian, author, and retired United States Marine Corps Lieutenant Colonel.',
-    object: 'oath',
+    object: 'congressional committee',
     alternatives: [],
     references: [],
   },
   {
     number: "10",
+    image: "",
     letter: "ao",
     person: "Lionel Messi",
     action: "playing football",
@@ -150,6 +161,7 @@ const dominicPAO =
   },
   {
     number: "11",
+    image: "",
     letter: "aa",
     person: "amy-adams",
     action: "praising",
@@ -170,6 +182,7 @@ const dominicPAO =
   },
   {
     number: "12",
+    image: "",
     letter: "ab",
     person: "Alec Baldwin",
     action: "mocking",
@@ -200,6 +213,7 @@ const dominicPAO =
   },
   {
     number: "13",
+    image: "",
     letter: "ac",
     person: "Anderson Cooper",
     action: "presenting",
@@ -219,6 +233,7 @@ const dominicPAO =
   },
   {
     number: "14",
+    image: "",
     letter: "ad",
     person: "Alexandra Daddario",
     action: "crave",
@@ -243,6 +258,7 @@ const dominicPAO =
   },
   {
     number: "15",
+    image: "",
     letter: "ae",
     person: "albert einstein",
     action: "writing",
@@ -266,6 +282,7 @@ const dominicPAO =
   },
   {
     number: "16",
+    image: "",
     letter: "as",
     person: "anushka sharma",
     action: "dancing",
@@ -313,6 +330,7 @@ const dominicPAO =
   },
   {
     number: "17",
+    image: "",
     letter: "ag",
     person: "Ali G",
     action: "Drives",
@@ -332,6 +350,7 @@ const dominicPAO =
   },
   {
     number: "18",
+    image: "",
     letter: "ah",
     person: "adolf hitler",
     action: " sieg-heiling",
@@ -355,6 +374,7 @@ const dominicPAO =
   },
   {
     number: "19",
+    image: "",
     letter: "an",
     person: "alfred nobel",
     action: "lighting",
@@ -374,6 +394,7 @@ const dominicPAO =
   },
   {
     number: "20",
+    image: "",
     letter: "bo",
     person: "barack obama",
     action: "speeching",
@@ -384,6 +405,7 @@ const dominicPAO =
   },
   {
     number: "21",
+    image: "",
     letter: "ba",
     person: "bill atkinson",
     action: "breaking",
@@ -394,6 +416,7 @@ const dominicPAO =
   },
   {
     number: "22",
+    image: "",
     letter: "bb",
     person: "banga bandhu sheikh mujibur rahman",
     action: "founded",
@@ -413,6 +436,7 @@ const dominicPAO =
   },
   {
     number: "23",
+    image: "",
     letter: "bc",
     person: "bradley cooper",
     action: "access",
@@ -423,6 +447,7 @@ const dominicPAO =
   },
   {
     number: "24",
+    image: "",
     letter: "bd",
     person: "bobby deol",
     action: "celebrate",
@@ -438,6 +463,7 @@ const dominicPAO =
   },
   {
     number: "25",
+    image: "",
     letter: "be",
     person: "billy elliott",
     action: "jumping",
@@ -448,6 +474,7 @@ const dominicPAO =
   },
   {
     number: "26",
+    image: "",
     letter: "bs",
     person: "ben stiller",
     action: "taking care",
@@ -468,6 +495,7 @@ const dominicPAO =
   },
   {
     number: "27",
+    image: "",
     letter: "bg",
     person: "bill gates",
     action: "counting",
@@ -478,6 +506,7 @@ const dominicPAO =
   },
   {
     number: "28",
+    image: "",
     letter: "bh",
     person: "benny hill",
     action: "chased",
@@ -497,6 +526,7 @@ const dominicPAO =
   },
   {
     number: "29",
+    image: "",
     letter: "bn",
     person: "bill nighy",
     action: "giving motor ride",
@@ -507,6 +537,7 @@ const dominicPAO =
   },
   {
     number: "30",
+    image: "",
     letter: "co",
     person: "conan o'brien",
     action: "hosting",
@@ -517,6 +548,7 @@ const dominicPAO =
   },
   {
     number: "31",
+    image: "",
     letter: "ca",
     person: "Captain America",
     action: 'frisbee-throws',
@@ -536,6 +568,7 @@ const dominicPAO =
   },
   {
     number: "32",
+    image: "",
     letter: "cb",
     person: "christian bale",
     action: "push up",
@@ -559,6 +592,7 @@ const dominicPAO =
   },
   {
     number: "33",
+    image: "",
     letter: "cc",
     person: "charlie chaplin",
     action: "twirling",
@@ -578,6 +612,7 @@ const dominicPAO =
   },
   {
     number: "34",
+    image: "",
     letter: "cd",
     person: "cameron diaz",
     action: "self defense",
@@ -597,6 +632,7 @@ const dominicPAO =
   },
   {
     number: "35",
+    image: "",
     letter: "ce",
     person: "clint eastwood",
     action: "mumbling",
@@ -616,6 +652,7 @@ const dominicPAO =
   },
   {
     number: "36",
+    image: "",
     letter: "cs",
     person: "charlie sheen",
     action: "angry",
@@ -626,6 +663,7 @@ const dominicPAO =
   },
   {
     number: "37",
+    image: "",
     letter: "cg",
     person: "che guevara",
     action: "wearing",
@@ -636,6 +674,7 @@ const dominicPAO =
   },
   {
     number: "38",
+    image: "",
     letter: "ch",
     person: "chris hemsworth",
     action: "lifting",
@@ -651,6 +690,7 @@ const dominicPAO =
   },
   {
     number: "39",
+    image: "",
     letter: "cn",
     person: "chuck norris",
     action: "roundhouse kicking",
@@ -670,6 +710,7 @@ const dominicPAO =
   },
   {
     number: "40",
+    image: "",
     letter: "do",
     person: "dominc o'brien",
     action: "memorizing",
@@ -680,6 +721,7 @@ const dominicPAO =
   },
   {
     number: "41",
+    image: "",
     letter: "da",
     person: "dan akroyd",
     action: "fighting",
@@ -693,12 +735,17 @@ const dominicPAO =
       {
         name: "Dianna Agron",
         intro: "Daughter of robert d niro in family movie",
+      },
+      {
+        name: "Dolly Ahluwalia",
+        intro: "Viky donor mother",
       }
     ],
     references: [],
   },
   {
     number: "42",
+    image: "",
     letter: "db",
     person: "david beckham",
     action: "free kick",
@@ -719,6 +766,7 @@ const dominicPAO =
   },
   {
     number: "43",
+    image: "",
     letter: "dc",
     person: "david copperfield",
     action: "disappear",
@@ -729,6 +777,7 @@ const dominicPAO =
   },
   {
     number: "44",
+    image: "",
     letter: "dd",
     person: "Dr DRe",
     action: "branding - endorsing",
@@ -748,16 +797,24 @@ const dominicPAO =
   },
   {
     number: "45",
+    image: "",
     letter: "de",
     person: "dwight eisenhower",
-    action: " sworn",
-    hints: 'no hints added yet',
-    object: 'office',
-    alternatives: [],
+    action: "swearing",
+    hints: "American army general and statesman who served as the 34th President of the United States from 1953 to 1961.",
+    object: 'oath',
+    alternatives: [
+      {
+        name: "Dwight Eisenhower",
+        intro: "American army general and statesman who served as the 34th President of the United States from 1953 to 1961.",
+      },
+
+    ],
     references: [],
   },
   {
     number: "46",
+    image: "",
     letter: "ds",
     person: "dale steyn",
     action: "bowling",
@@ -779,6 +836,18 @@ const dominicPAO =
         {
             name: "Dax Shepard",
             intro: "Acted police officer in CHIPS movie",
+        },
+        {
+          name: "Daisy Shah",
+          intro: "Race 3 actress, joi hoo",
+        },
+        {
+          name: "Darsheel Safary",
+          intro: "Bum Bum Bole"
+        },
+        {
+          name: "Devi Sri Prasad",
+          intro: "Music producer Dad mummy",
         }
 
     ],
@@ -786,6 +855,7 @@ const dominicPAO =
   },
   {
     number: "47",
+    image: "",
     letter: "dg",
     person: "dolce gabana",
     action: " adjusting",
@@ -796,6 +866,7 @@ const dominicPAO =
   },
   {
     number: "48",
+    image: "",
     letter: "dh",
     person: "dustin hoffman",
     action: "karate",
@@ -815,6 +886,7 @@ const dominicPAO =
   },
   {
     number: "49",
+    image: "",
     letter: "dn",
     person: "duke nukem",
     action: "firing",
@@ -834,6 +906,7 @@ const dominicPAO =
   },
   {
     number: "50",
+    image: "",
     letter: "eo",
     person: "50 cent",
     action: "opening",
@@ -844,6 +917,7 @@ const dominicPAO =
   },
   {
     number: "51",
+    image: "",
     letter: "ea",
     person: "elizabeth arden",
     action: " spraying",
@@ -854,6 +928,7 @@ const dominicPAO =
   },
   {
     number: "52",
+    image: "",
     letter: "eb",
     person: "emily bronte",
     action: "authoring",
@@ -878,6 +953,7 @@ const dominicPAO =
   },
   {
     number: "53",
+    image: "",
     letter: "ec",
     person: "eric clapton",
     action: "performing",
@@ -901,6 +977,7 @@ const dominicPAO =
   },
   {
     number: "54",
+    image: "",
     letter: "ed",
     person: "Ellen Degeneres",
     action: "choosing",
@@ -925,6 +1002,7 @@ const dominicPAO =
   },
   {
     number: "55",
+    image: "",
     letter: "ee",
     person: "e e cummings",
     action: "typing",
@@ -940,6 +1018,7 @@ const dominicPAO =
   },
   {
     number: "56",
+    image: "",
     letter: "es",
     person: "ED Sheeran",
     action: "exercising",
@@ -963,6 +1042,7 @@ const dominicPAO =
   },
   {
     number: "57",
+    image: "",
     letter: "eg",
     person: "Esha Gupta",
     action: "participating",
@@ -990,6 +1070,7 @@ const dominicPAO =
   },
   {
     number: "58",
+    image: "",
     letter: "eh",
     person: "ethan hunt",
     action: "suspended",
@@ -1013,6 +1094,7 @@ const dominicPAO =
   },
   {
     number: "59",
+    image: "",
     letter: "en",
     person: "edward norton",
     action: "smashing",
@@ -1023,6 +1105,7 @@ const dominicPAO =
   },
   {
     number: "60",
+    image: "",
     letter: "so",
     person: "sharon osbourne",
     action: "kissing/squeezing",
@@ -1033,6 +1116,7 @@ const dominicPAO =
   },
   {
     number: "61",
+    image: "",
     letter: "sa",
     person: "shakira",
     action: "singing",
@@ -1057,6 +1141,7 @@ const dominicPAO =
   },
   {
     number: "62",
+    image: "",
     letter: "sb",
     person: "sandra bullock",
     action: "controlling",
@@ -1067,6 +1152,7 @@ const dominicPAO =
   },
   {
     number: "63",
+    image: "",
     letter: "sc",
     person: "simon cowell",
     action: "judging",
@@ -1086,6 +1172,7 @@ const dominicPAO =
   },
   {
     number: "64",
+    image: "",
     letter: "sd",
     person: "snoop dogg",
     action: "smoking",
@@ -1111,6 +1198,7 @@ const dominicPAO =
   },
   {
     number: "65",
+    image: "",
     letter: "se",
     person: "sam elliot",
     action: "riding",
@@ -1130,6 +1218,7 @@ const dominicPAO =
   },
   {
     number: "66",
+    image: "",
     letter: "ss",
     person: "steven spielberg",
     action: "directing",
@@ -1177,6 +1266,7 @@ const dominicPAO =
   },
   {
     number: "67",
+    image: "",
     letter: "sg",
     person: "sourav ganguly",
     action: "bangali captaincy",
@@ -1202,6 +1292,7 @@ const dominicPAO =
   },
   {
     number: "68",
+    image: "",
     letter: "sh",
     person: "stephen hawking",
     action: "discover",
@@ -1226,6 +1317,7 @@ const dominicPAO =
   },
   {
     number: "69",
+    image: "",
     letter: "sn",
     person: "Sam Neill",
     action: "running",
@@ -1245,6 +1337,7 @@ const dominicPAO =
   },
   {
     number: "70",
+    image: "",
     letter: "go",
     person: "gary oldman",
     action: "curbing crime",
@@ -1255,6 +1348,7 @@ const dominicPAO =
   },
   {
     number: "71",
+    image: "",
     letter: "ga",
     person: "Giorgio Armani",
     action: "tailoring",
@@ -1265,6 +1359,7 @@ const dominicPAO =
   },
   {
     number: "72",
+    image: "",
     letter: "gb",
     person: "gerard butler",
     action: "telling",
@@ -1275,6 +1370,7 @@ const dominicPAO =
   },
   {
     number: "73",
+    image: "",
     letter: "gc",
     person: "George Clooney",
     action: "marriage",
@@ -1285,16 +1381,18 @@ const dominicPAO =
   },
   {
     number: "74",
+    image: "",
     letter: "gd",
     person: "gandhi",
     action: "spinning",
     hints: 'no hints added yet',
-    object: 'wheel',
+    object: 'cotton wheel',
     alternatives: [],
     references: [],
   },
   {
     number: "75",
+    image: "",
     letter: "ge",
     person: "Shakib Al Hasan",
     action: "playing cricket",
@@ -1305,6 +1403,7 @@ const dominicPAO =
   },
   {
     number: "76",
+    image: "",
     letter: "gs",
     person: "Gene Simmons",
     action: "Spitting",
@@ -1324,6 +1423,7 @@ const dominicPAO =
   },
   {
     number: "77",
+    image: "",
     letter: "gg",
     person: "gal gadot",
     action: "shielding/resisting",
@@ -1351,6 +1451,7 @@ const dominicPAO =
   },
   {
     number: "78",
+    image: "",
     letter: "gh",
     person: "gigi hadid",
     action: "modeling",
@@ -1374,6 +1475,7 @@ const dominicPAO =
   },
   {
     number: "79",
+    image: "",
     letter: "gn",
     person: "greg norman",
     action: "swinging",
@@ -1384,6 +1486,7 @@ const dominicPAO =
   },
   {
     number: "80",
+    image: "",
     letter: "ho",
     person: "santa claus",
     action: "laughing",
@@ -1394,6 +1497,7 @@ const dominicPAO =
   },
   {
     number: "81",
+    image: "",
     letter: "ha",
     person: "humayun ahmed",
     action: "made - making",
@@ -1404,6 +1508,7 @@ const dominicPAO =
   },
   {
     number: "82",
+    image: "",
     letter: "hb",
     person: "halle barry",
     action: "leaping",
@@ -1419,6 +1524,7 @@ const dominicPAO =
   },
   {
     number: "83",
+    image: "",
     letter: "hc",
     person: "hillary clinton",
     action: "poll",
@@ -1438,6 +1544,7 @@ const dominicPAO =
   },
   {
     number: "84",
+    image: "",
     letter: "hd",
     person: "humpty dumpty",
     action: "crime",
@@ -1448,6 +1555,7 @@ const dominicPAO =
   },
   {
     number: "85",
+    image: "",
     letter: "he",
     person: "herb elliott",
     action: "sprinting",
@@ -1458,6 +1566,7 @@ const dominicPAO =
   },
   {
     number: "86",
+    image: "",
     letter: "hs",
     person: "Harry style",
     action: "formed",
@@ -1481,6 +1590,7 @@ const dominicPAO =
   },
   {
     number: "87",
+    image: "",
     letter: "hg",
     person: "hg wells",
     action: "traveling",
@@ -1500,6 +1610,7 @@ const dominicPAO =
   },
   {
     number: "88",
+    image: "",
     letter: "hh",
     person: "hulk hogan",
     action: "wrestling",
@@ -1510,16 +1621,23 @@ const dominicPAO =
   },
   {
     number: "89",
+    image: "",
     letter: "hn",
     person: "horatio nelson",
-    action: "standing at the wheel of the ship",
-    hints: 'no hints added yet',
-    object: 'not',
-    alternatives: [],
+    action: "operating",
+    hints: "British flag officer in the Royal Navy",
+    object: 'wheel of the ship',
+    alternatives: [
+      {
+        name: "Horatio nelson",
+        intro: "British flag officer in the royal navy",
+      }
+    ],
     references: [],
   },
   {
     number: "90",
+    image: "",
     letter: "no",
     person: "norman osbourne",
     action: "altering",
@@ -1530,6 +1648,7 @@ const dominicPAO =
   },
   {
     number: "91",
+    image: "",
     letter: "na",
     person: "neil armstrong",
     action: "stepping",
@@ -1540,6 +1659,7 @@ const dominicPAO =
   },
   {
     number: "92",
+    image: "",
     letter: "nb",
     person: "napoleon bonaparte",
     action: "standing",
@@ -1559,6 +1679,7 @@ const dominicPAO =
   },
   {
     number: "93",
+    image: "",
     letter: "nc",
     person: "nicholas cage",
     action: "conducting",
@@ -1578,6 +1699,7 @@ const dominicPAO =
   },
   {
     number: "94",
+    image: "",
     letter: "nd",
     person: "Nina Dobrev",
     action: "challenging",
@@ -1611,6 +1733,7 @@ const dominicPAO =
   },
   {
     number: "95",
+    image: "",
     letter: "ne",
     person: "noel edmonds",
     action: "talking",
@@ -1630,11 +1753,12 @@ const dominicPAO =
   },
   {
     number: "96",
+    image: "",
     letter: "ns",
-    person: "neil sedaka",
-    action: "singing happy birthday sweet 16",
-    hints: 'no hints added yet',
-    object: 'not',
+    person: "Nawazuddin Siddiqui",
+    action: "donate",
+    hints: "in kick movie Nawazuddin Siddiqui donated rs 100 to Salman khan",
+    object: "rs 100",
     alternatives: [
       {
         name: "Neil Sedaka",
@@ -1661,6 +1785,7 @@ const dominicPAO =
   },
   {
     number: "97",
+    image: "",
     letter: "ng",
     person: "nancy grace",
     action: "commenting",
@@ -1680,6 +1805,7 @@ const dominicPAO =
   },
   {
     number: "98",
+    image: "",
     letter: "nh",
     person: "neil patrick harris",
     action: "saying",
@@ -1690,6 +1816,7 @@ const dominicPAO =
   },
   {
     number: "99",
+    image: "",
     letter: "nn",
     person: "nicholas nickleby",
     action: "created",

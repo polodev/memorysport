@@ -7,5 +7,5 @@ import PAO from '../components/PAO'
 
 export default () => <div>
   <MethodTable title="Dominic system" arr={dominicNumbers} />
-  <PAO title='Dominic PAO' arr={dominicPAO} columns={["letter", "number", "person", "action", "object"]} />
+  <PAO title='Dominic PAO' arr={dominicPAO} columns={["letter", "number", "image", "person", "action", "object"]} />
 </div>

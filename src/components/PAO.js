@@ -1,5 +1,7 @@
 import React from 'react'
 import styles from '../utils/style.module.css'
+import { withPrefix } from 'gatsby-link'
+
 
 class PAO extends React.Component {
   ucwords (str){
@@ -31,7 +33,9 @@ class PAO extends React.Component {
                   arr.map((item, index) => 
                     <tr onClick={() => console.log(item)} key={index} className='hello' title={item.hints}>
                       {
-                        columns.map((column, index) => <td key={index}>{item[column]}</td>)
+                        columns.map((column, index) => {
+                          return column == 'image' ?   <td key={index}> <img className={styles.paoImage} src={item[column]} alt=''/></td> :  <td key={index}>{item[column]}</td>
+                        })
                       }
                     </tr>
                     )
