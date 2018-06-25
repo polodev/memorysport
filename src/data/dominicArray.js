@@ -144,7 +144,7 @@ const dominicPAO =
   },
   {
     number: "10",
-    image: "",
+    image: "images/aa/leonel_messi.jpg",
     letter: "ao",
     person: "Lionel Messi",
     action: "playing football",
@@ -161,7 +161,7 @@ const dominicPAO =
   },
   {
     number: "11",
-    image: "",
+    image: "images/aa/amy_adams.jpg",
     letter: "aa",
     person: "amy-adams",
     action: "praising",
@@ -182,7 +182,7 @@ const dominicPAO =
   },
   {
     number: "12",
-    image: "",
+    image: "images/aa/alec_baldwin.png",
     letter: "ab",
     person: "Alec Baldwin",
     action: "mocking",
@@ -213,7 +213,7 @@ const dominicPAO =
   },
   {
     number: "13",
-    image: "",
+    image: "images/aa/anderson_cooper.jpg",
     letter: "ac",
     person: "Anderson Cooper",
     action: "presenting",
@@ -233,7 +233,7 @@ const dominicPAO =
   },
   {
     number: "14",
-    image: "",
+    image: "images/aa/alexandra_daddario.jpg",
     letter: "ad",
     person: "Alexandra Daddario",
     action: "crave",
@@ -258,7 +258,7 @@ const dominicPAO =
   },
   {
     number: "15",
-    image: "",
+    image: "images/aa/albert_einstein.jpg",
     letter: "ae",
     person: "albert einstein",
     action: "writing",
@@ -282,7 +282,7 @@ const dominicPAO =
   },
   {
     number: "16",
-    image: "",
+    image: "images/aa/anushka_sharma.jpg",
     letter: "as",
     person: "anushka sharma",
     action: "dancing",
@@ -330,7 +330,7 @@ const dominicPAO =
   },
   {
     number: "17",
-    image: "",
+    image: "images/aa/ali_g.jpg",
     letter: "ag",
     person: "Ali G",
     action: "Drives",
@@ -350,7 +350,7 @@ const dominicPAO =
   },
   {
     number: "18",
-    image: "",
+    image: "images/aa/adolf_hitler.jpg",
     letter: "ah",
     person: "adolf hitler",
     action: " sieg-heiling",
@@ -374,7 +374,7 @@ const dominicPAO =
   },
   {
     number: "19",
-    image: "",
+    image: "images/aa/alfred_nobel.png",
     letter: "an",
     person: "alfred nobel",
     action: "lighting",
