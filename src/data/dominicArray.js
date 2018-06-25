@@ -520,6 +520,10 @@ const dominicPAO =
       {
         name: "Bella Hadid",
         intro: "Gigi hadid sister",
+      },
+      {
+        name: "Bill Hader",
+        intro: "Tropic thunder and saturday night actor",
       }
     ],
     references: [],
@@ -1148,6 +1152,24 @@ const dominicPAO =
     hints: 'driving bus in speed movie',
     object: 'bus',
     alternatives: ['sandra bullock', 'Simon Baker from mentalist', 'sacha baron cohen'],
+    alternatives: [
+      {
+        name: "sandra bullock",
+        intro: "speed movie",
+      },
+      {
+        name: "simon baker",
+        intro: "main character in mentalist"
+      },
+      {
+        name: "Sacha Baron Cohen",
+        intro: "dictator",
+      },
+      {
+        name: "Stewart Butterfield",
+        intro: "Canadian programmer who build flicker and slack"
+      }
+    ],
     references: [],
   },
   {
@@ -1167,6 +1189,10 @@ const dominicPAO =
         name: "Sunidhi Chauhan",
         intro: "sang Mere Hath main in fanaa movie, crazy kiya re, Sheila ki jawani, dance pe chance",
       },
+      {
+        name: "Steve Coogan",
+        intro: "Director in Tropic Thunder",
+      }
     ],
     references: [],
   },
@@ -1830,6 +1856,10 @@ const dominicPAO =
       {
         name: "nicholas nickleby",
         intro: "Dickension character",
+      },
+      {
+        name: "Nick Nolte",
+        intro: "steel hand hook in trophic thunder who was very patriotic by his book, acted in parker movie, hulk father",
       }
     ],
     references: [],
