@@ -479,7 +479,7 @@ const dominicPAO =
     person: "ben stiller",
     action: "taking care",
     hints: 'taking care Vietnamese child in Tropic thunder',
-    object: 'Vietnamese Child',
+    object: 'Vietnamese son',
     alternatives: [
         {
             name: "Ben stiller",
@@ -541,7 +541,7 @@ const dominicPAO =
   },
   {
     number: "30",
-    image: "",
+    image: "images/cc/conan_obrien.jpg",
     letter: "co",
     person: "conan o'brien",
     action: "hosting",
@@ -552,7 +552,7 @@ const dominicPAO =
   },
   {
     number: "31",
-    image: "",
+    image: "images/cc/captain_america.jpg",
     letter: "ca",
     person: "Captain America",
     action: 'frisbee-throws',
@@ -572,7 +572,7 @@ const dominicPAO =
   },
   {
     number: "32",
-    image: "",
+    image: "images/cc/christian_bale.jpg",
     letter: "cb",
     person: "christian bale",
     action: "push up",
@@ -596,7 +596,7 @@ const dominicPAO =
   },
   {
     number: "33",
-    image: "",
+    image: "images/cc/charlie_chaplin.jpg",
     letter: "cc",
     person: "charlie chaplin",
     action: "twirling",
@@ -616,7 +616,7 @@ const dominicPAO =
   },
   {
     number: "34",
-    image: "",
+    image: "images/cc/cameron_diaz.jpg",
     letter: "cd",
     person: "cameron diaz",
     action: "self defense",
@@ -636,7 +636,7 @@ const dominicPAO =
   },
   {
     number: "35",
-    image: "",
+    image: "images/cc/clint_eastwood.jpg",
     letter: "ce",
     person: "clint eastwood",
     action: "mumbling",
@@ -656,7 +656,7 @@ const dominicPAO =
   },
   {
     number: "36",
-    image: "",
+    image: "images/cc/charlie_sheen.jpg",
     letter: "cs",
     person: "charlie sheen",
     action: "angry",
@@ -667,7 +667,7 @@ const dominicPAO =
   },
   {
     number: "37",
-    image: "",
+    image: "images/cc/che_guevara.jpg",
     letter: "cg",
     person: "che guevara",
     action: "wearing",
@@ -678,7 +678,7 @@ const dominicPAO =
   },
   {
     number: "38",
-    image: "",
+    image: "images/cc/chris_hemsworth.jpg",
     letter: "ch",
     person: "chris hemsworth",
     action: "lifting",
@@ -694,7 +694,7 @@ const dominicPAO =
   },
   {
     number: "39",
-    image: "",
+    image: "images/cc/chuck_norris.jpg",
     letter: "cn",
     person: "chuck norris",
     action: "roundhouse kicking",
