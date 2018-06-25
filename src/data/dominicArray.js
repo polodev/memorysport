@@ -394,7 +394,7 @@ const dominicPAO =
   },
   {
     number: "20",
-    image: "",
+    image: "images/bb/barack_obama.webp",
     letter: "bo",
     person: "barack obama",
     action: "speeching",
@@ -405,7 +405,7 @@ const dominicPAO =
   },
   {
     number: "21",
-    image: "",
+    image: "images/bb/bill_atkinson.jpg",
     letter: "ba",
     person: "bill atkinson",
     action: "breaking",
@@ -416,7 +416,7 @@ const dominicPAO =
   },
   {
     number: "22",
-    image: "",
+    image: "images/bb/banga_bandhu.jpg",
     letter: "bb",
     person: "banga bandhu sheikh mujibur rahman",
     action: "founded",
@@ -436,7 +436,7 @@ const dominicPAO =
   },
   {
     number: "23",
-    image: "",
+    image: "images/bb/bradley_cooper.jpg",
     letter: "bc",
     person: "bradley cooper",
     action: "access",
@@ -447,7 +447,7 @@ const dominicPAO =
   },
   {
     number: "24",
-    image: "",
+    image: "images/bb/bobby_deol.jpg",
     letter: "bd",
     person: "bobby deol",
     action: "celebrate",
@@ -463,7 +463,7 @@ const dominicPAO =
   },
   {
     number: "25",
-    image: "",
+    image: "images/bb/billy_elliot.jpg",
     letter: "be",
     person: "billy elliott",
     action: "jumping",
@@ -474,7 +474,7 @@ const dominicPAO =
   },
   {
     number: "26",
-    image: "",
+    image: "images/bb/ben_stiller.jpg",
     letter: "bs",
     person: "ben stiller",
     action: "taking care",
@@ -495,7 +495,7 @@ const dominicPAO =
   },
   {
     number: "27",
-    image: "",
+    image: "images/bb/bill_gates.jpg",
     letter: "bg",
     person: "bill gates",
     action: "counting",
@@ -506,7 +506,7 @@ const dominicPAO =
   },
   {
     number: "28",
-    image: "",
+    image: "images/bb/benny_hill.jpg",
     letter: "bh",
     person: "benny hill",
     action: "chased",
@@ -530,7 +530,7 @@ const dominicPAO =
   },
   {
     number: "29",
-    image: "",
+    image: "images/bb/bill_nighy.jpg",
     letter: "bn",
     person: "bill nighy",
     action: "giving motor ride",
