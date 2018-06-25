@@ -1,27 +1,18 @@
 import React from 'react'
 import styles from '../utils/style.module.css'
+import MethodTable from '../components/MethodTable'
 
 const majors = [
-"0 - z, s, x",
-"1 - T, D",
-"2 - N",
-"3 - M",
-"4 - R",
-"5 - L",
-"6 - J, Ch, Sh",
-"7 - K, C",
-"8 - F V",
-"9 - p, b"
+{ index: 0, letter: "z, s, x" },
+{ index: 1, letter: "T, D" },
+{ index: 2, letter: "N" },
+{ index: 3, letter: "M" },
+{ index: 4, letter: "R" },
+{ index: 5, letter: "L" },
+{ index: 6, letter: "J, Ch, Sh" },
+{ index: 7, letter: "K, C" },
+{ index: 8, letter: "F V" },
+{ index: 9, letter: "p, b" },
 ];
 
-export default () => <div>
-  <h1 className={styles.pageHeader}>Major system</h1>
-
-  <ul className={styles.uList}>
-  {
-    majors.map((number, index) => 
-      <li key={index} className={styles.singleList}>{number}</li>
-      )
-  }
-  </ul>
-</div>
+export default () => <MethodTable title="Major System" arr={majors} />

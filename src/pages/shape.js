@@ -1,30 +1,19 @@
 import React from 'react'
 import styles from '../utils/style.module.css'
+import MethodTable from '../components/MethodTable'
 
 const shapes = [
-"0 - blackhole, tire, donut",
-"1 - pencil, candle",
-"2 - swan",
-"3 - hearts, butterfly",
-"4 - sailboat",
-"5 - hook, pulley",
-"6 - golf club, lasso, pipe",
-"7 - Axe, scythe, boomerang",
-"8 - hour glass, snowman",
-"9 - tadpole, flag",
-]
-export default () => 
-<div>
-  <h1 className={styles.pageHeader}>Shape</h1>
-  
-  <ul className={styles.uList}>
-    {
-      shapes.map((shape, index) => 
-        <li className={styles.singleList} key={index}>{shape}</li>
-        )
-    }
-  </ul>
-
-</div>
+{ index: 0, letter: "blackhole, tire, donut" },
+{ index: 1, letter: "pencil, candle" },
+{ index: 2, letter: "swan" },
+{ index: 3, letter: "hearts, butterfly" },
+{ index: 4, letter: "sailboat" },
+{ index: 5, letter: "hook, pulley" },
+{ index: 6, letter: "golf club, lasso, pipe" },
+{ index: 7, letter: "Axe, scythe, boomerang" },
+{ index: 8, letter: "hour glass, snowman" },
+{ index: 9, letter: "tadpole, flag" },
+];
+export default () => <MethodTable title="Shape" arr={shapes} titles={['Number', 'Shape']} />
   
 
