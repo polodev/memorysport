@@ -15,7 +15,7 @@ const dominicPAO =
 [
   {
     number: "00",
-    image: "",
+    image: "images/oo/ozzy_osbourne.jpg",
     letter: "oo",
     person: "ozzy osbourne",
     action: " biting",
@@ -31,7 +31,7 @@ const dominicPAO =
   },
   {
     number: "01",
-    image: "",
+    image: "images/oo/quaker_oats.jpg",
     letter: "oa",
     person: "Quaker Oats guy",
     action: "offering",
@@ -42,7 +42,7 @@ const dominicPAO =
   },
   {
     number: "02",
-    image: "",
+    image: "images/oo/orlando_bloom.jpg",
     letter: "ob",
     person: "orlando bloom",
     action: "love",
@@ -58,7 +58,7 @@ const dominicPAO =
   },
   {
     number: "03",
-    image: "",
+    image: "images/oo/oliver_cromwell.jpg",
     letter: "oc",
     person: "oliver cromwell",
     action: " loading",
@@ -69,7 +69,7 @@ const dominicPAO =
   },
   {
     number: "04",
-    image: "",
+    image: "images/oo/officer_dibble.jpg",
     letter: "od",
     person: "officer dibble",
     action: "chasing",
@@ -89,7 +89,7 @@ const dominicPAO =
   },
   {
     number: "05",
-    image: "",
+    image: "images/oo/omar_epps.jpg",
     letter: "oe",
     person: "omar epps",
     action: "playing baseball",
@@ -100,7 +100,7 @@ const dominicPAO =
   },
   {
     number: "06",
-    image: "",
+    image: "images/oo/oj_simpson.jpg",
     letter: "os",
     person: "oj simpson",
     action: "playing NFL",
@@ -111,7 +111,7 @@ const dominicPAO =
   },
   {
     number: "07",
-    image: "",
+    image: "images/oo/james_bond.jpg",
     letter: "og",
     person: "james bond",
     action: "shooting",
@@ -122,7 +122,7 @@ const dominicPAO =
   },
   {
     number: "08",
-    image: "",
+    image: "images/oo/oliver_hardy.jpg",
     letter: "oh",
     person: "oliver hardy",
     action: "put on",
@@ -133,7 +133,7 @@ const dominicPAO =
   },
   {
     number: "09",
-    image: "/images/oliver_north.jpg",
+    image: "/images/oo/oliver_north.jpg",
     letter: "on",
     person: "oliver north",
     action: "testifying",
