@@ -2,14 +2,8 @@
  * global
  */
  .main {
-   margin: 10px 100px;
+   margin: 10px 20px;
    padding: 1.25rem 1rem;
- }
- @media screen and (max-width: 800px) {
-   .main {
-     margin: 10px 20px;
-     padding: 1.25rem 1rem;
-   }
  }
 .uList {
   list-style: none;

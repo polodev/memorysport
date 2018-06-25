@@ -220,14 +220,15 @@ const dominicPAO =
   {
     number: "14",
     letter: "ad",
-    person: "ajay devgan",
-    action: "laugh",
-    hints: 'ajay devgan can talk english, laugh english in bol bachchan movie',
-    object: 'english',
+    person: "Alexandra Daddario",
+    action: "crave",
+    hints: 'ajay devgan punished his superman for rs99',
+    object: 'sex',
     alternatives: [
       {
         name: "Alexandra Daddario",
-        intro: "Acted in Baywatch and Thelayover(kate upton)"
+        intro: "Acted in Baywatch and Thelayover(kate upton)",
+        hints: "Crave for sex in the layover",
       },
       {
         name: "Ajay devgan",
@@ -375,7 +376,7 @@ const dominicPAO =
     number: "20",
     letter: "bo",
     person: "barack obama",
-    action: "speech",
+    action: "speeching",
     hints: 'Obama speaks to sold-out crowd in Montreal',
     object: 'crowd',
     alternatives: [],
@@ -395,7 +396,7 @@ const dominicPAO =
     number: "22",
     letter: "bb",
     person: "banga bandhu sheikh mujibur rahman",
-    action: "found",
+    action: "founded",
     hints: 'founding father of bangladesh',
     object: 'Bangladesh',
     alternatives: [
@@ -539,7 +540,7 @@ const dominicPAO =
     person: "christian bale",
     action: "push up",
     hints: "morning push up after taking green leafy vegetable juice from michael caine",
-    object: 'michael caine',
+    object: "leafy vegetable",
     alternatives: [
         {
             name: "christian bale",
@@ -617,8 +618,8 @@ const dominicPAO =
     number: "36",
     letter: "cs",
     person: "charlie sheen",
-    action: "anger",
-    hints: 'no hints added yet',
+    action: "angry",
+    hints: 'key role in anger management',
     object: 'management',
     alternatives: ['charlie sheen', 'Cecily Strong'],
     references: [],
@@ -720,7 +721,7 @@ const dominicPAO =
     number: "43",
     letter: "dc",
     person: "david copperfield",
-    action: "making disappear",
+    action: "disappear",
     hints: "making a pyramid disappear",
     object: 'pyramid',
     alternatives: [],
@@ -730,7 +731,7 @@ const dominicPAO =
     number: "44",
     letter: "dd",
     person: "Dr DRe",
-    action: "creating",
+    action: "branding - endorsing",
     hints: 'no hints added yet',
     object: 'Headphone',
     alternatives: [
@@ -901,10 +902,10 @@ const dominicPAO =
   {
     number: "54",
     letter: "ed",
-    person: "ernie dingo",
-    action: "talking",
-    hints: " talking in aboriginal accent",
-    object: 'aboriginal accent',
+    person: "Ellen Degeneres",
+    action: "choosing",
+    object: "celebrity",
+    hints: "would you rather with celebrity",
     alternatives: ['Ellen DeGeneres', 'Ernie Dingo'],
     alternatives: [
       {
@@ -912,7 +913,7 @@ const dominicPAO =
         intro: "Australian actor. aboriginal accent",
       },
       {
-        name: "ellen degeneres",
+        name: "Ellen Degeneres",
         intro: "Ellen show, ellen tube",
       },
       {
@@ -942,8 +943,8 @@ const dominicPAO =
     letter: "es",
     person: "ED Sheeran",
     action: "exercising",
-    hints: 'no hints added yet',
-    object: 'for shape of you',
+    object: "shape",
+    hints: "singing shape of you",
     alternatives: [
       {
         name: "Edward scissorhands",
@@ -1086,14 +1087,15 @@ const dominicPAO =
   {
     number: "64",
     letter: "sd",
-    person: "sanjay dutt",
-    action: "Gandhigiri",
-    hints: 'sanjoy datta showing gandhi giri in lago raho munna vi',
-    object: 'munna bhai',
+    person: "snoop dogg",
+    action: "smoking",
+    hints: 'snoop dogg smoking pot in lot of movie',
+    object: 'pot',
     alternatives: [
       {
         name: "sanjoy datta",
         intro: "sanju movie performed by Ranbir kapoor",
+        hints: 'sanjoy datta showing gandhi giri in lago raho munna vi',
       },
       {
         name: "Shikhar Dhawan",
@@ -1102,6 +1104,7 @@ const dominicPAO =
       {
         name: "snoop dogg",
         intro: "snoop dogg and pharrell williams drop it like its hot",
+        hints: "Snoop Dogg, smoking a blunt with his hoody up",
       }
     ],
     references: [],
@@ -1203,7 +1206,7 @@ const dominicPAO =
     person: "stephen hawking",
     action: "discover",
     hints: "discover theory of relativity",
-    object: 'theory of relativity',
+    object: 'big bang',
     alternatives: ['salma hayek', 'Stephen Hawking'],
     alternatives: [
       {
@@ -1323,9 +1326,9 @@ const dominicPAO =
     number: "77",
     letter: "gg",
     person: "gal gadot",
-    action: "fighting",
+    action: "shielding/resisting",
+    object: 'bullet',
     hints: 'Princess Diana - wonder women',
-    object: 'wonder women',
     alternatives: [
       {
         name: "Gulshan Grover",
@@ -1338,6 +1341,10 @@ const dominicPAO =
       {
         name: "Gal Gadot",
         intro: "Wonder women",
+      },
+      {
+        name: "Lady gaga",
+        intro: "singer"
       }
     ],
     references: [],
@@ -1389,9 +1396,9 @@ const dominicPAO =
     number: "81",
     letter: "ha",
     person: "humayun ahmed",
-    action: "creating",
+    action: "made - making",
     hints: "himu wear yellow dress",
-    object: 'yellow dress',
+    object: 'himu character',
     alternatives: [],
     references: [],
   },
@@ -1443,7 +1450,7 @@ const dominicPAO =
     number: "85",
     letter: "he",
     person: "herb elliott",
-    action: "running",
+    action: "sprinting",
     hints: "running very fast",
     object: 'very fast',
     alternatives: [],
@@ -1554,9 +1561,9 @@ const dominicPAO =
     number: "93",
     letter: "nc",
     person: "nicholas cage",
-    action: "riding",
+    action: "conducting",
     hints: "conducting hallelujah in face off with gold guns",
-    object: 'burning motor cycle',
+    object: 'hallelujah',
     alternatives: [
       {
         name: "Nicholas cage",
@@ -1605,14 +1612,18 @@ const dominicPAO =
   {
     number: "95",
     letter: "ne",
-    person: "noel edmunds",
+    person: "noel edmonds",
     action: "talking",
     hints: 'no hints added yet',
     object: 'banker',
     alternatives: [
       {
-        name: "noel edmunds",
+        name: "noel edmonds",
         intro: "talking to the banker"
+      },
+      {
+        name: "Nicole Eggert",
+        intro: "Original Baywatch actress"
       }
     ],
     references: [],
