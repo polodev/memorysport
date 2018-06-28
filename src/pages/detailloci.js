@@ -12,7 +12,7 @@ import {
   hyderabadMtww,
   banjaraHills ,
   ratanMama,
-  dhakaMess,
+  dhakaMess1,
   palashMess,
   dhakaMama
 } from '../data/lociArray.js'
@@ -25,6 +25,7 @@ export default () =>
     <li className='singleList'> <a href='#palashpurBiren'>Palashpur Biren Home - {palashpurBiren.length} </a> </li>
     <li className='singleList'> <a href='#feniMess'>feniMess houses - {feniMess.length}</a> </li>
     <li className='singleList'> <a href='#palashHome'>palashHome - {palashHome.length}</a> </li>
+    <li className='singleList'> <a href='#dhakaMess1'>dhakaMess1 - {dhakaMess1.length}</a> </li>
     <li className='singleList'> <a href='#indiaMama'>indiaMama - {indiaMama.length}</a> </li>
     <li className='singleList'> <a href='#village'>Village houses - {village.length}</a> </li>
   </ul>
@@ -34,6 +35,7 @@ export default () =>
   <Loci id='palashpurBiren' pageTitle="Palashpur Biren Home" arr={palashpurBiren} />
   <Loci id='feniMess' pageTitle="feniMess houses" arr={feniMess} />
   <Loci id='palashHome' pageTitle="palash Home" arr={palashHome} />
+  <Loci id='dhakaMess1' pageTitle="Dhaka mess main(1)" arr={dhakaMess1} />
   <Loci id='indiaMama' pageTitle="India mama Home" arr={indiaMama} />
   <Loci id='village' pageTitle="Village houses" arr={village} />
 </div>
