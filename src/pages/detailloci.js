@@ -24,8 +24,9 @@ export default () =>
     <li className='singleList'> <a href='#palashpurBasudev'>Palashpur Basudev Home - {palashpurBasudev.length} </a></li>
     <li className='singleList'> <a href='#palashpurBiren'>Palashpur Biren Home - {palashpurBiren.length} </a> </li>
     <li className='singleList'> <a href='#feniMess'>feniMess houses - {feniMess.length}</a> </li>
-    <li className='singleList'> <a href='#village'>Village houses - {village.length}</a> </li>
     <li className='singleList'> <a href='#palashHome'>palashHome - {palashHome.length}</a> </li>
+    <li className='singleList'> <a href='#indiaMama'>indiaMama - {indiaMama.length}</a> </li>
+    <li className='singleList'> <a href='#village'>Village houses - {village.length}</a> </li>
   </ul>
 
   <Loci id='fatepurHome' pageTitle="Fatepur Home" arr={fatepurHome} />
@@ -33,6 +34,7 @@ export default () =>
   <Loci id='palashpurBiren' pageTitle="Palashpur Biren Home" arr={palashpurBiren} />
   <Loci id='feniMess' pageTitle="feniMess houses" arr={feniMess} />
   <Loci id='palashHome' pageTitle="palash Home" arr={palashHome} />
+  <Loci id='indiaMama' pageTitle="India mama Home" arr={indiaMama} />
   <Loci id='village' pageTitle="Village houses" arr={village} />
 </div>
   
