@@ -325,6 +325,10 @@ const dominicPAO =
         {
           name: "Anushka Shetty",
           intro: "Baahubali heroin",
+        },
+        {
+          name: "alejandro sanz",
+          intro: "La tortura singer",
         }
     ],
   },
@@ -1092,6 +1096,10 @@ const dominicPAO =
       {
         name: "Emraan Hashmi",
         intro: "Kissing Hero in bollywood",
+      },
+      {
+        name: "Ed helms",
+        intro: "Acted in we are miller (drug boss) and hangover (face tattoo)"
       }
     ],
     references: [],

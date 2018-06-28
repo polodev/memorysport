@@ -20,13 +20,19 @@ export default () =>
 <div>
   <h3>Table of Content(ToC)</h3>
   <ul className='uList'>
-    <li className='singleList'> <a href='#fatepurHome'>Fatepur Home</a> </li>
-    <li className='singleList'> <a href='#palashpurBasudev'>Palashpur Basudev Home</a> </li>
-    <li className='singleList'> <a href='#village'>Village houses</a> </li>
+    <li className='singleList'> <a href='#fatepurHome'>Fatepur Home - {fatepurHome.length} </a> </li>
+    <li className='singleList'> <a href='#palashpurBasudev'>Palashpur Basudev Home - {palashpurBasudev.length} </a></li>
+    <li className='singleList'> <a href='#palashpurBiren'>Palashpur Biren Home - {palashpurBiren.length} </a> </li>
+    <li className='singleList'> <a href='#feniMess'>feniMess houses - {feniMess.length}</a> </li>
+    <li className='singleList'> <a href='#village'>Village houses - {village.length}</a> </li>
+    <li className='singleList'> <a href='#palashHome'>palashHome - {palashHome.length}</a> </li>
   </ul>
 
   <Loci id='fatepurHome' pageTitle="Fatepur Home" arr={fatepurHome} />
   <Loci id='palashpurBasudev' pageTitle="Palashpur Basudev Home" arr={palashpurBasudev} />
+  <Loci id='palashpurBiren' pageTitle="Palashpur Biren Home" arr={palashpurBiren} />
+  <Loci id='feniMess' pageTitle="feniMess houses" arr={feniMess} />
+  <Loci id='palashHome' pageTitle="palash Home" arr={palashHome} />
   <Loci id='village' pageTitle="Village houses" arr={village} />
 </div>
   
