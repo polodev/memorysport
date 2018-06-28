@@ -14,7 +14,8 @@ import {
   ratanMama,
   dhakaMess1,
   palashMess,
-  dhakaMama
+  dhakaMama,
+  tarunHouse
 } from '../data/lociArray.js'
 export default () => 
 <div>
@@ -27,6 +28,10 @@ export default () =>
     <li className='singleList'> <a href='#palashHome'>palashHome - {palashHome.length}</a> </li>
     <li className='singleList'> <a href='#dhakaMess1'>dhakaMess1 - {dhakaMess1.length}</a> </li>
     <li className='singleList'> <a href='#indiaMama'>indiaMama - {indiaMama.length}</a> </li>
+    <li className='singleList'> <a href='#palashMess'>palashMess - {palashMess.length}</a> </li>
+    <li className='singleList'> <a href='#dhakaMama'>dhakaMama houses - {dhakaMama.length}</a> </li>
+    <li className='singleList'> <a href='#tarunHouse'>tarunHouse houses - {tarunHouse.length}</a> </li>
+    <li className='singleList'> <a href='#banjaraHills'>banjaraHills - {banjaraHills.length}</a> </li>
     <li className='singleList'> <a href='#village'>Village houses - {village.length}</a> </li>
   </ul>
 
@@ -37,6 +42,10 @@ export default () =>
   <Loci id='palashHome' pageTitle="palash Home" arr={palashHome} />
   <Loci id='dhakaMess1' pageTitle="Dhaka mess main(1)" arr={dhakaMess1} />
   <Loci id='indiaMama' pageTitle="India mama Home" arr={indiaMama} />
+  <Loci id='palashMess' pageTitle="Palash Mess" arr={palashMess} />
+  <Loci id='dhakaMama' pageTitle="dhakaMama houses" arr={dhakaMama} />
+  <Loci id='tarunHouse' pageTitle="tarunHouse houses" arr={tarunHouse} />
+  <Loci id='banjaraHills' pageTitle="banjaraHills" arr={banjaraHills} />
   <Loci id='village' pageTitle="Village houses" arr={village} />
 </div>
   
