@@ -534,21 +534,6 @@ const indiaMama = [
   'toilet',
   'big toilet door',
   'big toilet',
-
-
-
-]
-const bangalore = [
-  
-]
-const hyderabadMtww = [
-  
-]
-const banjaraHills  = [
-  
-]
-const ratanMama = [
-  
 ]
 const dhakaMess = [
   
@@ -560,6 +545,20 @@ const dhakaMama = [
   
 ]
 const tarunHouse = [
+]
+const banjaraHills  = [
+  
+]
+const hyderabadMtww = [
+  
+]
+const fd = [
+]
+const bangalore = [
+  
+]
+const ratanMama = [
+  
 ]
 export default {
   fatepurHome,
