@@ -19,6 +19,7 @@
 }
 .singleListWithBr {
   border-top: 5px solid tomato;
+  padding-top: 5px;
 }
 
 .pageHeader {
