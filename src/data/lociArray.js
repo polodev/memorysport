@@ -38,7 +38,7 @@ const fatepurHome = [
 
   "<br>",
 
-  "west facing wall inside middle room ",
+  "## west facing wall inside middle room ",
   "hanger for baba/dadu shirt",
   "door inside middle room to way to my bed room",
   "east facing wall in my bed room",
@@ -57,7 +57,7 @@ const fatepurHome = [
 
   "<br>",
 
-  "north facing wall in middle room",
+  "## north facing wall in middle room",
   "door to go inside back room(__picer __ghar)",
   "middle room showcase",
   "rack top of the show case for storing puffed rice",
@@ -79,7 +79,7 @@ const fatepurHome = [
 
   "<br>",
 
-  "__picer __ghar south facing wall",
+  "## __picer __ghar south facing wall",
   "__picer __ghar middle west facing wall",
   "west facing wall in between bed room and tin box",
   "door to enter __picer __ghar bed room",
@@ -96,7 +96,7 @@ const fatepurHome = [
 
   "<br>",
 
-  "tin-wood storing box",
+  "## tin-wood storing box",
   "north facing wall",
   "window of north facing wall west",
   "window of north facing wall east near food almira",
@@ -108,7 +108,7 @@ const fatepurHome = [
 
   "<br>",
 
-  "mango tree near study room(==============my study room=================)",
+  "## mango tree near study room(==============my study room=================)",
   "study room mud stair",
   "study room door",
   "study room door bottom chain for lock",
@@ -128,7 +128,7 @@ const fatepurHome = [
 
   "<br>",
 
-  "__larki(wood for cook temporary) (============kitchen=============)",
+  "## __larki(wood for cook temporary) (============kitchen=============)",
   "north facing wall",
   "__matir oven area",
   "east facing wall",
@@ -137,7 +137,7 @@ const fatepurHome = [
 
   "<br>",
 
-  "__pira of the main kitchen room",
+  "## __pira of the main kitchen room",
   "door of the main kitchen room",
   "chain of the main kitchen room",
   "south facing wall",
@@ -150,7 +150,7 @@ const fatepurHome = [
 
   "<br>",
 
-  "__thakur __ghar stair__pira in front of south door",
+  "## __thakur __ghar stair__pira in front of south door",
   "__thakur __ghar south door",
   "south door chain",
   "west facing wall",
@@ -162,7 +162,7 @@ const fatepurHome = [
 
  "<br>",
 
-  "__stair__pira in front of north door",
+  "## __stair__pira in front of north door",
   "north door",
   "north door chain",
   "west facing wall",
@@ -173,9 +173,12 @@ const fatepurHome = [
   "<br>",
 
   
-  "__dhekhi__ghar",
+  "## __dhekhi__ghar",
   "__dhekhi__itself",
-  "__hawar__baper__ghar entrace (always open)",
+
+  "<br>",
+
+  "## __hawar__baper__ghar entrace (always open)",
   "cotton for dress drying in front of __hawar__baper__ghar",
   "__larki(wood for cook) inside __hawar__baper__ghar",
   "our tubewell",
