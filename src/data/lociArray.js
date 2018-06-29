@@ -150,16 +150,18 @@ const fatepurHome = [
 
   "<br>",
 
-  
   "__thakur __ghar stair__pira in front of south door",
   "__thakur __ghar south door",
   "south door chain",
   "west facing wall",
   "north facing wall",
   "north facing door",
-  "east facing wall",
   "__thakur small temple",
-  "south facing wall",
+  "east facing wall",
+ "south facing wall",
+
+ "<br>",
+
   "__stair__pira in front of north door",
   "north door",
   "north door chain",
@@ -167,6 +169,10 @@ const fatepurHome = [
   "bed",
   "north facing wall",
   "east facing wall",
+
+  "<br>",
+
+  
   "__dhekhi__ghar",
   "__dhekhi__itself",
   "__hawar__baper__ghar entrace (always open)",

@@ -11,9 +11,8 @@ export default ({pageTitle, arr, id='test'}) =>  {
       {
         arr.map((item, index) => {
           return item === '<br>' ?
-          <li className={`${styles.singleList} ${styles.singleListWithBr}`} key={index}></li> :
+          <li className={`${styles.singleList} ${styles.singleListWithBr}`} key={index}>Block</li> :
           <li className={styles.singleList} key={index}> {index + 1} -  {item}</li>
-
         })
       }
     </ul>
