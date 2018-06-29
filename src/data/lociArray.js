@@ -362,7 +362,7 @@ const feniMess = [
   
    '<br>',
  
-  'door on north facing wall',
+  '## door on north facing wall',
   'door on north facing wall',
   'west facing wall beside stair',
   'stair',
@@ -462,7 +462,7 @@ const feniMess = [
   
    '<br>',
  
-  'west facing wall in side balcony',
+  '## west facing wall in side balcony',
   'north facing tiny wall',
   'east facing wall',
   'window on east facing wall',
@@ -985,7 +985,7 @@ const tarunHouse = [
 
    '<br>',
 
-  'south facing wall',
+  '## south facing wall',
   'west facing wall',
   'door to go to tarun barandha',
   'north facing wall',
@@ -997,7 +997,7 @@ const tarunHouse = [
 
    '<br>',
 
-  'east facing wall in tarun barandha',
+  '## east facing wall in tarun barandha',
   'south facing wall (on partision)',
   'entrance door to go to tarun bed room',
   'north facing wall',
