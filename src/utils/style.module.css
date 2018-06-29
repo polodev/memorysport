@@ -17,6 +17,10 @@
   border-bottom: 1px solid #1ca086;
   font-size: 18px;
 }
+.singleListWithBr {
+  border-bottom: 5px solid tomato;
+  border-top: 5px solid tomato;
+}
 
 .pageHeader {
   margin-bottom: 1.5em;
