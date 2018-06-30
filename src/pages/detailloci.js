@@ -14,6 +14,8 @@ import {
   banjaraHills ,
   ratanMama,
   dhakaMess1,
+  dhakaMess2,
+  dhakaMess3,
   palashMess,
   dhakaMama,
   tarunHouse,
@@ -37,7 +39,9 @@ class detailloci extends React.Component {
           <LociLi id='palashpurBiren' pageTitle="Palashpur Biren Home" arr={palashpurBiren} />
           <LociLi id='feniMess' pageTitle="feniMess houses" arr={feniMess} />
           <LociLi id='palashHome' pageTitle="palash Home" arr={palashHome} />
-          <LociLi id='dhakaMess1' pageTitle="Dhaka mess main(1)" arr={dhakaMess1} />
+          <LociLi id='dhakaMess1' pageTitle="Dhaka mess (1)" arr={dhakaMess1} />
+          <LociLi id='dhakaMess2' pageTitle="Dhaka mess (2)" arr={dhakaMess2} />
+          <LociLi id='dhakaMess3' pageTitle="Dhaka mess (3)" arr={dhakaMess3} />
           <LociLi id='indiaMama' pageTitle="India mama Home" arr={indiaMama} />
           <LociLi id='palashMess' pageTitle="Palash Mess" arr={palashMess} />
           <LociLi id='dhakaMama' pageTitle="dhakaMama houses" arr={dhakaMama} />
@@ -47,6 +51,7 @@ class detailloci extends React.Component {
           <LociLi id='hyderabadVillaStay' pageTitle="hyderabadVillaStay" arr={hyderabadVillaStay} />
           <LociLi id='hyderabadVillaWork' pageTitle="hyderabadVillaWork" arr={hyderabadVillaWork} />
           <LociLi id='bangalore' pageTitle="bangalore" arr={bangalore} />
+          <LociLi id='ratanMama' pageTitle="ratanMama" arr={ratanMama} />
         </ul>
 
         <div>
@@ -57,6 +62,8 @@ class detailloci extends React.Component {
           <Loci id='feniMess' pageTitle="feniMess houses" arr={feniMess} />
           <Loci id='palashHome' pageTitle="palash Home" arr={palashHome} />
           <Loci id='dhakaMess1' pageTitle="Dhaka mess main(1)" arr={dhakaMess1} />
+          <Loci id='dhakaMess2' pageTitle="Dhaka mess main(2)" arr={dhakaMess2} />
+          <Loci id='dhakaMess3' pageTitle="Dhaka mess main(3)" arr={dhakaMess3} />
           <Loci id='indiaMama' pageTitle="India mama Home" arr={indiaMama} />
           <Loci id='palashMess' pageTitle="Palash Mess" arr={palashMess} />
           <Loci id='dhakaMama' pageTitle="dhakaMama houses" arr={dhakaMama} />
@@ -66,6 +73,7 @@ class detailloci extends React.Component {
           <Loci id='hyderabadVillaStay' pageTitle="hyderabadVillaStay" arr={hyderabadVillaStay} />
           <Loci id='hyderabadVillaWork' pageTitle="hyderabadVillaWork" arr={hyderabadVillaWork} />
           <Loci id='bangalore' pageTitle="bangalore" arr={bangalore} />
+          <Loci id='ratanMama' pageTitle="ratanMama" arr={ratanMama} />
         </div>
       </div>
 

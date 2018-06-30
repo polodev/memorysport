@@ -664,6 +664,107 @@ const indiaMama = [
   'big toilet',
 ]
 const dhakaMess1 = [
+  'gate of 124 house - ground floor',
+  'door from 5th floor',
+  'north facing wall',
+  'west facing wall',
+  'shoe rack in west facing wall',
+  'Alauddin vi table',
+  'north facing wall',
+  'door in north facing wall to go to jamal vi room',
+  'door in north facing wall to go to washroom',
+  'bed',
+  'fan',
+  'east facing wall',
+  'window in east facing wall',
+  'shipon vi table on north facing wall',
+
+   '<br>',
+
+  '## hallway to go to toilet',
+  'basin in hallway',
+  'toilet door',
+  'toilet',
+
+   '<br>',
+
+   '## south facing wall in jamal vi room',
+   'west facing wall',
+   'north facing wall',
+   'door in north facing wall for kitchen',
+   'kitchen',
+   'east facing wall',
+   'jamal vi table',
+   'window in east facing wall',
+   'my table',
+
+]
+const dhakaMess2 = [
+  'gate',
+  'door',
+  'east facing wall',
+  'north facing wall',
+  'east facing wall',
+  'old stuff and some table and cloth drying',
+  'south facing wall',
+  'door in south facing wall to go into our room',
+  'east facing wall tiny',
+  'south facing wall',
+  'door into south facing wall to go to uttam dada room',
+  'west facing wall',
+  'basin in west facing wall',
+  'door in west facing wall to go o kitchen',
+  'kitchen',
+  'door in west facing wall to go to toilet',
+  'toilet',
+
+   '<br>',
+
+   'north facing wall in our room',
+   'my table in north facing wall',
+   'east facing wall',
+   'our bed',
+   'fan',
+   'south facing wall',
+   'window in south facing wall',
+   'bed',
+   'fan',
+   'west facing wall',
+   'asim dada table',
+   'sanjoy dada table',
+
+   '<br>',
+
+   'north facing wall in uttam dada room',
+   'east facing wall',
+   'south facing wall',
+   'window in south facing wall',
+   'bed',
+   'fan',
+   'west facing wall',
+   'window in west facing wall',
+   'roni dada table',
+   'uttam dada table',
+   'toilet door in north facing wall',
+   'toilet',
+   'shafik dada bed',
+
+   '<br>',
+
+   'south facing wall in manik dada room',
+   'bed __khat near south facing wall',
+   'fan',
+   'west facing wall',
+   'window in west facing wall',
+   'north facing wall',
+   'door to ouside balcony in north facing wall',
+   'balcony',
+   'window in north facing wall',
+   'my table',
+   'east facing wall',
+   'manik dada table'
+]
+const dhakaMess3 = [
   'gate',
   'khalek mama room',
   'khalek mama wash room',
@@ -1317,7 +1418,7 @@ const hyderabadMtww = [
 
    '## west facing wall in east room',
    'north facing wall',
-   'door on north facing wall',
+   'window on north facing wall',
    'east facing wall',
    'door in east facing wall',
    'window in east facing wall',
@@ -1338,16 +1439,26 @@ const hyderabadMtww = [
    'storage facility',
    'south facing wall',
    'door to go to south east room',
+   'south facing wall',
    'stair',
    'west facing wall',
    'south facing wall',
    'entrance to visit children room',
-   'left some '
+   'children room',
+   'west facing wall',
+   'north facing wall',
+   'hallway in between north and south building to wash plate and toilet',
+   '2 toilet',
+   'west facing wall',
+   'door in west facing wall',
+   'interns room',
 
+   '<br>',
 
-
-
-
+   'east site open area',
+   'roof',
+   'room in roof',
+   'washroom in roof',
 
   
 ]
@@ -1614,6 +1725,8 @@ export default {
   banjaraHills ,
   ratanMama,
   dhakaMess1,
+  dhakaMess2,
+  dhakaMess3,
   palashMess,
   dhakaMama,
   tarunHouse,
