@@ -1299,9 +1299,156 @@ const hyderabadMtww = [
    '## roof'
   
 ]
-const stayingVilla44 = [
+const hyderabadVillaStay = [
+  'door',
+  'east facing wall',
+  'south facing wall',
+  'west facing wall',
+  'door in west facing wall',
+  'sofa in west facing wall',
+  'north facing wall',
+  'tv in north facing wall',
+  'sofa in east facing wall',
+
+   '<br>',
+
+  '## east facing wall',
+
+   '<br>',
+
+   '## north facing wall inside kitchen',
+   'east facing wall',
+   'window in east facing wall',
+   'oven',
+   'south facing wall',
+   'west facing wall',
+
+   '<br>',
+
+   'south facing wall',
+   'stair',
+   'west facing wall',
+   'door in west facing wall to enter chodagiri parents bedroom',
+   'bed room',
+   'door in west facing room to go to north room',
+   'north room',
+   'north facing wall',
+
+   '<br>',
+
+   'west facing wall in 2nd floor',
+   'south facing wall',
+   'door in south facing wall',
+
+   '<br>',
+
+   '## north facing wall',
+   'east facing wall',
+   'south facing wall',
+   'bed',
+   'fan',
+   'west facing wall',
+   'rack in west facing wall',
+   'window',
+   'north facing wall',
+   'west facing wall tiny',
+   'door in west facing wall to go to toilet',
+   'toilet',
+   'north facing wall',
+   'mirror in north facing wall',
+
+   '<br>',
+
+   '## south facing wall',
+   'door in south facing wall',
+   'west room 2',
+   'north facing wall',
+   'east facing wall',
+   'door on east facing wall to enter east north room',
+   'room - east north',
+   'door on east facing wall to enter east south room',
+   'room - east south ( where chapabazz and his wife stayed )',
+
+
+
+
 ]
-const workingVillaDeepti = [
+const hyderabadVillaWork = [
+  'gate',
+  'door',
+  'west facing wall',
+  'north facing wall tiny',
+  'west facing wall',
+  'north facing wall',
+  'window + parda in north facing wall',
+  'east facing wall',
+  'south facing wall',
+  'door in south facing wall to go to kitchen room',
+
+   '<br>',
+
+ 
+  '## north facing wall in kitchen room',
+  'east facing wall',
+  'washer in east facing wall',
+  'window in east facing wall',
+  'basin',
+  'south facing wall',
+  'door in south facing wall',
+  'west facing wall',
+  'rack in west facing wall',
+
+   '<br>',
+
+   '## east facing wall',
+   'south facing wall',
+   'stair to go 1st floor',
+   'west facing wall',
+   'door in west facing wall to go to girls bed room',
+   'south facing wall',
+
+   '<br>',
+
+   '## upstairs  west facing wall',
+   'south facing wall',
+   'door in south facing wall',
+
+   '<br>',
+
+   '## north facing wall',
+   'east facing wall',
+   'south facing wall tiny',
+   'door in south facing wall to go to toilet',
+   'toilet',
+   'east facing wall',
+   'south facing wall',
+   'west facing wall',
+   'door in west facing wall',
+
+   '<br>',
+
+   '## south facing wall',
+   'west facing wall',
+   'door in west facing wall to view in balcony',
+   'north facing wall',
+   'table',
+   'east facing wall',
+   'bed near east facing wall',
+   'west facing wall',
+   'north facing wall',
+   'east facing wall',
+   'door in east facing wall to go to bed room',
+   'bed room',
+
+
+
+
+
+
+
+
+
+
 ]
 const fd = [
 ]
@@ -1326,4 +1473,6 @@ export default {
   palashMess,
   dhakaMama,
   tarunHouse,
+  hyderabadVillaStay,
+  hyderabadVillaWork
 }
