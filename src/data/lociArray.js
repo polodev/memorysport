@@ -1696,6 +1696,7 @@ const bangalore = [
    'door on east facing wall to go to bathroom',
    'bathroom',
 
+   '<br>',
 
    "## north facing wall our room",
    'door to go to wash room',
@@ -1711,6 +1712,57 @@ const bangalore = [
 
 ]
 const ratanMama = [
+  
+  'door',
+  'south facing wall',
+  'window in south facing wall',
+  'bed dadu __khat',
+  'west facing wall',
+  'east facing wall',
+  'door in east facing wall',
+  'bed pintu dada __khat',
+  'window in west facing wall',
+
+
+   '<br>',
+
+  '## south facing wall mamar room',
+  'bed',
+  'west facing wall',
+  'window in west facing wall',
+  'north facing wall',
+  'door in north facing wall',
+  'east facing wall',
+
+   '<br>',
+
+  '## south facing wall in didis room',
+  'bed',
+  'west facing wall',
+  'window in west facing wall',
+  'north facing wall',
+  'door to go to food room in north facing wall',
+  'east facing wall',
+  'temple inside didis room',
+
+   '<br>',
+
+  '## south facing wall in food room',
+  'west facing wall',
+  'north facing wall',
+  'door in north facing wall to go out',
+  'east facing wall',
+  'food almirah',
+
+   '<br>',
+
+  '## kitchen',
+  'tubewell',
+  'toilet',
+  'cow house',
+
+
+
   
 ]
 export default {

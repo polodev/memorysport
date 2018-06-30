@@ -1,5 +1,5 @@
 const houses = [
-"My House(================My House================)",
+"My House",
 "Mizan",
 "Gonesh",
 "Vasan",
@@ -11,7 +11,10 @@ const houses = [
 "Liton / litha kagu",
 "shakil/ malek kagu",
 "ibrahim / ibba",
-"Ratan mama (================Bepari bari================)",
+
+'<br>',
+
+"## Ratan mama (================Bepari bari================)",
 "niranjon ",
 "nikunjo",
 "basra ",
@@ -31,7 +34,10 @@ const houses = [
 "chandan dada",
 "Goura",
 "Ceta dadu",
-"Babulal dada (================Bainer Bari================)",
+
+'<br>',
+
+"## Babulal dada (================Bainer Bari================)",
 "Asis",
 "Palash",
 "Subol",
@@ -41,7 +47,10 @@ const houses = [
 "Kartik dada",
 "Jalil ",
 "Rehena",
-"Juboraj dada (================Arka Bari================)",
+
+'<br>',
+
+"## Juboraj dada (================Arka Bari================)",
 "Khokon",
 "Binod",
 "Luxman",
@@ -55,10 +64,16 @@ const houses = [
 "Nirmal",
 "Tarani",
 "Liton",
-"Muslim Professor(================Dalal bari================",
+
+'<br>',
+
+"## Muslim Professor(================Dalal bari================",
 "Kanu",
 "Benu",
-"Dulal dada (================Modupur================)",
+
+'<br>',
+
+"## Dulal dada (================Modupur================)",
 "Balay",
 "Kanu",
 "Ratan kagu",
@@ -68,12 +83,18 @@ const houses = [
 "Vovon dalal",
 "Dilip",
 "Samiron",
-"anowar (================Purbo Thakhur bari================)",
+
+'<br>',
+
+"## anowar (================Purbo Thakhur bari================)",
 "neamot",
 "sahajan kagu",
 "habu/sumon",
 "manir kagu",
-"liton / abul (================Awla Bari================)",
+
+'<br>',
+
+"## liton / abul (================Awla Bari================)",
 "selim / jahir",
 "khalil",
 "fatik / momin",
@@ -87,7 +108,10 @@ const houses = [
 "Abu taher",
 "Bashar",
 "Tarun",
-"Easin (================Bhuia Bari================)",
+
+'<br>',
+
+"## Easin (================Bhuia Bari================)",
 "Khalek / iman",
 "Hazori / Imadadulla",
 "Ikbal",
@@ -105,11 +129,17 @@ const houses = [
 "Billal / Manik",
 "Basar / Mamun",
 "Afia",
-"Helal kagu (================Munsi Bari================) ",
+
+'<br>',
+
+"## Helal kagu (================Munsi Bari================) ",
 "caru",
 "jahangir",
 "kabir contractor",
-"Maru pisa(================Palashpur================)",
+
+'<br>',
+
+"## Maru pisa(================Palashpur================)",
 "biren pisa",
 "Palash Kagu",
 "Ramu kagu",
@@ -129,13 +159,19 @@ const houses = [
 "sahmol er bap",
 "tekka / basudev / sourov",
 "Nitai provu",
-"lovely masi",
+
+'<br>',
+
+"## lovely masi",
 "shamol",
 "dulal dada",
 "baju dada",
 "depak dada / komu",
 "palash",
-"kana moutta ",
+
+'<br>',
+
+"## kana moutta ",
 "krisna dada ",
 "madhobi",
 "bipolodada",
