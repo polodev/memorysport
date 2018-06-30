@@ -15,6 +15,7 @@ class calculation extends React.Component {
       selectedDigitNo: options.digitOptions[0],
       selectedOperator: options.operatorOptions[0],
       selectedIntervalTime: options.intervalOptions[0],
+      isGameOn: false,
     }
 
   }
@@ -22,7 +23,7 @@ class calculation extends React.Component {
     console.log('state', this.state);
     return (
     <div>
-      <div className={styles.mt_4}>
+      <div className={styles.mt_3}>
         <h2>Select Your game time</h2>
         <Select
           name="form-field-name"
@@ -34,7 +35,7 @@ class calculation extends React.Component {
       </div>
 
 
-      <div className={styles.mt_4}>
+      <div className={styles.mt_3}>
         <h2>Select max number of digit to calculation</h2>
         <Select
           name="form-field-name"
@@ -45,7 +46,7 @@ class calculation extends React.Component {
         />
       </div>
 
-      <div className={styles.mt_4}>
+      <div className={styles.mt_3}>
         <h2>Select Your operator</h2>
         <Select
           name="form-field-name"
@@ -56,7 +57,7 @@ class calculation extends React.Component {
         />
       </div>
 
-      <div className={styles.mt_4}>
+      <div className={styles.mt_3}>
         <h2>Select Your interval time</h2>
         <Select
           name="form-field-name"

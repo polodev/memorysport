@@ -8,6 +8,9 @@
  .mt_4 {
   margin-top: 2em;
  }
+ .mt_3 {
+  margin-top: 1.5em;
+ }
 .uList {
   list-style: none;
   margin: 0;
