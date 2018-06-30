@@ -6,6 +6,7 @@ from now on visit left hand side first
 all bed will be call at same time in one room then fan
 for new room '<br>' will be used
 after '<br>' next location starting will be by ## followed by location
+top to bottom (like window first then oven area incase of feni kitchen)
 
 `
 const fatepurHome = [
@@ -70,6 +71,9 @@ const fatepurHome = [
   'south facing wall',
   'door of south facing wall to enter into didis room',
   'north facing wall in didis room',
+  'bed',
+  'mosquito net',
+  'fan',
   'didis room east facing wall',
   'didis room window on east facing wall',
   'didis room south facing wall',
@@ -82,7 +86,6 @@ const fatepurHome = [
   '<br>',
 
   '## __picer __ghar south facing wall',
-  '__picer __ghar middle west facing wall',
   'west facing wall in between bed room and tin box',
   'door to enter __picer __ghar bed room',
   'east facing wall in bed room',
@@ -157,9 +160,9 @@ const fatepurHome = [
   'south door chain',
   'west facing wall',
   'north facing wall',
-  'north facing door',
-  '__thakur small temple',
+  'door on north facing',
   'east facing wall',
+  '__thakur small temple',
  'south facing wall',
 
  '<br>',
@@ -171,6 +174,7 @@ const fatepurHome = [
   'bed',
   'north facing wall',
   'east facing wall',
+  'south facing wall',
 
   '<br>',
 
@@ -282,8 +286,8 @@ const palashpurBiren = [
 
   '## west facing wall from almirah room',
   'north facing wall',
-  'window on north facing wall',
   'rack on north facing wall',
+  'window on north facing wall',
   'cotton __alna for keeping dresses',
   'steel __almira',
   'east facing wall',
@@ -373,7 +377,7 @@ const feniMess = [
   'calling bell switch',
   'door of 302',
   'tiny north facing wall',
-  'west facing wall',
+  'east facing wall',
   'north facing wall',
   'shoe rack',
   'water filter',
@@ -428,15 +432,15 @@ const feniMess = [
   'bottom rack on east facing wall -  regular stuff',
   'south facing wall',
   'tape area',
-  'oven area',
-  'window on south facing wall',
   'rack on south facing area',
+  'window on south facing wall',
+  'oven area',
   'west facing wall in kitchen',
   'rack on west facing wall where banker keep stuff',
 
    '<br>',
  
-  '## tiny south facing wall',
+  '## tiny south facing wall in my room',
   'north facing wall',
   'white board',
   'main table',
@@ -449,6 +453,7 @@ const feniMess = [
   'fan',
   '2 __gaj gym floor mate',
   'bin bag',
+  'south facing wall',
   'tiny east facing wall',
   'toilet door in tiny east facing wall',
   'toilet',
@@ -458,7 +463,7 @@ const feniMess = [
   'west facing wall',
   'regal laptop table',
   'pure it',
-  'tiny south facing wall',
+  'tiny south facing wall near main door',
   
    '<br>',
  
@@ -627,6 +632,7 @@ const indiaMama = [
   'kitchen room + oven area',
   'north facing wall',
   'door to go outside toilet',
+  'windown in north facing wall',
   'east facing wall',
   'old fridge',
 
@@ -707,10 +713,10 @@ const dhakaMess1 = [
 
    '<br>',
 
-  '## north facing wall',
+  '## north facing wall in manik dada room',
   'east facing wall',
   'dada table',
-  'dada weardrobe',
+  'dada wardrobe',
   'south facing wall',
   'mytable',
   'west facing wall',
@@ -728,7 +734,7 @@ const dhakaMess1 = [
   'west facing wall',
   'storage like almira in west facing wall',
   'khokon vi computer table',
-  'tiny south facing wall',
+  'south facing wall tiny ',
   'west facing wall',
   'atik vi table',
   'door to view outside in west facing wall',
@@ -746,7 +752,6 @@ const dhakaMess1 = [
   'water jar in west facing wall',
   'basin in west facing door',
   'south facing wall',
-  'cotton drying area',
   'west facing wall tiny',
   'door on tiny west facing area',
   'north facing wall',
@@ -775,7 +780,6 @@ const dhakaMess1 = [
   'liton + bappi + mostofa vi bed', 
   'fan',
   'east facing wall',
-  'south facing wall',
   'bappi vi computer',
 
    '<br>',
@@ -903,7 +907,7 @@ const palashMess = [
   'east facing wall',
   'window in east facing wall',
   'palash table',
-  'sanjoy dada weardrobe',
+  'sanjoy dada wardrobe',
   'south facing wall',
   'window in south facing wall',
   'shuvo da table',
@@ -929,6 +933,7 @@ const dhakaMama = [
   'kitchen oven',
   'kitchen basin',
   'door to go to washroom',
+  'washroom',
   'basin',
   'south facing room',
   'door to go to mama room',
@@ -952,7 +957,6 @@ const dhakaMama = [
   'south facing wall',
   'mirror',
   'almirah',
-  'west facing wall',
   'table',
 
 ]
@@ -978,7 +982,7 @@ const tarunHouse = [
   'south facing wall',
   'window in south facing wall',
   'west facing wall',
-  'steeler almirah',
+  'steel almirah',
   'showcase',
   'north facing wall',
   'door in north facing wall',
@@ -1011,6 +1015,7 @@ const tarunHouse = [
    '<br>',
 
   '## west facing wall',
+  'rack in west facing wall',
   'north facing wall',
   'door in north facing wall to go to kitchen and washroom',
 
@@ -1024,6 +1029,7 @@ const tarunHouse = [
    '## __puber _ghar door',
    'south facing wall',
    'west facing wall',
+   'bed',
    'north facing wall',
    'east facing wall',
    'window on east facing wall',
@@ -1045,7 +1051,7 @@ const banjaraHills  = [
   'Air Condition',
   'ramu reception table',
   'door to go inside cubical room',
-  'east facing room',
+  'east facing wall',
   'door in east facing room',
   'south facing door',
 
@@ -1064,16 +1070,18 @@ const banjaraHills  = [
   '3 cubical',
   'Ac in middle cubical',
   'west facing wall',
-  'door in west facing wall',
+  'window in west facing wall',
   'north facing wall',
+  'door in north facing wall to go to nikhil',
   'Nikhil cubical',
+  'door north facing wall to go to jk',
   'jk cubical',
   'west facing wall',
   'door in west facing wall to go to main room',
 
    '<br>',
 
-  '## east facing wall',
+  '## east facing wall from sir room',
   'south facing wall',
   'west facing wall',
   'table of the sir',
@@ -1095,8 +1103,8 @@ const banjaraHills  = [
 
   '## west facing wall from food room',
   'north facing wall',
-  'coffe machine',
   'rack on top',
+  'coffe machine',
   'east facing wall',
   'built in place for keeping food, oven area',
   'fridge',
@@ -1120,7 +1128,7 @@ const banjaraHills  = [
   'south facing wall',
   'ac in south facing wall',
   'west facing wall',
-  'some weardrobe in middle',
+  'some wardrobe in middle',
 
    '<br>',
 
@@ -1129,7 +1137,171 @@ const banjaraHills  = [
   'sunny bro cubical'
 ]
 const hyderabadMtww = [
+  'gate',
+  'door to go to down stair',
+  'east facing wall',
+  'south facing wall',
+  'west facing wall',
+  'library',
+  'reception table',
+  'door in west facing wall',
+  'north facing wall',
+
+   '<br>',
+
+   '## east facing wall',
+   'book stack',
+   'space for work',
+   'south facing wall',
+   'door in south facing wall (going no where or bin dump)',
+   'window in south facing wall',
+   'west facing wall',
+   'south facing wall tiny',
+   'door in south facing wall to go to room where i get salary from sir',
+
+   '<br>',
+
+
+   '## west facing wall',
+   'basin in west facing wall',
+   'north facing wall tiny',
+   'west facing wall',
+   'door to go to sleeping room',
+   'sleeping room of girl',
+   'north facing wall',
+
+   '<br>',
+
+   '## north facing wall from sir room',
+   'south facing wall',
+   'window in south facing wall',
+   'west facing wall',
+   'table of sir',
+   'toilet door in north facing wall',
+   'toilet',
+
+   '<br>',
+
+   '## stir to go to up stair',
+   'open space infront of 1st floor door + krishna chura tree',
+   'door',
+   'east facing wall',
+   'window in east facing wall',
+   'north cubical east',
+   'south cubical east',
+   'south cubical west',
+   'north cubical west',
+   'south facing wall',
+   'east facing wall',
+   'door in east facing wall to go to iot room',
+   'water jar',
+   'south facing wall',
+   'door in south facing wall',
+   'balcony ( usually its dirty) ',
+   'window in south facing wall',
+   'south cubical east (ganesh)',
+   'north cubical east',
+   'south cubical east (tarun)',
+   'north cubical east',
+   'west facing wall',
+   'south facing wall',
+   'door in south facing wall to go to tarun room',
+   'west facing wall',
+   'door in west facing wall to visit toilet',
+   'toilet',
+   'north facing wall',
+   'west facing wall',
+   'middle cubical west',
+   'middle cubical east',
+   'door to go to our room in west facing wall',
+   'north facing wall',
+   'window in north facing wall',
+   'door to go outside hallway in north facing wall',
+   'north hallway outside',
+   'window in north facing wall',
+
+   '<br>',
+
+   '## east facing wall in our room',
+   'a abandoned bed for storing mattress',
+   'south facing wall',
+   'all bed',
+   'fan',
+   'west facing wall',
+   'rack in west facing wall',
+   'north facing wall',
+   'window in north facing wall',
+
+   '<br>',
+
+   '## west facing wall in iot room',
+   'north facing wall',
+   'east facing wall',
+   'little window in east facing wall',
+   'south facing wall',
+   'almira near south facing wall',
+   'west facing wall',
+   'almirah near west facing wall',
+   'table for iot work',
+
+   '<br>',
+
+   '## north facing wall in tarun room',
+   'east facing wall',
+   'single uncommon bed for ganesh in east facing wall',
+   'south facing wall',
+   'window in south facing wall',
+   'west facing wall',
+
+   '<br>',
+
+   '## stir to go up 1st floor to 2nd floor',
+   'door in 2nd floor',
+   'east facing wall',
+   'window in east facing wall',
+   'full working space',
+   'south facing wall',
+   'basin',
+   'water jar',
+   'door to go to south hallway which the way we can visit roof',
+   'south hallway',
+   'window in south facing wall',
+   'west facing wall',
+   'tiny south facing wall',
+   'door in tiny south facing wall',
+
+   '<br>',
+
+   '## north facing wall',
+   'east facing wall',
+   'south facing wall',
+   'floor mate keeper in south facing wall',,
+   'west facing wall',
+   'window in west facing wall',
+   'little almirah like things to keep facewash and others cosmetics',
+
+   '<br>',
+
+   '## west facing wall',
+   'door in west facing wall to go to toilet',
+   'toilet',
+   'north facing wall',
+   'south facing wall',
+   'west facing wall',
+   'north facing wall',
+   'window in north facing wall west',
+   'door in north facing wall to go to north hall way',
+   'north hallway',
+   'window in north facing wall west',
+
+   '<br>',
+
+   '## roof'
   
+]
+const stayingVilla44 = [
+]
+const workingVillaDeepti = [
 ]
 const fd = [
 ]
