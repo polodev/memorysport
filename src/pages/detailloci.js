@@ -43,9 +43,10 @@ class detailloci extends React.Component {
           <LociLi id='dhakaMama' pageTitle="dhakaMama houses" arr={dhakaMama} />
           <LociLi id='tarunHouse' pageTitle="tarunHouse houses" arr={tarunHouse} />
           <LociLi id='banjaraHills' pageTitle="banjaraHills" arr={banjaraHills} />
+          <LociLi id='hyderabadMtww' pageTitle="MTWW" arr={hyderabadMtww} />
           <LociLi id='hyderabadVillaStay' pageTitle="hyderabadVillaStay" arr={hyderabadVillaStay} />
           <LociLi id='hyderabadVillaWork' pageTitle="hyderabadVillaWork" arr={hyderabadVillaWork} />
-          <LociLi id='hyderabadMtww' pageTitle="MTWW" arr={hyderabadMtww} />
+          <LociLi id='bangalore' pageTitle="bangalore" arr={bangalore} />
         </ul>
 
         <div>
@@ -64,6 +65,7 @@ class detailloci extends React.Component {
           <Loci id='hyderabadMtww' pageTitle="MTWW" arr={hyderabadMtww} />
           <Loci id='hyderabadVillaStay' pageTitle="hyderabadVillaStay" arr={hyderabadVillaStay} />
           <Loci id='hyderabadVillaWork' pageTitle="hyderabadVillaWork" arr={hyderabadVillaWork} />
+          <Loci id='bangalore' pageTitle="bangalore" arr={bangalore} />
         </div>
       </div>
 

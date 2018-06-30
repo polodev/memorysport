@@ -1296,7 +1296,59 @@ const hyderabadMtww = [
 
    '<br>',
 
-   '## roof'
+   '## roof',
+
+   '<br>',
+
+   '## mtww main gate',
+   'north facing wall',
+   'east facing wall',
+   'door in east facing wall',
+   'west facing wall',
+   'stir to go upstairs only used by girl',
+   'south facing wall',
+   'door to go to girls room',
+   'girls room',
+   'south facing wall',
+   'west facing wall',
+   'reception',
+
+   '<br>',
+
+   '## west facing wall in east room',
+   'north facing wall',
+   'door on north facing wall',
+   'east facing wall',
+   'door in east facing wall',
+   'window in east facing wall',
+   'south facing wall',
+
+   '<br>',
+
+   '## kitchen',
+   'stair to go to upstairs',
+
+   '<br>',
+
+   'east facing wall',
+   'door in east facing wall',
+   'north facing wall tiny',
+   'east facing wall',
+   'door in east facing wall to visit storage room',
+   'storage facility',
+   'south facing wall',
+   'door to go to south east room',
+   'stair',
+   'west facing wall',
+   'south facing wall',
+   'entrance to visit children room',
+   'left some '
+
+
+
+
+
+
   
 ]
 const hyderabadVillaStay = [
@@ -1439,21 +1491,113 @@ const hyderabadVillaWork = [
    'east facing wall',
    'door in east facing wall to go to bed room',
    'bed room',
-
-
-
-
-
-
-
-
-
-
-]
-const fd = [
 ]
 const bangalore = [
-  
+  'gate',
+  'underground way',
+  'south facing wall',
+  'west facing wall',
+  'north facing wall',
+  'kitchen - open',
+  'west facing wall',
+  'door on west facing wall to go to cook room',
+  'cook room',
+  'north facing wall',
+  'door in north facing wall to go to girls house',
+  'toilet in east site',
+  'east facing boundary wall',
+
+   '<br>',
+
+   '## mini gate to go to 1st floor',
+   'door to go to 1st floor working place',
+   'south facing wall',
+   'west facing wall',
+   'north facing wall',
+   'west facing wall',
+   'door on west facing wall to go to meeting room',
+   'meeting room',
+   'north facing wall',
+   'door on north facing wall to go to svk sir commanding room',
+   'door on north facing wall to go to first floor iot room',
+   'iot room',
+   'wash room inside iot room',
+   'door on north facing wall to go to toilet',
+   'toilet',
+   'east facing wall',
+   'south facing wall',
+   'media room (vasanth, nikhil) on south facing wall',
+   'working cubical west',
+   'work cubical south',
+   'working cubical north (where we used to work)',
+
+   '<br>',
+
+   'stair to go to 2nd floor',
+   '2nd floor door',
+   'south facing wall',
+   'window on south facing wall',
+   'west facing wall',
+   'door in west facing wall to go to iot room',
+   'door on west facing wall to go to kiron room',
+   'north facing wall',
+   'door on north facing wall to go to __motas room',
+   'door on north facing wall to go to east side room which have toilet',
+   'door in north facing wall to go to toilet',
+   'toilet',
+   'east facing wall tiny',
+   'south facing wall',
+   'east facing wall tiny',
+   'basin',
+   'south facing wall',
+   'door on south facing wall to go inside our room',
+   'east facing wall',
+
+   '<br>',
+
+   '## east facing wall inside iot room',
+   'south facing wall',
+   'west facing wall',
+   'window in west facing wall',
+   'north facing wall',
+   'iot almirah on east facing wall',
+   'table for iot working',
+
+   '<br>',
+
+   '## east facing wall in kiron room',
+   'south facing wall',
+   'west facing wall',
+   'bed',
+   'fan',
+   'north facing wall',
+   'east facing wall',
+   'door on east facing wall to go to toilet',
+   'toilet',
+
+   '<br>',
+
+   '## south facing wall east __khat room',
+   'west facing wall',
+   'north facing wall',
+   'basin in north facing wall',
+   'east facing wall',
+   'door on east facing wall to go to bathroom',
+   'bathroom',
+
+
+   "## north facing wall our room",
+   'door to go to wash room',
+   'washroom',
+   'east facing wall',
+   'window on east facing wall',
+   'south facing wall',
+   'window in south facing wall',
+   'west facing wall',
+   'rack in west facing wall',
+   'bed',
+   'fan'
+
 ]
 const ratanMama = [
   
