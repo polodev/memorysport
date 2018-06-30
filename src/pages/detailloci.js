@@ -1,7 +1,6 @@
 import React from 'react'
 import Loci from '../components/Loci.js'
 import LociLi from '../components/LociLi'
-import village from '../data/villageLociArray.js'
 import {
   fatepurHome,
   palashpurBasudev,
@@ -20,18 +19,43 @@ import {
   dhakaMama,
   tarunHouse,
   hyderabadVillaStay,
-  hyderabadVillaWork
+  hyderabadVillaWork,
+  village
 } from '../data/lociArray.js'
 // class LociLi extends React.Component {
 //   arrayCount = (arr) => arr.filter(loc => loc !='<br>').length
 //   render = () => <li className='singleList'> <a href={`#${this.props.id}`}>{this.props.pageTitle} - {this.arrayCount(this.props.arr)} </a> </li>
 // }
 class detailloci extends React.Component {
+  totalArryCount = () => {
+    const all = [
+      ...fatepurHome,
+      ...palashpurBasudev,
+      ...palashpurBiren,
+      ...feniMess,
+      ...palashHome,
+      ...indiaMama,
+      ...bangalore,
+      ...hyderabadMtww,
+      ...banjaraHills ,
+      ...ratanMama,
+      ...dhakaMess1,
+      ...dhakaMess2,
+      ...dhakaMess3,
+      ...palashMess,
+      ...dhakaMama,
+      ...tarunHouse,
+      ...hyderabadVillaStay,
+      ...hyderabadVillaWork,
+      ...village
+    ]
+    return this.arrayCount(all);
+  }
   arrayCount = (arr) => arr.filter(loc => loc !='<br>').length
   render () {
     return (
       <div>
-        <h3>Table of Content(ToC)</h3>
+        <h3>Table of Content(ToC) total - {this.totalArryCount()}</h3>
         <ul className='uList'>
           <LociLi id='village' pageTitle="Village houses" arr={village} />
           <LociLi id='fatepurHome' pageTitle="Fatepur Home" arr={fatepurHome} />
