@@ -12,6 +12,7 @@
     "gatsby": "^1.9.273",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-typography": "^1.7.18",
+    "react-select": "^1.2.1",
     "typography": "^0.16.17",
     "typography-theme-alton": "^0.15.10",
     "typography-theme-fairy-gates": "^0.15.11"
