@@ -4,13 +4,17 @@
       "path---dominic-a0e39f21c11f6a62c5ab.js",
       "path---dominic-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-calculation-js": [
+      "component---src-pages-calculation-js-a8cde9a543f7cf1324dc.js",
+      "component---src-pages-calculation-js-a8cde9a543f7cf1324dc.js.map"
+    ],
     "path---major": [
       "path---major-a0e39f21c11f6a62c5ab.js",
       "path---major-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-b4442c312c77dc8836f7.js",
-      "component---src-pages-index-js-b4442c312c77dc8836f7.js.map"
+      "component---src-pages-index-js-0af2f9e206453522b12e.js",
+      "component---src-pages-index-js-0af2f9e206453522b12e.js.map"
     ],
     "path---rhyme": [
       "path---rhyme-a0e39f21c11f6a62c5ab.js",
@@ -37,8 +41,8 @@
       "component---src-pages-villageloci-js-bb3cb8ea938740ce8628.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-e24ef46289c2de55bc52.js",
-      "component---src-layouts-index-js-e24ef46289c2de55bc52.js.map"
+      "component---src-layouts-index-js-5cb8e2044a3df34b9778.js",
+      "component---src-layouts-index-js-5cb8e2044a3df34b9778.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -52,27 +56,41 @@
       "component---src-pages-major-js-87b66fa5b2a6e2773415.js",
       "component---src-pages-major-js-87b66fa5b2a6e2773415.js.map"
     ],
+    "path---routine": [
+      "path---routine-a0e39f21c11f6a62c5ab.js",
+      "path---routine-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "commons": [
-      "commons-b3fa90c5fe67d4130c0a.js",
+      "commons-6e512f3a298c023f8849.js",
       "build-js-styles.css",
-      "commons-b3fa90c5fe67d4130c0a.js.map",
+      "commons-6e512f3a298c023f8849.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-dominic-js": [
-      "component---src-pages-dominic-js-d8ec1ef9ad0491220d51.js",
-      "component---src-pages-dominic-js-d8ec1ef9ad0491220d51.js.map"
+      "component---src-pages-dominic-js-4d74e9e51715cf8dbaab.js",
+      "component---src-pages-dominic-js-4d74e9e51715cf8dbaab.js.map"
     ],
     "app": [
-      "app-ae6217e492955765d42b.js",
-      "app-ae6217e492955765d42b.js.map"
+      "app-3850453532f1a3d451e5.js",
+      "build-js-styles.css",
+      "app-3850453532f1a3d451e5.js.map",
+      "build-js-styles.css.map"
     ],
     "component---src-pages-rhyme-js": [
       "component---src-pages-rhyme-js-822600ee5647798ee550.js",
       "component---src-pages-rhyme-js-822600ee5647798ee550.js.map"
     ],
     "component---src-pages-detailloci-js": [
-      "component---src-pages-detailloci-js-5c2928999b7dde24ca82.js",
-      "component---src-pages-detailloci-js-5c2928999b7dde24ca82.js.map"
+      "component---src-pages-detailloci-js-d46b834f1c7b243c4b4a.js",
+      "component---src-pages-detailloci-js-d46b834f1c7b243c4b4a.js.map"
+    ],
+    "path---calculation": [
+      "path---calculation-a0e39f21c11f6a62c5ab.js",
+      "path---calculation-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-routine-js": [
+      "component---src-pages-routine-js-359e9f48da53ee42f117.js",
+      "component---src-pages-routine-js-359e9f48da53ee42f117.js.map"
     ]
   }
 }
