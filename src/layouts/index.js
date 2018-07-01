@@ -9,6 +9,6 @@ export default ({ children }) =>
     </Link>
       {children()}
     <Link to="/" style={{ textShadow: `none`, backgroundImage: `none` }}>
-      <h3 style={{marginBottom: 20, textAlign: 'center'}}>Memory sport </h3>
+      <h3 style={{marginTop: 50, textAlign: 'center'}}>Memory sport </h3>
     </Link>
   </div>

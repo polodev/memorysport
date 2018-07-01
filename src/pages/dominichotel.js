@@ -33,7 +33,10 @@ class DominicHotel extends React.Component {
   }
 
   _generatePA =  () => {
-    const {minNumber, maxNumber} = this.state
+    let {minNumber, maxNumber} = this.state
+    if (this._isEmpty(maxNumber)) {
+      maxNumber = minNumber
+    }
     let allPA = []
     for(let i = minNumber; i <= maxNumber; i++) {
       allPA.push(
@@ -42,9 +45,14 @@ class DominicHotel extends React.Component {
     }
     return allPA
   }
+  _isEmpty = str => !str || 0 === str.length || /^\s*$/.test(str)
 
   _handleGenerate = () => {
     let {minNumber, maxNumber, isGenerate} = this.state
+    if (this._isEmpty(maxNumber)) {
+      maxNumber = minNumber
+    }
+    console.log('maxNumber', maxNumber);
     if (isNaN(parseInt(minNumber)) || isNaN(parseInt(maxNumber))) {
       alert('min Number and max Number should be a valid number. No string allowed')
     } else if (minNumber > maxNumber) {
