@@ -180,7 +180,7 @@ const fatepurHome = [
 
   '<br>',
 
-  
+
   '## __dhekhi__ghar',
   '__dhekhi__itself',
 
@@ -311,7 +311,7 @@ const palashpurBiren = [
   'gas oven area',
 
    '<br>',
- 
+
   '__chap__kall area',
   '__toilet area',
   'preety (bhagnir) ghar',
@@ -319,7 +319,7 @@ const palashpurBiren = [
   'shoag ar ghar',
 
    '<br>',
- 
+
 
   '## pisar gharer door',
   'west facing wall',
@@ -330,9 +330,9 @@ const palashpurBiren = [
   'door on east facing wall',
   'rack on east facing wall',
   'south facing wall',
-  
+
    '<br>',
- 
+
   '## west facing wall in middle room',
   'bed',
   'ceiling fan',
@@ -345,7 +345,7 @@ const palashpurBiren = [
   '__thakur __ghar',
 
    '<br>',
- 
+
   '## lithoner ghar old',
   'lithoner ghar 2'
 
@@ -360,9 +360,9 @@ const feniMess = [
   'north facing wall',
   'door on north facing wall',
   'tubewell',
-  
+
    '<br>',
- 
+
   '## door on north facing wall',
   'door on north facing wall',
   'west facing wall beside stair',
@@ -393,7 +393,7 @@ const feniMess = [
   'winter storage in between east facing west facing and main door top',
 
    '<br>',
- 
+
   '## east facing wall',
   'rakib study table',
   'south facing wall',
@@ -408,7 +408,7 @@ const feniMess = [
   'x style table which purchased from me',
 
    '<br>',
- 
+
   '## north facing wall from banker room',
   'banker __vagina __shoag study table',
   'east facing wall',
@@ -419,7 +419,7 @@ const feniMess = [
   'west facing wall',
   'winter stuff store house',
   'study table on west facing wall',
-  
+
    '<br>',
 
   '## north facing wall in kitchen',
@@ -436,7 +436,7 @@ const feniMess = [
   'rack on west facing wall where banker keep stuff',
 
    '<br>',
- 
+
   '## tiny south facing wall in my room',
   'north facing wall',
   'white board',
@@ -461,9 +461,9 @@ const feniMess = [
   'regal laptop table',
   'pure it',
   'tiny south facing wall near main door',
-  
+
    '<br>',
- 
+
   '## west facing wall in side balcony',
   'north facing tiny wall',
   'east facing wall',
@@ -488,7 +488,7 @@ const palashHome = [
   'door on west facing wall',
 
    '<br>',
- 
+
   '## east facing wall',
   'sofa near baidh bed',
   'bed',
@@ -502,9 +502,9 @@ const palashHome = [
   'north facing wall',
   'window on north facing wall',
   'sofa near north facing wall',
-  
+
    '<br>',
- 
+
   '## east facing wall from jumur didi room',
   'bed',
   'fan',
@@ -519,7 +519,7 @@ const palashHome = [
   '__alna near north facing wall socket',
 
    '<br>',
- 
+
   '## kitchen room door',
   'east facing wall',
   'south facing wall',
@@ -551,7 +551,7 @@ const indiaMama = [
   'nest for bird',
 
    '<br>',
- 
+
   '## East facing wall',
   'chair near bed',
   'bed',
@@ -566,7 +566,7 @@ const indiaMama = [
   'big mirror near north facing wall',
 
    '<br>',
- 
+
   '## south facing wall --shubha room',
   'cycle near south facing wall',
   'west facing wall',
@@ -581,7 +581,7 @@ const indiaMama = [
   'window in east facing wall',
 
    '<br>',
- 
+
   '## kitchen room entrance - south facing wall',
   'west facing wall',
   'oven',
@@ -646,7 +646,7 @@ const indiaMama = [
   'roof',
 
    '<br>',
- 
+
   '## tape call outside before toilet',
   'old __koop',
   'straight toilet door',
@@ -869,7 +869,7 @@ const dhakaMess3 = [
   '## east facing wall',
   'door to go to milky room from east facing wall',
   'north facing wall from liton vi room',
-  'liton + bappi + mostofa vi bed', 
+  'liton + bappi + mostofa vi bed',
   'fan',
   'east facing wall',
   'bappi vi computer',
@@ -1052,7 +1052,7 @@ const dhakaMama = [
   'table',
 
 ]
-const tarunHouse = [
+const fatepurTarun = [
   'door to go inside main room',
   'east facing wall',
   'window in east facing wall',
@@ -1208,7 +1208,7 @@ const banjaraHills  = [
   'nandip and others cubical',
   'east facing wall',
   'window-north in east facing wall',
-  'window-south in east facing wall', 
+  'window-south in east facing wall',
   'south facing wall',
   'glass door to go inside cloth drying room',
 
@@ -1451,7 +1451,7 @@ const hyderabadMtww = [
    'room in roof',
    'washroom in roof',
 
-  
+
 ]
 const hyderabadVillaStay = [
   'door',
@@ -1541,7 +1541,7 @@ const hyderabadVillaWork = [
 
    '<br>',
 
- 
+
   '## north facing wall in kitchen room',
   'east facing wall',
   'washer in east facing wall',
@@ -1702,8 +1702,8 @@ const bangalore = [
    'fan'
 
 ]
-const ratanMama = [
-  
+const fatepurRatanMama = [
+
   'door',
   'south facing wall',
   'window in south facing wall',
@@ -1752,7 +1752,7 @@ const ratanMama = [
   'toilet',
   'cow house',
 ]
-  const village = [
+  const fatepurVillage = [
   "My House",
   "Mizan",
   "Gonesh",
@@ -1935,23 +1935,23 @@ const ratanMama = [
   "Sanjoy dada",
 ]
 export default {
+  fatepurVillage,
   fatepurHome,
+  fatepurRatanMama,
+  fatepurTarun,
   palashpurBasudev,
   palashpurBiren,
-  feniMess,
   palashHome,
-  indiaMama,
-  bangalore,
-  hyderabadMtww,
-  banjaraHills ,
-  ratanMama,
+  feniMess,
   dhakaMess1,
   dhakaMess2,
   dhakaMess3,
   palashMess,
   dhakaMama,
-  tarunHouse,
-  hyderabadVillaStay,
+  indiaMama,
+  banjaraHills ,
+  hyderabadMtww,
   hyderabadVillaWork,
-  village
+  hyderabadVillaStay,
+  bangalore,
 }

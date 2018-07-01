@@ -2,25 +2,25 @@ import React from 'react'
 import Loci from '../components/Loci.js'
 import LociLi from '../components/LociLi'
 import {
+  fatepurVillage,
   fatepurHome,
+  fatepurRatanMama,
+  fatepurTarun,
   palashpurBasudev,
   palashpurBiren,
-  feniMess,
   palashHome,
-  indiaMama,
-  bangalore,
-  hyderabadMtww,
-  banjaraHills ,
-  ratanMama,
+  feniMess,
   dhakaMess1,
   dhakaMess2,
   dhakaMess3,
   palashMess,
   dhakaMama,
-  tarunHouse,
-  hyderabadVillaStay,
+  indiaMama,
+  banjaraHills ,
+  hyderabadMtww,
   hyderabadVillaWork,
-  village
+  hyderabadVillaStay,
+  bangalore,
 } from '../data/detailLociArray'
 // class LociLi extends React.Component {
 //   arrayCount = (arr) => arr.filter(loc => loc !='<br>').length
@@ -28,26 +28,27 @@ import {
 // }
 class detailloci extends React.Component {
   totalArryCount = () => {
+    // here will come all array
     const all = [
+      ...fatepurVillage,
       ...fatepurHome,
+      ...fatepurRatanMama,
+      ...fatepurTarun,
       ...palashpurBasudev,
       ...palashpurBiren,
-      ...feniMess,
       ...palashHome,
-      ...indiaMama,
-      ...bangalore,
-      ...hyderabadMtww,
-      ...banjaraHills ,
-      ...ratanMama,
+      ...feniMess,
       ...dhakaMess1,
       ...dhakaMess2,
       ...dhakaMess3,
       ...palashMess,
       ...dhakaMama,
-      ...tarunHouse,
-      ...hyderabadVillaStay,
+      ...indiaMama,
+      ...banjaraHills ,
+      ...hyderabadMtww,
       ...hyderabadVillaWork,
-      ...village
+      ...hyderabadVillaStay,
+      ...bangalore,
     ]
     return this.arrayCount(all);
   }
@@ -57,10 +58,10 @@ class detailloci extends React.Component {
       <div>
         <h3>Table of Content(ToC) total - {this.totalArryCount()}</h3>
         <ul className='uList'>
-          <LociLi id='village' pageTitle="Village houses" arr={village} />
+          <LociLi id='fatepurVillage' pageTitle="Village houses" arr={fatepurVillage} />
           <LociLi id='fatepurHome' pageTitle="Fatepur Home" arr={fatepurHome} />
-          <LociLi id='ratanMama' pageTitle="ratanMama" arr={ratanMama} />
-          <LociLi id='tarunHouse' pageTitle="tarunHouse houses" arr={tarunHouse} />
+          <LociLi id='fatepurRatanMama' pageTitle="fatepurRatanMama" arr={fatepurRatanMama} />
+          <LociLi id='fatepurTarun' pageTitle="fatepurTarun houses" arr={fatepurTarun} />
           <LociLi id='palashpurBasudev' pageTitle="Palashpur Basudev Home" arr={palashpurBasudev} />
           <LociLi id='palashpurBiren' pageTitle="Palashpur Biren Home" arr={palashpurBiren} />
           <LociLi id='palashHome' pageTitle="palash Home" arr={palashHome} />
@@ -77,10 +78,11 @@ class detailloci extends React.Component {
           <LociLi id='hyderabadVillaStay' pageTitle="hyderabadVillaStay" arr={hyderabadVillaStay} />
           <LociLi id='bangalore' pageTitle="bangalore" arr={bangalore} />
         </ul>
-          <Loci id='village' pageTitle="Village houses" arr={village} />
+        <div>
+          <Loci id='fatepurVillage' pageTitle="Village houses" arr={fatepurVillage} />
           <Loci id='fatepurHome' pageTitle="Fatepur Home" arr={fatepurHome} />
-          <Loci id='ratanMama' pageTitle="ratanMama" arr={ratanMama} />
-          <Loci id='tarunHouse' pageTitle="tarunHouse houses" arr={tarunHouse} />
+          <Loci id='fatepurRatanMama' pageTitle="fatepurRatanMama" arr={fatepurRatanMama} />
+          <Loci id='fatepurTarun' pageTitle="fatepurTarun houses" arr={fatepurTarun} />
           <Loci id='palashpurBasudev' pageTitle="Palashpur Basudev Home" arr={palashpurBasudev} />
           <Loci id='palashpurBiren' pageTitle="Palashpur Biren Home" arr={palashpurBiren} />
           <Loci id='palashHome' pageTitle="palash Home" arr={palashHome} />
@@ -96,7 +98,6 @@ class detailloci extends React.Component {
           <Loci id='hyderabadVillaWork' pageTitle="hyderabadVillaWork" arr={hyderabadVillaWork} />
           <Loci id='hyderabadVillaStay' pageTitle="hyderabadVillaStay" arr={hyderabadVillaStay} />
           <Loci id='bangalore' pageTitle="bangalore" arr={bangalore} />
-               <div>
 
         </div>
       </div>
@@ -106,5 +107,5 @@ class detailloci extends React.Component {
   }
 }
 export default detailloci;
-  
+
 
