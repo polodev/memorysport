@@ -9,6 +9,7 @@
  *
  */
 const blueprint = {
+  key: "",
   time: "",
   duration: 2,
   activity: "practicing memory palace",
@@ -84,9 +85,18 @@ const r_php_book_reading = {
   activity: "zend book reading",
   note: ""
 }
+
+const r_exercise = {
+  key: 'exercise',
+  time: "after every 30 minutes or one hour",
+  duration: .5,
+  activity: "doing 100 push up 100 situp before 6pm",
+  note: ""
+}
 const routines = {
   date: 'July 1, 2018',
   arr: [
+    r_exercise,
     r_wordpress,
     r_goHugo,
     r_memoryPalace,
