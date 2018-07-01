@@ -13,7 +13,6 @@ const ListLink = props =>
       <div style={{ marginBottom: `1.5rem` }}>
       <ul className={styles.uList}>
         <ListLink to="/routine">Routine</ListLink>
-        <ListLink to="/villageloci/">Village-loci</ListLink>
         <ListLink to="/detailloci/">Detail Loci</ListLink>
         <ListLink to="/rhyme">Rhyme</ListLink>
         <ListLink to="/shape">Shape</ListLink>

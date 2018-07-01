@@ -20,7 +20,7 @@ class PAO extends React.Component {
     const {title, arr, columns} = this.props
     return (
       <div>
-        <h1 className={`${styles.pageHeader} ${styles.pageHeader_top}` }>{this.title}</h1>
+        <h1 className={`${styles.pageHeader} ${styles.pageHeader_top}` }>{title}</h1>
           <div className={styles.responsiveTable}>
             <table>
               <tbody>
