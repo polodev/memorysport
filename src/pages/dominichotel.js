@@ -52,7 +52,6 @@ class DominicHotel extends React.Component {
     if (this._isEmpty(maxNumber)) {
       maxNumber = minNumber
     }
-    console.log('maxNumber', maxNumber);
     if (isNaN(parseInt(minNumber)) || isNaN(parseInt(maxNumber))) {
       alert('min Number and max Number should be a valid number. No string allowed')
     } else if (minNumber > maxNumber) {
@@ -70,12 +69,12 @@ class DominicHotel extends React.Component {
 
 
     const allPA = isGenerate ? this._generatePA() : []
-   
+
     return (
       <div>
         <div style={styles.my4}>
           <p>
-            <label htmlFor="min">min Number   
+            <label htmlFor="min">min Number
               <input
                 placeholder='less than or equal to 4 digit number'
                 value={this.state.minNumber} id='min' style={styles.input}
@@ -84,7 +83,7 @@ class DominicHotel extends React.Component {
             </label>
           </p>
           <p>
-            <label htmlFor="max">max Number   
+            <label htmlFor="max">max Number
               <input
                 placeholder='less than or equal to 4 digit number'
                 value={this.state.maxNumber} id='max' style={styles.input}
@@ -101,7 +100,7 @@ class DominicHotel extends React.Component {
           {allPA}
         </div>
       </div>
-    ) 
+    )
   }
 }
 

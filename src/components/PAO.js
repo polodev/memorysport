@@ -30,7 +30,7 @@ class PAO extends React.Component {
                   }
                 </tr>
                 {
-                  arr.map((item, index) => 
+                  arr.map((item, index) =>
                     <tr onClick={() => console.log(item)} key={index} className='hello' title={item.hints}>
                       {
                         columns.map((column, index) => {

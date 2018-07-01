@@ -20,7 +20,6 @@ class calculation extends React.Component {
 
   }
   render = () => {
-    console.log('state', this.state);
     return (
     <div>
       <div className={styles.mt_3}>
