@@ -13,8 +13,8 @@
       "path---major-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-0af2f9e206453522b12e.js",
-      "component---src-pages-index-js-0af2f9e206453522b12e.js.map"
+      "component---src-pages-index-js-a61c629eefc170fd9aff.js",
+      "component---src-pages-index-js-a61c629eefc170fd9aff.js.map"
     ],
     "path---rhyme": [
       "path---rhyme-a0e39f21c11f6a62c5ab.js",
@@ -44,6 +44,10 @@
       "component---src-layouts-index-js-5cb8e2044a3df34b9778.js",
       "component---src-layouts-index-js-5cb8e2044a3df34b9778.js.map"
     ],
+    "component---src-pages-dominichotel-js": [
+      "component---src-pages-dominichotel-js-2e4935e8277483b7f1b4.js",
+      "component---src-pages-dominichotel-js-2e4935e8277483b7f1b4.js.map"
+    ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
@@ -67,13 +71,13 @@
       "build-js-styles.css.map"
     ],
     "component---src-pages-dominic-js": [
-      "component---src-pages-dominic-js-4d74e9e51715cf8dbaab.js",
-      "component---src-pages-dominic-js-4d74e9e51715cf8dbaab.js.map"
+      "component---src-pages-dominic-js-1c5a15adced274f8c769.js",
+      "component---src-pages-dominic-js-1c5a15adced274f8c769.js.map"
     ],
     "app": [
-      "app-3850453532f1a3d451e5.js",
+      "app-8b7c88eb052efaea271b.js",
       "build-js-styles.css",
-      "app-3850453532f1a3d451e5.js.map",
+      "app-8b7c88eb052efaea271b.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-rhyme-js": [
@@ -91,6 +95,10 @@
     "component---src-pages-routine-js": [
       "component---src-pages-routine-js-359e9f48da53ee42f117.js",
       "component---src-pages-routine-js-359e9f48da53ee42f117.js.map"
+    ],
+    "path---dominichotel": [
+      "path---dominichotel-a0e39f21c11f6a62c5ab.js",
+      "path---dominichotel-a0e39f21c11f6a62c5ab.js.map"
     ]
   }
 }
