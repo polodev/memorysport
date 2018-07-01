@@ -44,16 +44,22 @@ class DominicHotel extends React.Component {
   }
 
   _handleGenerate = () => {
-    let {minNumber, maxNumber, isGenerate} = this.state;
-    minNumber = parseInt(minNumber);
-    maxNumber = parseInt(maxNumber);
-    if (typeof minNumber !== 'number' || typeof maxNumber !== 'number') {
-      alert('min Number and max Number should be a valid number')
+    let {minNumber, maxNumber, isGenerate} = this.state
+    if (isNaN(parseInt(minNumber)) || isNaN(parseInt(maxNumber))) {
+      alert('min Number and max Number should be a valid number. No string allowed')
+    } else if (minNumber > maxNumber) {
+      alert('min number should be less than max number');
+    } else if (minNumber.toString().length > 4 || maxNumber.toString().length > 4) {
+      alert('min and max number can\'t be more than 4 digit. max value support 9999');
+    } else {
+      this.setState({isGenerate: true});
     }
   }
 
   render (){
+    console.log(this.state);
     const {isGenerate} = this.state
+
 
     const allPA = isGenerate ? this._generatePA() : []
    
@@ -62,12 +68,21 @@ class DominicHotel extends React.Component {
         <div style={styles.my4}>
           <p>
             <label htmlFor="min">min Number   
-              <input placeholder='less than or equal to 4 digit number' value={this.state.minNumber} id='min' style={styles.input} type="text" onChange={event => this.setState({minNumber: event.target.value})} />
+              <input
+                placeholder='less than or equal to 4 digit number'
+                value={this.state.minNumber} id='min' style={styles.input}
+                type="text"
+                onChange={event => this.setState({minNumber: event.target.value, isGenerate: false})} />
             </label>
           </p>
           <p>
             <label htmlFor="max">max Number   
-              <input placeholder='less than or equal to 4 digit number' value={this.state.maxNumber} id='max' style={styles.input} type="text" onChange={event => this.setState({maxNumber: event.target.value})} />
+              <input
+                placeholder='less than or equal to 4 digit number'
+                value={this.state.maxNumber} id='max' style={styles.input}
+                type="text"
+                onChange={event => this.setState({maxNumber: event.target.value})} />
+
             </label>
           </p>
           <p>
