@@ -705,7 +705,7 @@ let hyderabadMtww = [
     ],
   },
   {
-    title: '1st floor east cubical - me __ranjith __rekha',
+    title: '1st floor cubical',
     nooks: [
       'door',
     ],
@@ -717,25 +717,13 @@ let hyderabadMtww = [
     ],
   },
   {
-    title: '1st floor south cubical __ganesh __tarun',
-    nooks: [
-      'door',
-    ],
-  },
-  {
-    title: '1st floor west cubical __internship',
-    nooks: [
-      'door',
-    ],
-  },
-  {
     title: '__tarun room',
     nooks: [
       'door',
     ],
   },
   {
-    title: 'bath room',
+    title: 'bath room of the first floor',
     nooks: [
       'door',
     ],
@@ -759,11 +747,89 @@ let hyderabadMtww = [
     ],
   },
   {
-    title: 'bathroom',
+    title: 'bathroom of 2nd floor',
     nooks: [
       'door',
     ],
   },
+  {
+    title: 'reception and only girls stair in west cape building',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'English training room',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'girls sleeping room',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'kitchen in ground floor',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'big outside hall way for eating gossiping',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'inside dining space',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'caps class room',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'storage room',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'south east class room',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'cap sleeping room',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'intern sleeping',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'room in roof',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'roof + toilet',
+    nooks: [
+      'door',
+    ],
+  }
 ]
 let hyderabadVillaWork = [
   {
