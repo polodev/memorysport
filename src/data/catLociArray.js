@@ -1,3 +1,15 @@
+const groundRule = `
+outside door will be called before door
+wall holding door will be call(facing) immediately after door
+first wall than stuff near wall
+from now on visit left hand side first
+all bed will be call at same time in one room then fan
+for new room '<br>' will be used
+after '<br>' next location starting will be by ## followed by location
+top to bottom (like window first then oven area incase of feni kitchen)
+first main room than will be outside left aligned
+
+`
 let fatepurHome = [
   {
     title: 'main bed room',
@@ -278,13 +290,13 @@ let fatepurTarun = [
     ],
   },
   {
-    title: 'naim room',
+    title: 'tarun __barandha room',
     nooks: [
       'door',
     ],
   },
   {
-    title: 'tarun __barandha room',
+    title: 'naim room',
     nooks: [
       'door',
     ],
@@ -316,12 +328,6 @@ let fatepurTarun = [
 ]
 let palashpurBasudev = [
   {
-    title: 'kitchen and outdoor',
-    nooks: [
-      'door',
-    ],
-  },
-  {
     title: 'our main bed room',
     nooks: [
       'door',
@@ -340,7 +346,7 @@ let palashpurBasudev = [
     ],
   },
   {
-    title: 'southest room near toilet',
+    title: 'kitchen and outdoor',
     nooks: [
       'door',
     ],
@@ -352,13 +358,13 @@ let palashpurBasudev = [
     ],
   },
   {
-    title: 'sourov room',
+    title: 'southest room near toilet',
     nooks: [
       'door',
     ],
   },
   {
-    title: 'basudev room',
+    title: 'tekka kitchen',
     nooks: [
       'door',
     ],
@@ -370,7 +376,19 @@ let palashpurBasudev = [
     ],
   },
   {
-    title: 'tekka kitchen',
+    title: 'basudev room',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'sourov room',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'tekka mother',
     nooks: [
       'door',
     ],
@@ -503,6 +521,12 @@ let feniMess = [
       'door',
     ],
   },
+  {
+    title: 'my room balcony',
+    nooks: [
+      'door',
+    ],
+  },
 ]
 let dhakaMess1 = [
   {
@@ -518,7 +542,7 @@ let dhakaMess1 = [
     ],
   },
   {
-    title: '__hallway',
+    title: '__hallway to go to toilet',
     nooks: [
       'door',
     ],
@@ -559,6 +583,12 @@ let dhakaMess2 = [
 ]
 let dhakaMess3 = [
   {
+    title: '__daroan __mama (khalek) room',
+    nooks: [
+      'door',
+    ],
+  },
+  {
     title: 'dining room where __mojo and __khaled __vi stay apt-no 401',
     nooks: [
       'door',
@@ -595,12 +625,6 @@ let dhakaMess3 = [
     ],
   },
   {
-    title: 'me, __sharif, __rabbi room',
-    nooks: [
-      'door',
-    ],
-  },
-  {
     title: '__kitchen room of 402',
     nooks: [
       'door',
@@ -608,6 +632,30 @@ let dhakaMess3 = [
   },
   {
     title: '__milky & __mamun vi',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'me, __sharif, __rabbi room',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: 'dining room of __it __shamim + __shoag',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: '__badhon __sumon room',
+    nooks: [
+      'door',
+    ],
+  },
+  {
+    title: '__nishat __mamun',
     nooks: [
       'door',
     ],
@@ -688,19 +736,19 @@ let indiaMama = [
     ],
   },
   {
+    title: 'mami kitchen area',
+    nooks: [
+      'door',
+    ],
+  },
+  {
     title: '__didima room',
     nooks: [
       'door',
     ],
   },
   {
-    title: '__mami kitchen',
-    nooks: [
-      'door',
-    ],
-  },
-  {
-    title: '__middle room where stir  & kitchen available',
+    title: '__middle room where stir  & choto mami kitchen available',
     nooks: [
       'door',
     ],
@@ -717,6 +765,13 @@ let indiaMama = [
       'door',
     ],
   },
+  {
+    title: 'wash room area',
+    nooks: [
+      'door',
+    ],
+  },
+
 ]
 let banjaraHills  = [
   {
@@ -774,12 +829,6 @@ let banjaraHills  = [
     ],
   },
   {
-    title: 'sir room',
-    nooks: [
-      'door',
-    ],
-  },
-  {
     title: 'north cubical',
     nooks: [
       'door',
@@ -812,7 +861,7 @@ let hyderabadMtww = [
     ],
   },
   {
-    title: 'sir room',
+    title: 'sir room - where I got salary from sir',
     nooks: [
       'door',
     ],
@@ -830,7 +879,7 @@ let hyderabadMtww = [
     ],
   },
   {
-    title: '1st floor cubical',
+    title: '1st floor cubical east west south',
     nooks: [
       'door',
     ],
@@ -1008,7 +1057,7 @@ let hyderabadVillaStay = [
     ],
   },
   {
-    title: '2nd room open space',
+    title: '2nd room open space where we had a stair',
     nooks: [
       'door',
     ],
@@ -1050,7 +1099,7 @@ let hyderabadVillaStay = [
     ],
   },
   {
-    title: 'east south room where __sanjoy stayed few days with wife and child',
+    title: 'east south room where __sanjeev stayed few days with wife and child',
     nooks: [
       'door',
     ],
