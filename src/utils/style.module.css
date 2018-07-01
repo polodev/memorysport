@@ -69,7 +69,7 @@
  */
 
  .nestedUl {
-    background: teal;
+    background: beige;
     margin-left: 25px;
     padding: 10px;
     box-sizing: border-box;
@@ -79,6 +79,6 @@
     border-bottom: 5px solid salmon;
  }
  .nestedUl__li {
-    color: #efefef;
+    color: #111;
     margin-left: 20px;
  }

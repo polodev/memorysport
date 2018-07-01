@@ -8,7 +8,7 @@ export default ({arr, pageTitle, id}) =>
         {pageTitle} - ({arr.length})
       </a>
     </h2>
-    <ol>
+    <ul>
       {arr.map((item, index) => <TitleNook key={index} item={item} />)}
-    </ol>
+    </ul>
   </div>

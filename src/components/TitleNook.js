@@ -13,7 +13,11 @@ class TitleNook extends React.Component {
     const {title, nooks} = this.props.item
     const {isHidden} = this.state
     return (
-          <li style={{cursor: "pointer", marginBottom: 20, borderBottom: "1px solid teal", paddingBottom: 10}} onClick={() => this.setState({isHidden: !isHidden})}>{title}
+          <li
+            style={{cursor: "pointer", marginBottom: 20, borderBottom: "1px solid teal", paddingBottom: 10}}
+            onClick={() => this.setState({isHidden: !isHidden})}>
+
+            {title} - ({nooks.length})
           {
             isHidden ? '' :
             <ul className={styles.nestedUl}>
