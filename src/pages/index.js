@@ -13,12 +13,12 @@ const ListLink = props =>
       <div style={{ marginBottom: `1.5rem` }}>
       <ul className={styles.uList}>
         <ListLink to="/routine">Routine</ListLink>
-        <ListLink to="/detailloci/">Detail Loci</ListLink>
         <ListLink to="/catloci/">Cat Loci</ListLink>
         <ListLink to="/rhyme">Rhyme</ListLink>
         <ListLink to="/shape">Shape</ListLink>
         <ListLink to="/major">Major</ListLink>
         <ListLink to="/dominic">Dominic</ListLink>
+        <ListLink to="/compactdominic">compactdominic</ListLink>
         <ListLink to="/dominichotel">DominicHotel</ListLink>
         <ListLink to="/calculation">Calculation</ListLink>
       </ul>
