@@ -98,7 +98,7 @@ const dominicPAO =
     letter: "oe",
     person: "omar epps",
     action: "playing baseball",
-    fullAction: "playing and love baseball",
+    fullAction: "playing baseball",
     hints: 'no hints added yet',
     object: 'baseball',
     alternatives: [],
@@ -1538,7 +1538,7 @@ const dominicPAO =
     letter: "gg",
     person: "gal gadot",
     action: "shielding/resisting",
-    fullAction: "shielding bullet",
+    fullAction: "shielding bullet as wonder women",
     object: 'bullet',
     hints: 'Princess Diana - wonder women',
     alternatives: [
@@ -1567,7 +1567,7 @@ const dominicPAO =
     letter: "gh",
     person: "gigi hadid",
     action: "modeling",
-    fullAction: "modeling for victoria secret",
+    fullAction: "modeling for victoria secret and former girlfriend of zyan malik",
     hints: 'no hints added yet',
     object: 'victoria secret',
     alternatives: [
