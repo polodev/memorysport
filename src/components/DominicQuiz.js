@@ -8,7 +8,7 @@ import {
 const styles = {
   wrapper: {
     textAlign: 'center',
-    marginBottom: 20,
+    marginBottom: 80,
   },
   button: {
     border: '1px solid salmon',

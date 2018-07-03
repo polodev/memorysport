@@ -1,5 +1,7 @@
 import React from 'react'
 import {dominicPAO} from '../data/dominicArray'
+import {_gettingObjectByNumber} from '../data/functions'
+
 
 const styles = {
   table: {
@@ -19,7 +21,12 @@ const styles = {
 class Tr extends React.Component {
   render () {
     const {arr} = this.props;
-    const tds = arr.map((item, index) => <td style={styles.td} key={index} >{item}</td>)
+    const tds = arr.map((item, index) => <td
+      style={styles.td} key={index}
+      onClick={() => {console.log(`${_gettingObjectByNumber(dominicPAO, item).number} - ${_gettingObjectByNumber(dominicPAO, item).person} - ${_gettingObjectByNumber(dominicPAO, item).fullAction}`)}}
+       >
+        {item}
+      </td>)
     return (
       <tr>
         {tds}
