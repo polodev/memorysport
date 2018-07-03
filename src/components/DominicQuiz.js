@@ -16,6 +16,8 @@ const styles = {
     color: 'white',
     cursor: 'pointer',
     padding: 5,
+    display: 'inline-block',
+    marginTop: 15,
     marginLeft: 10,
   },
   box: {
