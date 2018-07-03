@@ -19,6 +19,7 @@ const ListLink = props =>
         <ListLink to="/major">Major</ListLink>
         <ListLink to="/dominic">Dominic</ListLink>
         <ListLink to="/compactdominic">compactdominic</ListLink>
+        <ListLink to="/dominicquiz">dominicquiz</ListLink>
         <ListLink to="/dominichotel">DominicHotel</ListLink>
         <ListLink to="/calculation">Calculation</ListLink>
       </ul>
