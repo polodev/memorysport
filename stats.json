@@ -13,8 +13,8 @@
       "path---major-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-cb6bcad79edbc536bccb.js",
-      "component---src-pages-index-js-cb6bcad79edbc536bccb.js.map"
+      "component---src-pages-index-js-7ab507ff55121407764e.js",
+      "component---src-pages-index-js-7ab507ff55121407764e.js.map"
     ],
     "path---rhyme": [
       "path---rhyme-a0e39f21c11f6a62c5ab.js",
@@ -45,12 +45,12 @@
       "component---src-pages-villageloci-js-bb3cb8ea938740ce8628.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-15fd1ec5b05194fcf31f.js",
-      "component---src-layouts-index-js-15fd1ec5b05194fcf31f.js.map"
+      "component---src-layouts-index-js-7417823fe7717104cfec.js",
+      "component---src-layouts-index-js-7417823fe7717104cfec.js.map"
     ],
     "component---src-pages-dominichotel-js": [
-      "component---src-pages-dominichotel-js-a6bff45a598c08136805.js",
-      "component---src-pages-dominichotel-js-a6bff45a598c08136805.js.map"
+      "component---src-pages-dominichotel-js-df81fd097e79b898e0eb.js",
+      "component---src-pages-dominichotel-js-df81fd097e79b898e0eb.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
@@ -78,14 +78,18 @@
       "commons-c072d08dcdcffda433ac.js.map",
       "build-js-styles.css.map"
     ],
+    "component---src-pages-compactdominic-js": [
+      "component---src-pages-compactdominic-js-74816277d0ab0209160e.js",
+      "component---src-pages-compactdominic-js-74816277d0ab0209160e.js.map"
+    ],
     "component---src-pages-dominic-js": [
-      "component---src-pages-dominic-js-1c5a15adced274f8c769.js",
-      "component---src-pages-dominic-js-1c5a15adced274f8c769.js.map"
+      "component---src-pages-dominic-js-0bd8234894436337c642.js",
+      "component---src-pages-dominic-js-0bd8234894436337c642.js.map"
     ],
     "app": [
-      "app-dbb729c55a32c694ce2a.js",
+      "app-c23bd10c85d3080fa3e0.js",
       "build-js-styles.css",
-      "app-dbb729c55a32c694ce2a.js.map",
+      "app-c23bd10c85d3080fa3e0.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-rhyme-js": [
@@ -99,6 +103,10 @@
     "path---calculation": [
       "path---calculation-a0e39f21c11f6a62c5ab.js",
       "path---calculation-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---compactdominic": [
+      "path---compactdominic-a0e39f21c11f6a62c5ab.js",
+      "path---compactdominic-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-routine-js": [
       "component---src-pages-routine-js-a4c7b5ce86dc3d212ede.js",
