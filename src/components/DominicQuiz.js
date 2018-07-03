@@ -15,11 +15,14 @@ const styles = {
     backgroundColor: 'tomato',
     color: 'white',
     cursor: 'pointer',
+    padding: 5,
+    marginLeft: 10,
   },
   box: {
     border: '1px solid rgba(0, 0, 0, .5)',
     padding: '5px 10px',
-    minWidth: 100,
+    minWidth: 250,
+    display: 'inline-block',
     cursor: 'pointer',
   },
   info: {
@@ -79,8 +82,6 @@ class DominicQuiz extends React.Component {
               onClick={this._spanClick} style={styles.box}>
               {this._numberOrPerson()}
             </span>
-          </p>
-          <p>
             <button onClick={this._buttonClick} style={styles.button}>Next</button>
           </p>
           {
