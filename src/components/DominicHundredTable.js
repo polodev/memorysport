@@ -1,4 +1,5 @@
 import React from 'react'
+import {dominicPAO} from '../data/dominicArray'
 
 const styles = {
   table: {

@@ -1,6 +1,13 @@
 import React from 'react'
 import {dominicPAO} from '../data/dominicArray'
 import DominicHundredTable from '../components/DominicHundredTable'
+import DominicQuiz from '../components/DominicQuiz'
+import {
+  _chunkArray,
+  _generateNatural100,
+  _shuffleArray,
+  
+} from '../data/functions'
 
 class dominicquiz extends React.Component{
   constructor () {
@@ -15,54 +22,17 @@ class dominicquiz extends React.Component{
   }
 
   _setStateRandomArr = () => {
-    const randomArr = this.chunkArray(this._generateRandomNatural())
+    const randomArr = _chunkArray( _shuffleArray(_generateNatural100()) )
     this.setState({randomArr})
   }
 
-  shuffleArray = arr => arr.concat().sort(() => Math.random() - 0.5);
-
-  _generateNatural = () => {
-    let natural = [];
-    for (let i = 0; i < 10; i++) {
-      for (let j = 0; j < 10; j++) {
-        natural.push(
-          `${i}${j}`
-        )
-      }
-    }
-    return natural;
-
-  }
-  _generateTenNatural = () => {
-    let tenNatural = [];
-    for (let i = 0; i < 10; i++) {
-      for (let j = 0; j < 10; j++) {
-        tenNatural.push(
-          `${j}${i}`
-        )
-      }
-    }
-    return tenNatural;
-
-  }
-  _generateRandomNatural = () => {
-    return this.shuffleArray(this._generateNatural());
-  }
-
-  chunkArray = (myArray, chunk_size = 10) => {
-    var arr = myArray.concat([]);
-    var results = [];
-    while(arr.length) {
-      results.push(arr.splice(0, chunk_size))
-    }
-    return results;
-  }
 
   render () {
 
-    const chunkNatural = this.chunkArray(this._generateNatural());
+    const chunkNatural = _chunkArray(_generateNatural100());
     return (
       <div>
+        <DominicQuiz />
         <DominicHundredTable arr={chunkNatural} title="Natural Hundred" />
         <h2 style={{textAlign: 'center'}}>
           <button style={{cursor: 'pointer', border: '1px solid rgba(0, 0, 0, .3)', display: 'inline-block'}} onClick={this._setStateRandomArr} >
