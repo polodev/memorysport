@@ -17,7 +17,9 @@ export default ({arr, pageTitle, id}) => {
   console.log(arr);
   return (
     <div style={styles.wrapper} id={id}>
-      <h3>{pageTitle}</h3>
+      <h3>
+        <a href="#">{pageTitle}</a>
+      </h3>
       <div>
         {
           arr.map((item, index) => <span key={index} style={styles.span}>{item.title}</span>)

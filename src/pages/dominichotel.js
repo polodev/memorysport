@@ -72,6 +72,7 @@ class DominicHotel extends React.Component {
 
     return (
       <div>
+        <h2>Hotel Dominic with 10000 rooms</h2>
         <div style={styles.my4}>
           <p>
             <label htmlFor="min">min Number
