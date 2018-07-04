@@ -1981,16 +1981,12 @@ const dominicPAO =
 
 const dominicCategory = [
   {
-    title: 'india',
+    title: 'in',
     numbers: [24, 57, 96, 74, 16, 67]
   },
   {
     title: 'bd',
     numbers: [22, 81, 75]
-  },
-  {
-    title: 'in',
-    numbers: [16, 96, 57, 67, 74]
   },
   {
     title: 'scientist',
@@ -1999,7 +1995,8 @@ const dominicCategory = [
   },
   {
     title: 'beautiful girl',
-    numbers: [11, 14, 78, 94, 34, 57, 11] }, {
+    numbers: [14, 78, 94, 34, 57, 11, 16] },
+  {
     title: 'host',
     numbers: [13, 30, 54]
   },
