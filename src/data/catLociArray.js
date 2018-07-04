@@ -1088,6 +1088,18 @@ let dhakaMess2 = [
     ],
   },
   {
+    title: 'kitchen room',
+    nooks: [
+      'east facing wall',
+      'south facing wall',
+      'west facing wall',
+      'window in west facing wall',
+      'oven',
+      'north facing wall',
+      'rack in east facing wall'
+    ]
+  },
+  {
     title: '__manik __dada and my room',
     nooks: [
        'south facing wall in __manik __dada room',
@@ -1103,18 +1115,6 @@ let dhakaMess2 = [
        'east facing wall',
        '__manik __dada table'
     ],
-  },
-  {
-    title: 'kitchen room',
-    nooks: [
-      'east facing wall',
-      'south facing wall',
-      'west facing wall',
-      'window in west facing wall',
-      'oven',
-      'north facing wall',
-      'rack in east facing wall'
-    ]
   },
 
 ]
@@ -1341,7 +1341,7 @@ let dhakaMess3 = [
     ],
   },
 ]
-let palashMess1 = [
+let palashMess2 = [
   {
     title: '__anik __asim room',
     nooks: [
@@ -1391,7 +1391,7 @@ let palashMess1 = [
     ],
   },
 ]
-let palashMess2 = [
+let palashMess1 = [
   {
     title: '__quantam__dada  __asim room',
     nooks: [
