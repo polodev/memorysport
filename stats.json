@@ -13,8 +13,8 @@
       "path---major-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-253cda678e38ce8d33e6.js",
-      "component---src-pages-index-js-253cda678e38ce8d33e6.js.map"
+      "component---src-pages-index-js-70bc47f626ad07b09dde.js",
+      "component---src-pages-index-js-70bc47f626ad07b09dde.js.map"
     ],
     "path---rhyme": [
       "path---rhyme-a0e39f21c11f6a62c5ab.js",
@@ -47,6 +47,10 @@
     "component---src-pages-villageloci-js": [
       "component---src-pages-villageloci-js-bb3cb8ea938740ce8628.js",
       "component---src-pages-villageloci-js-bb3cb8ea938740ce8628.js.map"
+    ],
+    "path---dominiccompact": [
+      "path---dominiccompact-a0e39f21c11f6a62c5ab.js",
+      "path---dominiccompact-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-15fd1ec5b05194fcf31f.js",
@@ -81,23 +85,23 @@
       "path---routine-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-131d691927e6b2bf9d88.js",
+      "commons-a014e6d89c5346fa5d29.js",
       "build-js-styles.css",
-      "commons-131d691927e6b2bf9d88.js.map",
+      "commons-a014e6d89c5346fa5d29.js.map",
       "build-js-styles.css.map"
     ],
-    "component---src-pages-compactdominic-js": [
-      "component---src-pages-compactdominic-js-d77d644da6f846bd8c0b.js",
-      "component---src-pages-compactdominic-js-d77d644da6f846bd8c0b.js.map"
+    "component---src-pages-dominiccompact-js": [
+      "component---src-pages-dominiccompact-js-cc2426bc0ec959b48463.js",
+      "component---src-pages-dominiccompact-js-cc2426bc0ec959b48463.js.map"
     ],
     "component---src-pages-dominic-js": [
       "component---src-pages-dominic-js-56122295b2c17f9bf6f6.js",
       "component---src-pages-dominic-js-56122295b2c17f9bf6f6.js.map"
     ],
     "app": [
-      "app-934c3a23b2b37c20e28e.js",
+      "app-bb07fc9a68c8f6a48c84.js",
       "build-js-styles.css",
-      "app-934c3a23b2b37c20e28e.js.map",
+      "app-bb07fc9a68c8f6a48c84.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-rhyme-js": [
@@ -111,10 +115,6 @@
     "path---calculation": [
       "path---calculation-a0e39f21c11f6a62c5ab.js",
       "path---calculation-a0e39f21c11f6a62c5ab.js.map"
-    ],
-    "path---compactdominic": [
-      "path---compactdominic-a0e39f21c11f6a62c5ab.js",
-      "path---compactdominic-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-routine-js": [
       "component---src-pages-routine-js-a4c7b5ce86dc3d212ede.js",
