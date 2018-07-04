@@ -1936,6 +1936,10 @@ const dominicPAO =
         name: "nell gwyn",
         action: "long-time mistress of king charles ii",
         fullAction: "",
+      },
+      {
+        name: 'ng - angular js',
+        intro: 'a javascript framework from google',
       }
     ],
     references: [],

@@ -14,6 +14,7 @@ const ListLink = props =>
       <ul className={styles.uList}>
         <ListLink to="/routine">Routine</ListLink>
         <ListLink to="/catloci/">Cat Loci</ListLink>
+        <ListLink to="/catlocicompact/">Cat Loci Compact</ListLink>
         <ListLink to="/rhyme">Rhyme</ListLink>
         <ListLink to="/shape">Shape</ListLink>
         <ListLink to="/major">Major</ListLink>

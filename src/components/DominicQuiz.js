@@ -67,8 +67,8 @@ class DominicQuiz extends React.Component {
     this._setStatePAO()
   }
   _numberOrPerson = () => {
-    const arr = ['number', 'person'];
-    const randomNumber = _getRandomNumber(0, 2);
+    const arr = ['number', 'person', 'number'];
+    const randomNumber = _getRandomNumber(0, arr.length);
     const nOrP = arr[randomNumber];
     return this.state.PAO[nOrP]
   }
