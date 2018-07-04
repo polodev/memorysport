@@ -1528,6 +1528,10 @@ const dominicPAO =
       {
         name: "Gracy Singh",
         intro: "Cinky in Munna Bhai MBBS"
+      },
+      {
+        name: 'genelia d suza',
+        intro: 'jane to yaa janena'
       }
     ],
     references: [],
@@ -1968,14 +1972,78 @@ const dominicPAO =
       },
       {
         name: "Nick Nolte",
-        intro: "steel hand hook in trophic thunder who was very patriotic by his book, acted in parker movie, hulk father",
+        intro: "steel hand hook in trophic thunder who was very patriotic(funny - asole __bhua) by his book, acted in parker movie, hulk father",
       }
     ],
     references: [],
   }
 ]
 
+const dominicCategory = [
+  {
+    title: 'india',
+    numbers: [24, 57, 96, 74, 16, 67]
+  },
+  {
+    title: 'bd',
+    numbers: [22, 81, 75]
+  },
+  {
+    title: 'in',
+    numbers: [16, 96, 57, 67, 74]
+  },
+  {
+    title: 'scientist',
+    numbers: [15, 68, 91, 21]
+    
+  },
+  {
+    title: 'beautiful girl',
+    numbers: [11, 14, 78, 94, 34, 57, 11] }, {
+    title: 'host',
+    numbers: [13, 30, 54]
+  },
+  {
+    title: 'comic',
+    numbers: [59, 32, 77, 31, 84]
+  },
+  {
+    title: 'player',
+    numbers: ['06', 10, 67, 75, 46, 79, 85, 42]
+  },
+  {
+    title: 'singer',
+    numbers: ['00', 76, 86, 61, 63, 64, 53, 44, 56]
+  },
+  {
+    title: 'actor',
+    numbers: ['02', '05', '08', 12, 17, 23, 24, 26, 29, 20, 28, 32, 33, 35, 36, 38, 39, 41, 48, 59, 65, 66, 69, 70, 72, 73, 93, 95, 96, 98, 88 ]
+  },
+  {
+    title: 'actress',
+    numbers: [11, 14, 16, 34, 57, 60, 62, 77, 78, 82, 94, 97 ]
+  },
+  {
+    title: 'oranizational people',
+    numbers: [74, '09', 89, '03', 22, 44, 27, 45, 20, 83, 19, 18, 92 ]
+  },
+  {
+    title: 'marchandise',
+    numbers: [44, 51, 47, 71]
+  },
+  {
+    title: 'character associated',
+    numbers: [41, 99, 81, 80, '04', '07', 17, 25, 58, 90 ]
+  },
+  {
+    title: 'author',
+    numbers: [52, 81, 87, ]
+  }
+
+]
+
 export default {
   dominicPAO,
-  dominicNumbers
+  dominicNumbers,
+  dominicCategory,
 }
