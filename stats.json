@@ -13,8 +13,8 @@
       "path---major-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-70bc47f626ad07b09dde.js",
-      "component---src-pages-index-js-70bc47f626ad07b09dde.js.map"
+      "component---src-pages-index-js-d0d79645dbc3ef0082bc.js",
+      "component---src-pages-index-js-d0d79645dbc3ef0082bc.js.map"
     ],
     "path---rhyme": [
       "path---rhyme-a0e39f21c11f6a62c5ab.js",
@@ -52,29 +52,33 @@
       "path---dominiccompact-a0e39f21c11f6a62c5ab.js",
       "path---dominiccompact-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---catlocicompact": [
+      "path---catlocicompact-a0e39f21c11f6a62c5ab.js",
+      "path---catlocicompact-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-layouts-index-js": [
       "component---src-layouts-index-js-15fd1ec5b05194fcf31f.js",
       "component---src-layouts-index-js-15fd1ec5b05194fcf31f.js.map"
     ],
     "component---src-pages-dominichotel-js": [
-      "component---src-pages-dominichotel-js-7abf4fc58bbbfeaf56e7.js",
-      "component---src-pages-dominichotel-js-7abf4fc58bbbfeaf56e7.js.map"
+      "component---src-pages-dominichotel-js-738b885769f3848f1cac.js",
+      "component---src-pages-dominichotel-js-738b885769f3848f1cac.js.map"
     ],
     "path---index": [
       "path---index-a0e39f21c11f6a62c5ab.js",
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-dominicquiz-js": [
-      "component---src-pages-dominicquiz-js-af7efb39fcb35fb8e20f.js",
-      "component---src-pages-dominicquiz-js-af7efb39fcb35fb8e20f.js.map"
+      "component---src-pages-dominicquiz-js-8aeecf6761d14b279e05.js",
+      "component---src-pages-dominicquiz-js-8aeecf6761d14b279e05.js.map"
     ],
     "path---shape": [
       "path---shape-a0e39f21c11f6a62c5ab.js",
       "path---shape-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-catloci-js": [
-      "component---src-pages-catloci-js-c3eb6e5bd24b3197f50d.js",
-      "component---src-pages-catloci-js-c3eb6e5bd24b3197f50d.js.map"
+      "component---src-pages-catloci-js-b1b4d75f2aab5fb01113.js",
+      "component---src-pages-catloci-js-b1b4d75f2aab5fb01113.js.map"
     ],
     "component---src-pages-major-js": [
       "component---src-pages-major-js-87b66fa5b2a6e2773415.js",
@@ -85,9 +89,9 @@
       "path---routine-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-a014e6d89c5346fa5d29.js",
+      "commons-ece55d850127b5e57280.js",
       "build-js-styles.css",
-      "commons-a014e6d89c5346fa5d29.js.map",
+      "commons-ece55d850127b5e57280.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-dominiccompact-js": [
@@ -99,9 +103,9 @@
       "component---src-pages-dominic-js-56122295b2c17f9bf6f6.js.map"
     ],
     "app": [
-      "app-bb07fc9a68c8f6a48c84.js",
+      "app-1532997213f83a5fd4ae.js",
       "build-js-styles.css",
-      "app-bb07fc9a68c8f6a48c84.js.map",
+      "app-1532997213f83a5fd4ae.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-rhyme-js": [
@@ -111,6 +115,10 @@
     "component---src-pages-detailloci-js": [
       "component---src-pages-detailloci-js-8f04f7e1b479aa52de73.js",
       "component---src-pages-detailloci-js-8f04f7e1b479aa52de73.js.map"
+    ],
+    "component---src-pages-catlocicompact-js": [
+      "component---src-pages-catlocicompact-js-62e9e5d3fe477f35f7ad.js",
+      "component---src-pages-catlocicompact-js-62e9e5d3fe477f35f7ad.js.map"
     ],
     "path---calculation": [
       "path---calculation-a0e39f21c11f6a62c5ab.js",
