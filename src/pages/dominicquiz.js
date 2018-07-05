@@ -2,6 +2,7 @@ import React from 'react'
 import {dominicPAO} from '../data/dominicArray'
 import DominicHundredTable from '../components/DominicHundredTable'
 import DominicQuiz from '../components/DominicQuiz'
+import DominicQuizTimer from '../components/DominicQuizTimer'
 import {
   _chunkArray,
   _generateNatural100,
@@ -34,6 +35,7 @@ class dominicquiz extends React.Component{
       <div>
         <DominicQuiz />
         <DominicHundredTable arr={chunkNatural} title="Natural Hundred" />
+        <DominicQuizTimer />
         <h2 style={{textAlign: 'center'}}>
           <button style={{cursor: 'pointer', border: '1px solid rgba(0, 0, 0, .3)', display: 'inline-block'}} onClick={this._setStateRandomArr} >
             change random number

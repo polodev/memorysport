@@ -31,7 +31,11 @@ const operatorOptions = [
 ]
 
 const intervalOptions = [
+  {value: ".5", label: ".5s"},
+  {value: "1", label: "1s"},
+  {value: "1.5", label: "1.5s"},
   {value: "2", label: "2s"},
+  {value: "2.5", label: "2.5s"},
   {value: "5", label: "5s"},
   {value: "10", label: "10s"},
   {value: "15", label: "15s"},
