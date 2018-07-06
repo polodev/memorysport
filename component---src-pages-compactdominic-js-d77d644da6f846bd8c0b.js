@@ -1,2 +1,0 @@
-webpackJsonp([0xa42fb2764e05],{230:function(e,t,n){"use strict";function u(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var l=n(1),r=u(l),a=n(22);t.default=function(){return r.default.createElement("div",null,a.dominicPAO.map(function(e,t){return r.default.createElement("p",{key:t},e.number," - ",e.person," - ",e.fullAction)}))},e.exports=t.default}});
-//# sourceMappingURL=component---src-pages-compactdominic-js-d77d644da6f846bd8c0b.js.map
