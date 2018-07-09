@@ -49,7 +49,7 @@ class lociTimer extends React.Component {
   constructor () {
     super()
     this.state = {
-      selectedIntervalTime: intervalOptions[4],
+      selectedIntervalTime: intervalOptions[2],
       currentIndex: 0,
     }
   }
