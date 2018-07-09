@@ -40,24 +40,32 @@ const styles = {
 
 class DominicQuizTimer extends React.Component {
   constructor () {
-    super();
+    super()
     this.state = {
       PAO: {},
       isInfoHidden: true,
-      selectedIntervalTime: intervalOptions[0]
+      selectedIntervalTime: intervalOptions[2]
     }
-    this._setStatePAOwithInterval();
   }
   _prefixZero = (number) => {
-    let stringNumber = number.toString();
+    let stringNumber = number.toString()
     if (stringNumber.length === 1) {
         stringNumber = `0${stringNumber}`
     }
     return stringNumber
   }
+
   componentDidMount = () => {
-    this._setStatePAO()
+    this._setPAOInterval()
   }
+  componentWillUnmount = () => {
+    clearInterval(this.intervalId)
+  }
+
+  _setPAOInterval = () => {
+    this.intervalId = setInterval(this._setStatePAO, this.state.selectedIntervalTime.value * 1000)
+  }
+
   
   _setStatePAO = () => {
     const number = _getRandomNumber(0, 100)
@@ -65,10 +73,7 @@ class DominicQuizTimer extends React.Component {
     const PAO = _gettingObjectByNumber(dominicPAO,stringNumber)
     this.setState({PAO, isInfoHidden: true})
   }
-  _setStatePAOwithInterval = () => {
-    this._setStatePAO();
-    setTimeout(this._setStatePAOwithInterval, this.state.selectedIntervalTime.value * 1000);
-  }
+
   _spanClick = () => {
     this.setState({isInfoHidden: !this.state.isInfoHidden})
   }
@@ -76,18 +81,18 @@ class DominicQuizTimer extends React.Component {
     this._setStatePAO()
   }
   _numberOrPerson = () => {
-    const arr = ['number', 'person', 'number'];
-    const randomNumber = _getRandomNumber(0, arr.length);
-    const nOrP = arr[randomNumber];
+    const arr = ['number', 'person', 'number']
+    const randomNumber = _getRandomNumber(0, arr.length)
+    const nOrP = arr[randomNumber]
     return this.state.PAO[nOrP]
   }
   _changeIntervalTime = (selectedIntervalTime) => {
-    this.setState({
-      selectedIntervalTime
-    })
+    clearInterval(this.intervalId)
+    this.setState({ selectedIntervalTime }, this._setPAOInterval)
   }
   render () {
-    const {PAO, isInfoHidden} = this.state;
+    console.log(this.state)
+    const {PAO, isInfoHidden} = this.state
     return (
       <div style={styles.wrapper}>
         <h1>Random name and number testing with interval time</h1>
@@ -122,4 +127,4 @@ class DominicQuizTimer extends React.Component {
   }
 }
 
-export default DominicQuizTimer;
+export default DominicQuizTimer
