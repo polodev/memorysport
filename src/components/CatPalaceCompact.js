@@ -14,7 +14,6 @@ const styles = {
 }
 
 export default ({arr, pageTitle, id}) => {
-  console.log(arr);
   return (
     <div style={styles.wrapper} id={id}>
       <h3>
