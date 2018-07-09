@@ -13,8 +13,8 @@
       "path---major-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-d0d79645dbc3ef0082bc.js",
-      "component---src-pages-index-js-d0d79645dbc3ef0082bc.js.map"
+      "component---src-pages-index-js-9f71d68329a26ead7d07.js",
+      "component---src-pages-index-js-9f71d68329a26ead7d07.js.map"
     ],
     "path---rhyme": [
       "path---rhyme-a0e39f21c11f6a62c5ab.js",
@@ -47,10 +47,6 @@
     "component---src-pages-villageloci-js": [
       "component---src-pages-villageloci-js-bb3cb8ea938740ce8628.js",
       "component---src-pages-villageloci-js-bb3cb8ea938740ce8628.js.map"
-    ],
-    "component---src-pages-loci-timer-js": [
-      "component---src-pages-loci-timer-js-ba9452d18877c073aeb2.js",
-      "component---src-pages-loci-timer-js-ba9452d18877c073aeb2.js.map"
     ],
     "path---dominiccompact": [
       "path---dominiccompact-a0e39f21c11f6a62c5ab.js",
@@ -98,22 +94,22 @@
       "commons-9388be0188d6c9a5c1f8.js.map",
       "build-js-styles.css.map"
     ],
+    "path---locitimer": [
+      "path---locitimer-a0e39f21c11f6a62c5ab.js",
+      "path---locitimer-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-pages-dominiccompact-js": [
       "component---src-pages-dominiccompact-js-c448b0849a3f6dbb8f45.js",
       "component---src-pages-dominiccompact-js-c448b0849a3f6dbb8f45.js.map"
-    ],
-    "path---loci-timer": [
-      "path---loci-timer-a0e39f21c11f6a62c5ab.js",
-      "path---loci-timer-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-dominic-js": [
       "component---src-pages-dominic-js-56122295b2c17f9bf6f6.js",
       "component---src-pages-dominic-js-56122295b2c17f9bf6f6.js.map"
     ],
     "app": [
-      "app-5ad90d5001132e9ec992.js",
+      "app-630c65bfcdcf72893925.js",
       "build-js-styles.css",
-      "app-5ad90d5001132e9ec992.js.map",
+      "app-630c65bfcdcf72893925.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-rhyme-js": [
@@ -131,6 +127,10 @@
     "path---calculation": [
       "path---calculation-a0e39f21c11f6a62c5ab.js",
       "path---calculation-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-locitimer-js": [
+      "component---src-pages-locitimer-js-7ee6d8838548114464d4.js",
+      "component---src-pages-locitimer-js-7ee6d8838548114464d4.js.map"
     ],
     "component---src-pages-routine-js": [
       "component---src-pages-routine-js-9b46fca252d33945350b.js",
