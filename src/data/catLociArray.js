@@ -163,7 +163,7 @@ let fatepurHome = [
       'north facing wall',
       'east facing wall',
       'oven area',
-      '__larki(wood for cook reserved edition)',     
+      '__larki(wood for cook reserved edition)',
     ],
   },
   {
@@ -366,6 +366,17 @@ let fatepurTarun = [
     ],
   },
   {
+    title: 'naim room',
+    nooks: [
+      'west facing wall',
+      'bed',
+      'fan',
+      'north facing wall',
+      'east facing wall',
+      'window in east facing wall'
+    ],
+  },
+  {
     title: 'tarun __barandha room',
     nooks: [
       'east facing wall in tarun barandha',
@@ -383,17 +394,6 @@ let fatepurTarun = [
       'rack in west facing wall',
       'north facing wall',
       'door in north facing wall to go to kitchen and washroom',
-    ],
-  },
-  {
-    title: 'naim room',
-    nooks: [
-      'west facing wall',
-      'bed',
-      'fan',
-      'north facing wall',
-      'east facing wall',
-      'window in east facing wall'
     ],
   },
   {
@@ -1100,7 +1100,7 @@ let dhakaMess2 = [
     ]
   },
   {
-    title: '__manik __dada and my room',
+    title: '__manik __dada, ex __debu __dada and my room',
     nooks: [
        'south facing wall in __manik __dada room',
        'bed __khat near south facing wall',
