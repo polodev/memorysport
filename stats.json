@@ -5,8 +5,8 @@
       "path---dominic-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-calculation-js": [
-      "component---src-pages-calculation-js-f76b69ec39a8786c90e3.js",
-      "component---src-pages-calculation-js-f76b69ec39a8786c90e3.js.map"
+      "component---src-pages-calculation-js-52ec9e6d15960c1c55af.js",
+      "component---src-pages-calculation-js-52ec9e6d15960c1c55af.js.map"
     ],
     "path---major": [
       "path---major-a0e39f21c11f6a62c5ab.js",
@@ -48,6 +48,10 @@
       "component---src-pages-villageloci-js-bb3cb8ea938740ce8628.js",
       "component---src-pages-villageloci-js-bb3cb8ea938740ce8628.js.map"
     ],
+    "component---src-pages-loci-timer-js": [
+      "component---src-pages-loci-timer-js-ba9452d18877c073aeb2.js",
+      "component---src-pages-loci-timer-js-ba9452d18877c073aeb2.js.map"
+    ],
     "path---dominiccompact": [
       "path---dominiccompact-a0e39f21c11f6a62c5ab.js",
       "path---dominiccompact-a0e39f21c11f6a62c5ab.js.map"
@@ -57,8 +61,8 @@
       "path---catlocicompact-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-49911b02dc4def4ca7e4.js",
-      "component---src-layouts-index-js-49911b02dc4def4ca7e4.js.map"
+      "component---src-layouts-index-js-3c90b6f02111ad5b5b76.js",
+      "component---src-layouts-index-js-3c90b6f02111ad5b5b76.js.map"
     ],
     "component---src-pages-dominichotel-js": [
       "component---src-pages-dominichotel-js-738b885769f3848f1cac.js",
@@ -69,8 +73,8 @@
       "path---index-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-dominicquiz-js": [
-      "component---src-pages-dominicquiz-js-4972aa3199d3d2fa2cf2.js",
-      "component---src-pages-dominicquiz-js-4972aa3199d3d2fa2cf2.js.map"
+      "component---src-pages-dominicquiz-js-8c23c5c05163dc561cd0.js",
+      "component---src-pages-dominicquiz-js-8c23c5c05163dc561cd0.js.map"
     ],
     "path---shape": [
       "path---shape-a0e39f21c11f6a62c5ab.js",
@@ -89,23 +93,27 @@
       "path---routine-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-34d3261e28783dc78682.js",
+      "commons-9388be0188d6c9a5c1f8.js",
       "build-js-styles.css",
-      "commons-34d3261e28783dc78682.js.map",
+      "commons-9388be0188d6c9a5c1f8.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-dominiccompact-js": [
       "component---src-pages-dominiccompact-js-c448b0849a3f6dbb8f45.js",
       "component---src-pages-dominiccompact-js-c448b0849a3f6dbb8f45.js.map"
     ],
+    "path---loci-timer": [
+      "path---loci-timer-a0e39f21c11f6a62c5ab.js",
+      "path---loci-timer-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-pages-dominic-js": [
       "component---src-pages-dominic-js-56122295b2c17f9bf6f6.js",
       "component---src-pages-dominic-js-56122295b2c17f9bf6f6.js.map"
     ],
     "app": [
-      "app-24b84dc3e267aea8263b.js",
+      "app-5ad90d5001132e9ec992.js",
       "build-js-styles.css",
-      "app-24b84dc3e267aea8263b.js.map",
+      "app-5ad90d5001132e9ec992.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-rhyme-js": [
