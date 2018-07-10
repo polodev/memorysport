@@ -22,6 +22,7 @@ import {
   hyderabadVillaWork,
   hyderabadVillaStay,
   bangalore,
+  village,
 } from '../data/catLociArray.js'
 const locis = [
   ...fatepurHome,
@@ -43,6 +44,7 @@ const locis = [
   ...hyderabadVillaWork,
   ...hyderabadVillaStay,
   ...bangalore,
+  ...village,
 ]
 
 class lociTimer extends React.Component {
@@ -72,7 +74,6 @@ class lociTimer extends React.Component {
     this.setState({selectedIntervalTime}, this.setCurrentIndexInterval)
   }
   render () {
-    console.log(this.state)
     return (
       <div>
         <div>
