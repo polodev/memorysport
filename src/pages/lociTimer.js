@@ -57,7 +57,7 @@ class lociTimer extends React.Component {
     this.setCurrentIndexInterval()
   }
   componentWillUnmount () {
-    this.setCurrentIndexInterval()
+    clearInterval(this.intervalId)
   }
   setCurrentIndexInterval = () => {
     clearInterval(this.intervalId)

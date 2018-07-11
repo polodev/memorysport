@@ -63,10 +63,11 @@ class DominicQuizTimer extends React.Component {
   }
 
   _setPAOInterval = () => {
+    clearInterval(this.intervalId)
     this.intervalId = setInterval(this._setStatePAO, this.state.selectedIntervalTime.value * 1000)
   }
 
-  
+
   _setStatePAO = () => {
     const number = _getRandomNumber(0, 100)
     const stringNumber = this._prefixZero(number)
