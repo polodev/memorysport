@@ -7,7 +7,7 @@ export default ({arr, pageTitle, id}) => {
     <div id={id}>
       <h2 style={{textAlign: 'center', borderBottom: "2px solid salmon", marginTop: '2em'}}>
         <a href="#">
-          {pageTitle} - (place - {arr.length}) - (nooks - {numberOfNooks})
+          {pageTitle} - (place - {arr.length}){numberOfNooks.length ? ` - (nooks - ${numberOfNooks})` : ''}
         </a>
       </h2>
       <ul>
