@@ -767,8 +767,10 @@ let palashHome = [
     nooks: [
       'door in palash room',
       'north facing wall',
+      'window in north facing wall',
       'reading table',
       'east facing wall',
+      'alna in east facing wall',
       'window on east facing wall',
       'bed',
       'ceiling fan',
@@ -2607,6 +2609,604 @@ let bangalore = [
        'fan'
     ],
   },
+  {
+    title: 'room in roof where abinash stayed',
+    nooks: [
+      'door',
+      'east facing wall',
+      'south facing wall',
+      'almirah in south facing wall',
+      'west facing wall',
+      'window in west facing wall',
+      'bed',
+      'fan',
+      'north facing wall',
+      'table in east facing wall'
+    ]
+    ,
+  },
+]
+const village = [
+{
+  title: "My House",
+  nooks: [],
+},
+{
+  title: "Mizan",
+  nooks: [],
+},
+{
+  title: "Gonesh",
+  nooks: [],
+},
+{
+  title: "Vasan",
+  nooks: [],
+},
+{
+  title: "Parul",
+  nooks: [],
+},
+{
+  title: "Khoka",
+  nooks: [],
+},
+{
+  title: "Asiqka",
+  nooks: [],
+},
+{
+  title: "Sarif",
+  nooks: [],
+},
+{
+  title: "khalek kaka",
+  nooks: [],
+},
+{
+  title: "Liton / litha kagu",
+  nooks: [],
+},
+{
+  title: "shakil/ malek kagu",
+  nooks: [],
+},
+{
+  title: "ibrahim / ibba",
+  nooks: [],
+},
+{
+  title: "## Ratan mama (================Bepari bari================)",
+  nooks: [],
+},
+{
+  title: "niranjon ",
+  nooks: [],
+},
+{
+  title: "nikunjo",
+  nooks: [],
+},
+{
+  title: "basra ",
+  nooks: [],
+},
+{
+  title: "Madon bepari / gourangu",
+  nooks: [],
+},
+{
+  title: "Tapos dada",
+  nooks: [],
+},
+{
+  title: "Haru dada / moron",
+  nooks: [],
+},
+{
+  title: "Nony mama",
+  nooks: [],
+},
+{
+  title: "Sibas jeda",
+  nooks: [],
+},
+{
+  title: "Balay",
+  nooks: [],
+},
+{
+  title: "Monoronjon ",
+  nooks: [],
+},
+{
+  title: "sapon",
+  nooks: [],
+},
+{
+  title: "Noyini",
+  nooks: [],
+},
+{
+  title: "Uttam dada ",
+  nooks: [],
+},
+{
+  title: "Robi",
+  nooks: [],
+},
+{
+  title: "Dulal",
+  nooks: [],
+},
+{
+  title: "Anurudro dada",
+  nooks: [],
+},
+{
+  title: "chandan dada",
+  nooks: [],
+},
+{
+  title: "Goura",
+  nooks: [],
+},
+{
+  title: "Ceta dadu",
+  nooks: [],
+},
+{
+  title: "## Babulal dada (================Bainer Bari================)",
+  nooks: [],
+},
+{
+  title: "Asis",
+  nooks: [],
+},
+{
+  title: "Palash",
+  nooks: [],
+},
+{
+  title: "Subol",
+  nooks: [],
+},
+{
+  title: "Sajib ",
+  nooks: [],
+},
+{
+  title: "Anil",
+  nooks: [],
+},
+{
+  title: "Sankar mama",
+  nooks: [],
+},
+{
+  title: "Kartik dada",
+  nooks: [],
+},
+{
+  title: "Jalil ",
+  nooks: [],
+},
+{
+  title: "Rehena",
+  nooks: [],
+},
+{
+  title: "## Juboraj dada (================Arka Bari================)",
+  nooks: [],
+},
+{
+  title: "Khokon",
+  nooks: [],
+},
+{
+  title: "Binod",
+  nooks: [],
+},
+{
+  title: "Luxman",
+  nooks: [],
+},
+{
+  title: "Sanjoy kaka",
+  nooks: [],
+},
+{
+  title: "Sumon kaka",
+  nooks: [],
+},
+{
+  title: "gopal - kali son",
+  nooks: [],
+},
+{
+  title: "ratan - kali son",
+  nooks: [],
+},
+{
+  title: "Jogodish",
+  nooks: [],
+},
+{
+  title: "Radesham krisna",
+  nooks: [],
+},
+{
+  title: "Narayon",
+  nooks: [],
+},
+{
+  title: "Shamol",
+  nooks: [],
+},
+{
+  title: "Nirmal",
+  nooks: [],
+},
+{
+  title: "Tarani",
+  nooks: [],
+},
+{
+  title: "Liton",
+  nooks: [],
+},
+{
+  title: "## Muslim Professor(================Dalal bari================",
+  nooks: [],
+},
+{
+  title: "Kanu",
+  nooks: [],
+},
+{
+  title: "Benu",
+  nooks: [],
+},
+{
+  title: "## Dulal dada (================Modupur================)",
+  nooks: [],
+},
+{
+  title: "Balay",
+  nooks: [],
+},
+{
+  title: "Kanu",
+  nooks: [],
+},
+{
+  title: "Ratan kagu",
+  nooks: [],
+},
+{
+  title: "Nitai ",
+  nooks: [],
+},
+{
+  title: "Nimai",
+  nooks: [],
+},
+{
+  title: "Badhon",
+  nooks: [],
+},
+{
+  title: "Vovon dalal",
+  nooks: [],
+},
+{
+  title: "Dilip",
+  nooks: [],
+},
+{
+  title: "Samiron",
+  nooks: [],
+},
+{
+  title: "## anowar (================Purbo Thakhur bari================)",
+  nooks: [],
+},
+{
+  title: "neamot",
+  nooks: [],
+},
+{
+  title: "sahajan kagu",
+  nooks: [],
+},
+{
+  title: "habu/sumon",
+  nooks: [],
+},
+{
+  title: "manir kagu",
+  nooks: [],
+},
+{
+  title: "## liton / abul (================Awla Bari================)",
+  nooks: [],
+},
+{
+  title: "selim / jahir",
+  nooks: [],
+},
+{
+  title: "khalil",
+  nooks: [],
+},
+{
+  title: "fatik / momin",
+  nooks: [],
+},
+{
+  title: "arif / manir",
+  nooks: [],
+},
+{
+  title: "delu / easin",
+  nooks: [],
+},
+{
+  title: "iqbal",
+  nooks: [],
+},
+{
+  title: "jamal",
+  nooks: [],
+},
+{
+  title: "Taju ",
+  nooks: [],
+},
+{
+  title: "Sumon",
+  nooks: [],
+},
+{
+  title: "Lokman",
+  nooks: [],
+},
+{
+  title: "Abu taher",
+  nooks: [],
+},
+{
+  title: "Bashar",
+  nooks: [],
+},
+{
+  title: "Tarun",
+  nooks: [],
+},
+{
+  title: "## Easin (================Bhuia Bari================)",
+  nooks: [],
+},
+{
+  title: "Khalek / iman",
+  nooks: [],
+},
+{
+  title: "Hazori / Imadadulla",
+  nooks: [],
+},
+{
+  title: "Ikbal",
+  nooks: [],
+},
+{
+  title: "Hossain",
+  nooks: [],
+},
+{
+  title: "Alom",
+  nooks: [],
+},
+{
+  title: "Riaz kagu",
+  nooks: [],
+},
+{
+  title: "Nazrul",
+  nooks: [],
+},
+{
+  title: "Saiful Sahin",
+  nooks: [],
+},
+{
+  title: "Rehena",
+  nooks: [],
+},
+{
+  title: "Mozaffar / firoza",
+  nooks: [],
+},
+{
+  title: "Bhuia",
+  nooks: [],
+},
+{
+  title: "Haque dada",
+  nooks: [],
+},
+{
+  title: "Ali mia",
+  nooks: [],
+},
+{
+  title: "Hamza",
+  nooks: [],
+},
+{
+  title: "Billal / Manik",
+  nooks: [],
+},
+{
+  title: "Basar / Mamun",
+  nooks: [],
+},
+{
+  title: "Afia",
+  nooks: [],
+},
+{
+  title: "## Helal kagu (================Munsi Bari================) ",
+  nooks: [],
+},
+{
+  title: "caru",
+  nooks: [],
+},
+{
+  title: "jahangir",
+  nooks: [],
+},
+{
+  title: "kabir contractor",
+  nooks: [],
+},
+{
+  title: "## Maru pisa(================Palashpur================)",
+  nooks: [],
+},
+{
+  title: "biren pisa",
+  nooks: [],
+},
+{
+  title: "Palash Kagu",
+  nooks: [],
+},
+{
+  title: "Ramu kagu",
+  nooks: [],
+},
+{
+  title: "krisna kagu",
+  nooks: [],
+},
+{
+  title: "Bijoy besi bia",
+  nooks: [],
+},
+{
+  title: "Ripon kagu",
+  nooks: [],
+},
+{
+  title: "Noyon kagu",
+  nooks: [],
+},
+{
+  title: "Babul kagu",
+  nooks: [],
+},
+{
+  title: "Kartik dada / bobita",
+  nooks: [],
+},
+{
+  title: "uttam dada",
+  nooks: [],
+},
+{
+  title: "manik",
+  nooks: [],
+},
+{
+  title: "sontosh / bishwajit / samojit",
+  nooks: [],
+},
+{
+  title: "Dilip ",
+  nooks: [],
+},
+{
+  title: "sujan kagu",
+  nooks: [],
+},
+{
+  title: "arun pisa",
+  nooks: [],
+},
+{
+  title: "Nidhu Member, Sumon, Mithu",
+  nooks: [],
+},
+{
+  title: "sahmol er bap",
+  nooks: [],
+},
+{
+  title: "tekka / basudev / sourov",
+  nooks: [],
+},
+{
+  title: "Nitai provu",
+  nooks: [],
+},
+{
+  title: "## lovely masi",
+  nooks: [],
+},
+{
+  title: "shamol",
+  nooks: [],
+},
+{
+  title: "dulal dada",
+  nooks: [],
+},
+{
+  title: "baju dada",
+  nooks: [],
+},
+{
+  title: "depak dada / komu",
+  nooks: [],
+},
+{
+  title: "palash",
+  nooks: [],
+},
+{
+  title: "## kana moutta ",
+  nooks: [],
+},
+{
+  title: "krisna dada ",
+  nooks: [],
+},
+{
+  title: "madhobi",
+  nooks: [],
+},
+{
+  title: "bipolodada",
+  nooks: [],
+},
+{
+  title: "sumon",
+  nooks: [],
+},
+{
+  title: "luxman dada",
+  nooks: [],
+},
+{
+  title: "Sujon dada / montu",
+  nooks: [],
+},
+{
+  title: "Sanjoy dada",
+  nooks: [],
+},
 ]
 
 export default {
@@ -2629,5 +3229,6 @@ export default {
   hyderabadVillaWork,
   hyderabadVillaStay,
   bangalore,
+  village,
 
 }

@@ -21,6 +21,7 @@ import {
   hyderabadVillaWork,
   hyderabadVillaStay,
   bangalore,
+  village,
 } from '../data/catLociArray.js'
 
 class catLoci extends React.Component {
@@ -45,6 +46,7 @@ class catLoci extends React.Component {
       ...hyderabadVillaWork,
       ...hyderabadVillaStay,
       ...bangalore,
+      ...village,
     ].length
   )
   render () {
@@ -71,6 +73,7 @@ class catLoci extends React.Component {
           <LociLi arr={hyderabadVillaWork} id="hyderabadVillaWork" pageTitle="hyderabadVillaWork" />
           <LociLi arr={hyderabadVillaStay} id="hyderabadVillaStay" pageTitle="hyderabadVillaStay" />
           <LociLi arr={bangalore} id="bangalore" pageTitle="bangalore" />
+          <LociLi arr={village} id="village" pageTitle="village" />
         </ol>
         <div>
           <CatPalace arr={fatepurHome} id="fatepurHome" pageTitle="Fatepur Home" />
@@ -92,6 +95,7 @@ class catLoci extends React.Component {
           <CatPalace arr={hyderabadVillaWork} id="hyderabadVillaWork" pageTitle="hyderabadVillaWork" />
           <CatPalace arr={hyderabadVillaStay} id="hyderabadVillaStay" pageTitle="hyderabadVillaStay" />
           <CatPalace arr={bangalore} id="bangalore" pageTitle="bangalore" />
+          <CatPalace arr={village} id="village" pageTitle="village" />
         </div>
       </div>
     )
