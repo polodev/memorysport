@@ -23,9 +23,9 @@ let fatepurHome = [
       'alamgir pic on south wall',
       'window 1 of south wall',
       'cement pillar near bed',
+      'window facing south wall',
       'bed',
       'ceiling fan above bed',
-      'window facing south wall',
       'west facing wall near bed',
       'window on west facing wall - adjacent of my reading room',
       'north facing middle wall',
@@ -996,19 +996,11 @@ const feniOffice = [
     ],
   },
   {
-    title: 'wash room with basin partition',
+    title: 'mehedi office room',
     nooks: [],
   },
   {
-    title: 'kitchen',
-    nooks: [
-      "door to enter office",
-      "south facing wall",
-      'west facing wall',
-    ],
-  },
-  {
-    title: 'mehedi office room',
+    title: 'wash room with basin partition',
     nooks: [],
   },
   {
@@ -1018,6 +1010,14 @@ const feniOffice = [
   {
     title: 'class room optional',
     nooks: [],
+  },
+  {
+    title: 'kitchen',
+    nooks: [
+      "door to enter office",
+      "south facing wall",
+      'west facing wall',
+    ],
   },
 ]
 const feniCollege = [
