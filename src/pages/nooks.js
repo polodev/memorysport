@@ -78,12 +78,12 @@ class onlynooks extends React.Component {
     switch (stringNumber.length) {
       case 1:
         shape = this._generating_shape(number);
-        return `${number} --- ${shape} -->>> `;
+        return `${number} --- ${shape}`;
         break;
       case 2:
         person = this._gettingObjectByNumber(dominicPAO, stringNumber);
         personText = person.person;
-        return `${number} --- ${personText} -->>> `;
+        return `${number} --- ${personText}`;
         break;
       case 3:
         personNumber = stringNumber.substr(0, 2);
@@ -91,7 +91,7 @@ class onlynooks extends React.Component {
         person = this._gettingObjectByNumber(dominicPAO, personNumber);
         personText = person.person;
         shape = this._generating_shape(shapeNumber);
-        return `${number} --- ${personText}, --- ${shape} -->>> `;
+        return `${number} --- ${personText}, --- ${shape}`;
         break;
       case 4:
         personNumber = stringNumber.substr(0, 2);
@@ -100,7 +100,7 @@ class onlynooks extends React.Component {
         action = this._gettingObjectByNumber(dominicPAO, actionNumber);
         personText = person.person;
         actionText = action.fullAction;
-        return `${number} --- ${personText} --- ${actionText} -->>> `;
+        return `${number} --- ${personText} --- ${actionText}`;
         break;
       default: 
         return 'not found'
@@ -114,7 +114,8 @@ class onlynooks extends React.Component {
             nooks.map((nook, index) =>
               <li
                 style={{listStyle: 'none', borderBottom: '2px solid salmon', padding: 5}}
-                key={index}> {this._generating_dominic(index + 1)} {nook}
+                key={index}>
+                {nook} {`   <<<-------->>>`} {this._generating_dominic(index + 1)}
               </li>)
           }
         </div>

@@ -14,7 +14,7 @@ let fatepurHome = [
   {
     title: 'main bed room',
     nooks: [
-      'door from outside',
+      '### door from outside',
       'chain of main door',
       'lock of main door',
       '__dhasa inside main door',
@@ -223,7 +223,7 @@ let fatepurRatanMama = [
   {
     title: 'pintu dada and dadu room',
     nooks: [
-      'door',
+      '### door',
       'south facing wall',
       'window in south facing wall',
       'bed dadu __khat',
@@ -323,7 +323,7 @@ let fatepurTarun = [
   {
     title: 'main bed room of billal sir',
     nooks: [
-      'door to go inside main room',
+      '### door to go inside main room',
       'east facing wall',
       'window in east facing wall',
       'bed',
@@ -445,9 +445,9 @@ let fatepurTarun = [
 ]
 let palashpurBasudev = [
   {
-    title: 'our main bed room',
+    title: 'Our main bed room',
     nooks: [
-      'door',
+      '### door',
       'west facing wall',
       'permanent rack above door for keep puffed rice tin',
       'window where we drying our dress on west facing wall',
@@ -603,7 +603,7 @@ let palashpurBiren = [
   {
     title: 'main bed / tv room ',
     nooks: [
-      'door',
+      '### door',
       'north facing wall',
       'east facing wall',
       'door to go inside',
@@ -765,7 +765,7 @@ let palashHome = [
   {
     title: '__palash bed room',
     nooks: [
-      'door in palash room',
+      '### door in palash room',
       'north facing wall',
       'window in north facing wall',
       'reading table',
@@ -842,7 +842,7 @@ let feniMess = [
   {
     title: '__daroan mama ground floor',
     nooks: [
-      'gate of the __japani __bhaban',
+      '### gate of the __japani __bhaban',
       'east facing gate wall',
       'south facing wall where lot of meter',
       'west facing wall',
@@ -976,7 +976,7 @@ const feniOffice = [
   {
     title: 'reception',
     nooks: [
-      "door to enter office",
+      "### door to enter office",
       "south facing wall",
       'west facing wall',
       'shoe box in west facing wall',
@@ -1068,7 +1068,7 @@ const feniCollege = [
   {
     title: 'first floor room near stair',
     nooks: [
-      'door to enter this room',
+      '### door to enter this room',
       'east facing wall',
       'window in east facing wall',
       'south facing wall',
@@ -1148,7 +1148,7 @@ let dhakaMess1 = [
   {
     title: 'me, __alauddin __vi room',
     nooks: [
-      'door from 5th floor',
+      '### door from 5th floor',
       'north facing wall',
       'west facing wall',
       'shoe rack in west facing wall',
@@ -1201,7 +1201,7 @@ let dhakaMess2 = [
   {
     title: '__daroan __mama room',
     nooks: [
-      'gate',
+      '### gate',
       '__daroan mama(luccha) room',
       'stair'
     ],
@@ -1296,7 +1296,7 @@ let dhakaMess3 = [
   {
     title: '__daroan __mama (khalek) room',
     nooks: [
-      'gate',
+      '### gate',
       'khalek mama room',
       'khalek mama wash room',
       'stir',
@@ -1519,7 +1519,7 @@ let palashMess2 = [
   {
     title: '__anik __asim room',
     nooks: [
-      'east facing wall',
+      '### east facing wall',
       'north facing wall',
       'shoe rack',
       'east facing wall',
@@ -1569,7 +1569,7 @@ let palashMess1 = [
   {
     title: '__quantam__dada  __asim room',
     nooks: [
-      'door',
+      '### door',
       'east facing wall',
       'south facing wall',
       'shoe rack',
@@ -1622,7 +1622,7 @@ let dhakaMama = [
   {
     title: 'dining room',
     nooks: [
-      'door',
+      '### door',
       'west facing wall',
       'north facing wall',
       'sofa',
@@ -1691,7 +1691,7 @@ let indiaMama = [
   {
     title: 'gate area',
     nooks: [
-      'gate',
+      '### gate',
       'new __mandir area',
       'gate to enter main house',
       'south facing wall only gate part',
@@ -1834,7 +1834,7 @@ let banjaraHills  = [
   {
     title: 'outside __BH has shoe, ground floor glass door',
     nooks: [
-      'main gate',
+      '### main gate',
       'glass door in basement',
       'stir',
       'shoe rack',
@@ -1977,7 +1977,7 @@ let hyderabadMtww = [
   {
     title: 'ground floor reception',
     nooks: [
-      'door',
+      '### door',
       'east facing wall',
       'south facing wall',
       'west facing wall',
@@ -2343,7 +2343,7 @@ let hyderabadVillaWork = [
   {
     title: 'dining / initial room',
     nooks: [
-      'door',
+      '### door',
       'west facing wall',
       'north facing wall tiny',
       'west facing wall',
@@ -2447,7 +2447,7 @@ let hyderabadVillaStay = [
   {
     title: 'front room / initial room',
     nooks: [
-      'door',
+      '### door',
       'east facing wall',
       'south facing wall',
       'west facing wall',
@@ -2592,7 +2592,7 @@ let bangalore = [
   {
     title: 'ground floor kitchen + outdoor',
     nooks: [
-      'ground floor way',
+      '### ground floor way',
       'south facing wall',
       'west facing wall',
       'north facing wall',
