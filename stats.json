@@ -13,8 +13,8 @@
       "path---major-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-883a2a939ec90a6e7c9f.js",
-      "component---src-pages-index-js-883a2a939ec90a6e7c9f.js.map"
+      "component---src-pages-index-js-4aa9d047ed69f94cd5be.js",
+      "component---src-pages-index-js-4aa9d047ed69f94cd5be.js.map"
     ],
     "path---rhyme": [
       "path---rhyme-a0e39f21c11f6a62c5ab.js",
@@ -41,16 +41,20 @@
       "path---detailloci-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-shape-js": [
-      "component---src-pages-shape-js-3eec3a76365584a4715a.js",
-      "component---src-pages-shape-js-3eec3a76365584a4715a.js.map"
+      "component---src-pages-shape-js-b9be402bc8658783d6eb.js",
+      "component---src-pages-shape-js-b9be402bc8658783d6eb.js.map"
     ],
     "component---src-pages-villageloci-js": [
       "component---src-pages-villageloci-js-fe2f6ebdb940cba7b9ca.js",
       "component---src-pages-villageloci-js-fe2f6ebdb940cba7b9ca.js.map"
     ],
     "component---src-pages-loci-timer-js": [
-      "component---src-pages-loci-timer-js-c1bae2e918c2b9077150.js",
-      "component---src-pages-loci-timer-js-c1bae2e918c2b9077150.js.map"
+      "component---src-pages-loci-timer-js-9374809bfa0d5ab9684b.js",
+      "component---src-pages-loci-timer-js-9374809bfa0d5ab9684b.js.map"
+    ],
+    "component---src-pages-nooks-js": [
+      "component---src-pages-nooks-js-b200425fd3231a37d0b5.js",
+      "component---src-pages-nooks-js-b200425fd3231a37d0b5.js.map"
     ],
     "path---dominiccompact": [
       "path---dominiccompact-a0e39f21c11f6a62c5ab.js",
@@ -81,8 +85,8 @@
       "path---shape-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-catloci-js": [
-      "component---src-pages-catloci-js-d55008ad4830932af19a.js",
-      "component---src-pages-catloci-js-d55008ad4830932af19a.js.map"
+      "component---src-pages-catloci-js-e5aa16009371044e7d7f.js",
+      "component---src-pages-catloci-js-e5aa16009371044e7d7f.js.map"
     ],
     "component---src-pages-major-js": [
       "component---src-pages-major-js-87b66fa5b2a6e2773415.js",
@@ -93,10 +97,14 @@
       "path---routine-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-dd5cf13a88171a27a967.js",
+      "commons-fd8745a4c3a472d45731.js",
       "build-js-styles.css",
-      "commons-dd5cf13a88171a27a967.js.map",
+      "commons-fd8745a4c3a472d45731.js.map",
       "build-js-styles.css.map"
+    ],
+    "path---nooks": [
+      "path---nooks-a0e39f21c11f6a62c5ab.js",
+      "path---nooks-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-pi-js": [
       "component---src-pages-pi-js-1542dc1ad0dbffd69409.js",
@@ -119,9 +127,9 @@
       "component---src-pages-dominic-js-56122295b2c17f9bf6f6.js.map"
     ],
     "app": [
-      "app-4e54520a11b590706fbe.js",
+      "app-9f62c80fe12e464a4643.js",
       "build-js-styles.css",
-      "app-4e54520a11b590706fbe.js.map",
+      "app-9f62c80fe12e464a4643.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-rhyme-js": [
@@ -133,8 +141,8 @@
       "component---src-pages-detailloci-js-8f04f7e1b479aa52de73.js.map"
     ],
     "component---src-pages-catlocicompact-js": [
-      "component---src-pages-catlocicompact-js-77360a2c506c1648bd4e.js",
-      "component---src-pages-catlocicompact-js-77360a2c506c1648bd4e.js.map"
+      "component---src-pages-catlocicompact-js-d97e8c69c8c8b52e69a6.js",
+      "component---src-pages-catlocicompact-js-d97e8c69c8c8b52e69a6.js.map"
     ],
     "path---calculation": [
       "path---calculation-a0e39f21c11f6a62c5ab.js",
