@@ -894,7 +894,7 @@ let feniMess = [
       'door to go to banker room',
       'door to go to toilet',
       'toilet',
-      'tiny west facing room',
+      'tiny west facing wall',
       'door to go to mainuddin vi room',
       'north facing wall',
       'west facing wall',
@@ -904,8 +904,8 @@ let feniMess = [
   {
     title: '__mainuddin __vi room',
     nooks: [
-      '### east facing wall',
-      'rakib study table',
+      '### east facing wall inside __mainuddin vi room',
+      '__rakib study table',
       'south facing wall',
       'door on south facing wall',
       'balcony',
@@ -921,7 +921,7 @@ let feniMess = [
   {
     title: '__banker __vi room',
     nooks: [
-      '### ## north facing wall from banker room',
+      '### north facing wall from banker room',
       'banker __vagina __shoag study table',
       'east facing wall',
       'south facing wall',
@@ -983,7 +983,7 @@ let feniMess = [
   {
     title: 'my room balcony',
     nooks: [
-      '### ## west facing wall in side balcony',
+      '### west facing wall in side balcony',
       'north facing tiny wall',
       'east facing wall',
       'window on east facing wall',
@@ -995,7 +995,7 @@ const feniOffice = [
   {
     title: 'reception',
     nooks: [
-      "door ### to enter office",
+      "### door to enter office",
       "south facing wall",
       'west facing wall',
       'shoe box in west facing wall',
