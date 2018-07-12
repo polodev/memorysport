@@ -972,6 +972,78 @@ let feniMess = [
     ],
   },
 ]
+const feniOffice = [
+  {
+    title: 'reception',
+    nooks: [
+      "door to enter office",
+      "south facing wall",
+      'west facing wall',
+      'shoe box in west facing wall',
+      'north facing wall',
+      'door to enter into mehedis room',
+      'sofa in north facing wall for student waiting',
+      'door to enter into basin and wash room',
+      'east facing wall',
+      'door to enter into main class room',
+      'door to enter into optional class room',
+      'reception',
+      'fan',
+      'south facing wall',
+      'door in south facing wall to enter to kitchen',
+      'west facing wall',
+      'sofa in west facing wall',
+    ],
+  },
+  {
+    title: 'wash room with basin partition',
+    nooks: [],
+  },
+  {
+    title: 'kitchen',
+    nooks: [
+      "door to enter office",
+      "south facing wall",
+      'west facing wall',
+    ],
+  },
+  {
+    title: 'mehedi office room',
+    nooks: [],
+  },
+  {
+    title: 'class room main',
+    nooks: [],
+  },
+  {
+    title: 'class room optional',
+    nooks: [],
+  },
+]
+const feniCollege = [
+  {
+    title: 'first floor room near stair',
+    nooks: [
+      ''
+    ],
+  },
+  {
+    title: '2nd floor teacher meeting room',
+    nooks: [],
+  },
+  {
+    title: '3rd floor training room',
+    nooks: [],
+  },
+  {
+    title: 'washroom',
+    nooks: [],
+  },
+  {
+    title: 'outside room like stair, 2 gate, field',
+    nooks: []
+  },
+]
 let dhakaMess1 = [
   {
     title: 'me, __alauddin __vi room',
