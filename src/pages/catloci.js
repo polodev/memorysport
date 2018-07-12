@@ -9,6 +9,8 @@ import {
   palashpurBiren,
   palashHome,
   feniMess,
+  feniOffice,
+  feniCollege,
   dhakaMess1,
   dhakaMess2,
   dhakaMess3,
@@ -34,6 +36,8 @@ class catLoci extends React.Component {
       ...palashpurBiren,
       ...palashHome,
       ...feniMess,
+      ...feniOffice,
+      ...feniCollege,
       ...dhakaMess1,
       ...dhakaMess2,
       ...dhakaMess3,
@@ -61,6 +65,8 @@ class catLoci extends React.Component {
           <LociLi arr={palashpurBiren} id="palashpurBiren" pageTitle="palashpurBiren" />
           <LociLi arr={palashHome} id="palashHome" pageTitle="palashHome" />
           <LociLi arr={feniMess} id="feniMess" pageTitle="feniMess" />
+          <LociLi arr={feniOffice} id="feniOffice" pageTitle="feniOffice" />
+          <LociLi arr={feniCollege} id="feniCollege" pageTitle="feniCollege" />
           <LociLi arr={dhakaMess1} id="dhakaMess1" pageTitle="dhakaMess1" />
           <LociLi arr={dhakaMess2} id="dhakaMess2" pageTitle="dhakaMess2" />
           <LociLi arr={dhakaMess3} id="dhakaMess3" pageTitle="dhakaMess3" />
@@ -83,6 +89,8 @@ class catLoci extends React.Component {
           <CatPalace arr={palashpurBiren} id="palashpurBiren" pageTitle="palashpurBiren" />
           <CatPalace arr={palashHome} id="palashHome" pageTitle="palashHome" />
           <CatPalace arr={feniMess} id="feniMess" pageTitle="feniMess" />
+          <CatPalace arr={feniOffice} id="feniOffice" pageTitle="feniOffice" />
+          <CatPalace arr={feniCollege} id="feniCollege" pageTitle="feniCollege" />
           <CatPalace arr={dhakaMess1} id="dhakaMess1" pageTitle="dhakaMess1" />
           <CatPalace arr={dhakaMess2} id="dhakaMess2" pageTitle="dhakaMess2" />
           <CatPalace arr={dhakaMess3} id="dhakaMess3" pageTitle="dhakaMess3" />

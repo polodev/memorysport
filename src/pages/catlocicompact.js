@@ -8,6 +8,8 @@ import {
   palashpurBiren,
   palashHome,
   feniMess,
+  feniOffice,
+  feniCollege,
   dhakaMess1,
   dhakaMess2,
   dhakaMess3,
@@ -43,6 +45,8 @@ class catLoci extends React.Component {
       ...palashpurBiren,
       ...palashHome,
       ...feniMess,
+      ...feniOffice,
+      ...feniCollege,
       ...dhakaMess1,
       ...dhakaMess2,
       ...dhakaMess3,
@@ -69,6 +73,8 @@ class catLoci extends React.Component {
           <a style={styles.link} href="#palashpurBiren">palashpurBiren</a>
           <a style={styles.link} href="#palashHome">palashHome</a>
           <a style={styles.link} href="#feniMess">feniMess</a>
+          <a style={styles.link} href="#feniOffice">feniOffice</a>
+          <a style={styles.link} href="#feniCollege">feniCollege</a>
           <a style={styles.link} href="#dhakaMess1">dhakaMess1</a>
           <a style={styles.link} href="#dhakaMess2">dhakaMess2</a>
           <a style={styles.link} href="#dhakaMess3">dhakaMess3</a>
@@ -91,6 +97,8 @@ class catLoci extends React.Component {
           <CatPalaceCompact arr={palashpurBiren} id="palashpurBiren" pageTitle="palashpurBiren" />
           <CatPalaceCompact arr={palashHome} id="palashHome" pageTitle="palashHome" />
           <CatPalaceCompact arr={feniMess} id="feniMess" pageTitle="feniMess" />
+          <CatPalaceCompact arr={feniOffice} id="feniOffice" pageTitle="feniOffice" />
+          <CatPalaceCompact arr={feniCollege} id="feniCollege" pageTitle="feniCollege" />
           <CatPalaceCompact arr={dhakaMess1} id="dhakaMess1" pageTitle="dhakaMess1" />
           <CatPalaceCompact arr={dhakaMess2} id="dhakaMess2" pageTitle="dhakaMess2" />
           <CatPalaceCompact arr={dhakaMess3} id="dhakaMess3" pageTitle="dhakaMess3" />
