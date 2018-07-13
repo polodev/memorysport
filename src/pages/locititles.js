@@ -22,7 +22,6 @@ import {
   hyderabadVillaWork,
   hyderabadVillaStay,
   bangalore,
-  village,
 } from '../data/catLociArray.js'
 const locis = [
   ...fatepurHome,
@@ -46,13 +45,11 @@ const locis = [
   ...hyderabadVillaWork,
   ...hyderabadVillaStay,
   ...bangalore,
-  ...village,
 ]
 
-const nooksArr = locis.map(loci => loci.nooks)
-const nooksArrFlat = nooksArr.reduce((cumilative, current) => [...cumilative, ...current])
+const titles = locis.map(loci => loci.title)
 
-class nooks extends React.Component {
+class locititles extends React.Component {
   _generating_shape = (number) => {
     const shapes = [
     { index: 0, letter: "blackhole, tire, donut" },
@@ -108,14 +105,15 @@ class nooks extends React.Component {
 
   }
   render () {
+    console.log(titles);
     return (
         <div>
           {
-            nooksArrFlat.map((nook, index) =>
+            titles.map((title, index) =>
               <li
                 style={{listStyle: 'none', borderBottom: '2px solid salmon', padding: 5}}
                 key={index}>
-                {nook} {`   <<<-------->>>`} {this._generating_dominic(index + 1)}
+                {title} {`   <<<-------->>>`} {this._generating_dominic(index + 1)}
               </li>)
           }
         </div>
@@ -123,4 +121,4 @@ class nooks extends React.Component {
   }
 }
 
-export default nooks
+export default locititles;

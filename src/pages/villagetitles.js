@@ -1,58 +1,9 @@
 import React from 'react'
 import {dominicPAO} from '../data/dominicArray'
-import {
-  fatepurHome,
-  fatepurRatanMama,
-  fatepurTarun,
-  palashpurBasudev,
-  palashpurBiren,
-  palashHome,
-  feniMess,
-  feniOffice,
-  feniCollege,
-  dhakaMess1,
-  dhakaMess2,
-  dhakaMess3,
-  palashMess1,
-  palashMess2,
-  dhakaMama,
-  indiaMama,
-  banjaraHills ,
-  hyderabadMtww,
-  hyderabadVillaWork,
-  hyderabadVillaStay,
-  bangalore,
-  village,
-} from '../data/catLociArray.js'
-const locis = [
-  ...fatepurHome,
-  ...fatepurRatanMama,
-  ...fatepurTarun,
-  ...palashpurBasudev,
-  ...palashpurBiren,
-  ...palashHome,
-  ...feniMess,
-  ...feniOffice,
-  ...feniCollege,
-  ...dhakaMess1,
-  ...dhakaMess2,
-  ...dhakaMess3,
-  ...palashMess1,
-  ...palashMess2,
-  ...dhakaMama,
-  ...indiaMama,
-  ...banjaraHills ,
-  ...hyderabadMtww,
-  ...hyderabadVillaWork,
-  ...hyderabadVillaStay,
-  ...bangalore,
-  ...village,
-]
+import {village} from '../data/catLociArray.js'
+const titles = village.map(loci => loci.title)
 
-const nooksArr = locis.map(loci => loci.nooks)
-const nooksArrFlat = nooksArr.reduce((cumilative, current) => [...cumilative, ...current])
-
-class nooks extends React.Component {
+class villagetitles extends React.Component {
   _generating_shape = (number) => {
     const shapes = [
     { index: 0, letter: "blackhole, tire, donut" },
@@ -108,14 +59,15 @@ class nooks extends React.Component {
 
   }
   render () {
+    console.log(titles);
     return (
         <div>
           {
-            nooksArrFlat.map((nook, index) =>
+            titles.map((title, index) =>
               <li
                 style={{listStyle: 'none', borderBottom: '2px solid salmon', padding: 5}}
                 key={index}>
-                {nook} {`   <<<-------->>>`} {this._generating_dominic(index + 1)}
+                {title} {`   <<<-------->>>`} {this._generating_dominic(index + 1)}
               </li>)
           }
         </div>
@@ -123,4 +75,4 @@ class nooks extends React.Component {
   }
 }
 
-export default nooks
+export default villagetitles;
