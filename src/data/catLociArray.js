@@ -16,9 +16,6 @@ let fatepurHome = [
     title: 'main bed room',
     nooks: [
       '### door from outside',
-      'chain of main door',
-      'lock of main door',
-      '__dhasa inside main door',
       'south facing wall',
       'upper decoration like flower on tin and polyester cloth',
       'alamgir pic on south wall',
@@ -127,8 +124,6 @@ let fatepurHome = [
     title: 'my west reading room',
     nooks: [
       '### study room door',
-      'study room door bottom chain for lock',
-      '__dhasa inside door south facing door',
       'south facing wall',
       'west facing wall',
       'winter rack',
@@ -158,7 +153,6 @@ let fatepurHome = [
     title: '__roshi __ghar',
     nooks: [
       '### door of the main kitchen room',
-      'chain of the main kitchen room',
       'south facing wall',
       'west facing wall',
       'bamboo pillar to store __beter__mulla for sitting when we used to eat',
@@ -173,7 +167,6 @@ let fatepurHome = [
     title: '__thakur __ghar south room',
     nooks: [
       '### __thakur __ghar south door',
-      'south door chain',
       'west facing wall',
       'north facing wall',
       'door on north facing',
@@ -186,7 +179,6 @@ let fatepurHome = [
     title: '__thakur __ghar north room',
     nooks: [
       '### north door of the tagore __ghar',
-      'north door chain',
       'west facing wall',
       'north facing wall',
       'east facing wall',
