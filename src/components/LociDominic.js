@@ -49,8 +49,7 @@ class LociDominic extends React.Component {
     this.setState({ isInfoHidden: !this.state.isInfoHidden })
   }
   _buttonClick = () => {
-    // __refactor: in future titles_length will be titles.length when remember all
-    const currentNumber = _getRandomNumber(1, this.props.titles_length);
+    const currentNumber = _getRandomNumber(1, this.props.titles.length);
     this.setState({currentNumber, isInfoHidden: true})
   }
   _getMnemonic = () => {
@@ -73,7 +72,7 @@ class LociDominic extends React.Component {
           </p>
           {
             isInfoHidden ? "" : <div style={styles.info}>
-              <p> mnemonic: {this._getMnemonic().title} {`<<--------->>`} {this._getMnemonic().mnemonic} </p>
+              <p> {this._getMnemonic().title} {`<<--------->>`} {this._getMnemonic().mnemonic} </p>
             </div>
           }
         </div>

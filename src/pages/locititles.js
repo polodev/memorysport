@@ -66,7 +66,7 @@ class locititles extends React.Component {
     return (
         <div>
           <h1>titles loci with dominic quiz</h1>
-          <LociDominic titles={quizTitles} titles_length={184} />
+          <LociDominic titles={quizTitles} />
           <h1>titles loci with dominic</h1>
           {
             titles.map((title, index) =>
