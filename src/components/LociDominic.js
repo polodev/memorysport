@@ -51,7 +51,7 @@ class LociDominic extends React.Component {
   _buttonClick = () => {
     // __refactor: in future titles_length will be titles.length when remember all
     const currentNumber = _getRandomNumber(1, this.props.titles_length);
-    this.setState({currentNumber})
+    this.setState({currentNumber, isInfoHidden: true})
   }
   _getMnemonic = () => {
     const { titles, currentNumber} = this.state;
