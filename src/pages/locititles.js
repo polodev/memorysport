@@ -3,6 +3,7 @@ import {dominicPAO} from '../data/dominicArray'
 import shapes from '../data/shapeArr.js'
 import rhymes from '../data/rhymeArr.js'
 import {_generating_dominic} from '../data/functions.js'
+import LociDominic from '../components/LociDominic'
 import {
   fatepurHome,
   fatepurRatanMama,
@@ -51,11 +52,22 @@ const locis = [
 ]
 
 const titles = locis.map(loci => loci.title)
+const quizTitles = titles.map((title, index) => {
+  return  {
+    number: index + 1,
+    title,
+    mnemonic: _generating_dominic(dominicPAO, shapes, rhymes, (index + 1))
+  }
+})
+  
 
 class locititles extends React.Component {
   render () {
     return (
         <div>
+          <h1>titles loci with dominic quiz</h1>
+          <LociDominic titles={quizTitles} titles_length={184} />
+          <h1>titles loci with dominic</h1>
           {
             titles.map((title, index) =>
               <li
