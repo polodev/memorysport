@@ -53,24 +53,24 @@
       "path---detailloci-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-shape-js": [
-      "component---src-pages-shape-js-b9be402bc8658783d6eb.js",
-      "component---src-pages-shape-js-b9be402bc8658783d6eb.js.map"
+      "component---src-pages-shape-js-1020c4e32e538d3f1e10.js",
+      "component---src-pages-shape-js-1020c4e32e538d3f1e10.js.map"
     ],
     "component---src-pages-villageloci-js": [
       "component---src-pages-villageloci-js-fe2f6ebdb940cba7b9ca.js",
       "component---src-pages-villageloci-js-fe2f6ebdb940cba7b9ca.js.map"
     ],
     "component---src-pages-locititles-js": [
-      "component---src-pages-locititles-js-cb6bb924b8854a7072f0.js",
-      "component---src-pages-locititles-js-cb6bb924b8854a7072f0.js.map"
+      "component---src-pages-locititles-js-bcb80122c64ab9d11129.js",
+      "component---src-pages-locititles-js-bcb80122c64ab9d11129.js.map"
     ],
     "component---src-pages-loci-timer-js": [
       "component---src-pages-loci-timer-js-9374809bfa0d5ab9684b.js",
       "component---src-pages-loci-timer-js-9374809bfa0d5ab9684b.js.map"
     ],
     "component---src-pages-nooks-js": [
-      "component---src-pages-nooks-js-cf0104d71fa5c3c6bc34.js",
-      "component---src-pages-nooks-js-cf0104d71fa5c3c6bc34.js.map"
+      "component---src-pages-nooks-js-84727a2e97e71b7ec6c6.js",
+      "component---src-pages-nooks-js-84727a2e97e71b7ec6c6.js.map"
     ],
     "path---dominiccompact": [
       "path---dominiccompact-a0e39f21c11f6a62c5ab.js",
@@ -85,8 +85,8 @@
       "path---catlocicompact-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-15fd1ec5b05194fcf31f.js",
-      "component---src-layouts-index-js-15fd1ec5b05194fcf31f.js.map"
+      "component---src-layouts-index-js-7417823fe7717104cfec.js",
+      "component---src-layouts-index-js-7417823fe7717104cfec.js.map"
     ],
     "component---src-pages-dominichotel-js": [
       "component---src-pages-dominichotel-js-738b885769f3848f1cac.js",
@@ -117,9 +117,9 @@
       "path---routine-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-f306636f4d7b7630e43c.js",
+      "commons-542d93b5622dca2b0573.js",
       "build-js-styles.css",
-      "commons-f306636f4d7b7630e43c.js.map",
+      "commons-542d93b5622dca2b0573.js.map",
       "build-js-styles.css.map"
     ],
     "path---nooks": [
@@ -135,8 +135,8 @@
       "component---src-pages-dominiccompact-js-cc2426bc0ec959b48463.js.map"
     ],
     "component---src-pages-villagetitles-js": [
-      "component---src-pages-villagetitles-js-3fd5c8f2efc31018fc19.js",
-      "component---src-pages-villagetitles-js-3fd5c8f2efc31018fc19.js.map"
+      "component---src-pages-villagetitles-js-8b991ba75ca504ffc6da.js",
+      "component---src-pages-villagetitles-js-8b991ba75ca504ffc6da.js.map"
     ],
     "path---pi": [
       "path---pi-a0e39f21c11f6a62c5ab.js",
@@ -151,9 +151,9 @@
       "component---src-pages-dominic-js-56122295b2c17f9bf6f6.js.map"
     ],
     "app": [
-      "app-1b04eb616765a9ba55b8.js",
+      "app-ebcf2f1c1932193c7565.js",
       "build-js-styles.css",
-      "app-1b04eb616765a9ba55b8.js.map",
+      "app-ebcf2f1c1932193c7565.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-rhyme-js": [
