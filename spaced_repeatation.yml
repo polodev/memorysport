@@ -1,0 +1,44 @@
+laravel backend 
+ users:
+  laravel default
+ decks:
+  user_id [written by some user id who can able to edit also]
+  name
+  type [optional since I am going to use markdown]
+  category_id
+  card_id 
+  user_id (creator_id)
+ categories:
+  name
+ tags:
+   name
+ deck_tag:
+   deck_id
+   user_id
+ card:
+  front
+  back [generally it will be markdown]
+ user_decs:
+   __just for show in users home page
+   user_id
+   deck_id
+ tag_deck
+
+__how to save user data for daily activity
+
+
+
+
+deck hasMany cards
+cards belongsTo deck
+
+user hasMany card
+cards belongsTo User
+
+user belongsToMany (card)
+card belongsToMany (user)
+
+
+ 
+
+react frontend
