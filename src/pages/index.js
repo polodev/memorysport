@@ -1,17 +1,34 @@
 import React from 'react'
-import Link from 'gatsby-link';
-import styles from '../utils/style.module.css'
+import Link from 'gatsby-link'
+const styles = {
+  list: {
+    display: 'inline-block',
+    padding: '5px 10px',
+    border: '1px solid teal',
+    margin: '8px',
+  },
+  listContainer: {
+    listStyle: 'none',
+    margin: 0,
+    padding: 0,
+    marginBottom: 40
+  },
+  link: {
+    fontSize: 30,
+    fontWeight: 700,
+  }
+}
 
 const ListLink = props =>
-  <li className={styles.singleList}>
-    <Link className={styles.home_link} to={props.to}>
+  <li style={styles.list}>
+    <Link style={styles.link} to={props.to}>
       {props.children}
     </Link>
   </li>
 
  export default () =>  
       <div style={{ marginBottom: `1.5rem` }}>
-      <ul className={styles.uList}>
+      <ul style={styles.listContainer}>
         <ListLink to="/routine">Routine</ListLink>
         <ListLink to="/catloci/">Cat Loci</ListLink>
         <ListLink to="/locitimer/">locitimer</ListLink>
@@ -28,5 +45,6 @@ const ListLink = props =>
         <ListLink to="/nooks">nooks</ListLink>
         <ListLink to="/locititles">locititles</ListLink>
         <ListLink to="/villagetitles">villagetitles</ListLink>
+        <ListLink to="/englishletter">englishletter</ListLink>
       </ul>
     </div>

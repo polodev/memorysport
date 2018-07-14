@@ -81,3 +81,10 @@
  .nestedUl__li {
     color: #111;
  }
+ .englishletter_container {
+  margin: 0 auto;
+  width: 60%;
+  @media screen and (max-width: 800px) {
+    width: 100%;
+  }
+ }
