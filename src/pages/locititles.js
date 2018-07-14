@@ -63,7 +63,7 @@ class locititles extends React.Component {
     { index: 6, letter: "golf club, lasso, pipe" },
     { index: 7, letter: "Axe, scythe, boomerang" },
     { index: 8, letter: "hour glass, snowman" },
-    { index: 9, letter: "tadpole, flag" },
+    { index: 9, letter: "balloon, tadpole, flag" },
     ];
     const object = shapes.find(item => item.index == number)
     return object.letter;
@@ -101,7 +101,7 @@ class locititles extends React.Component {
         actionText = action.fullAction;
         return `${number} --- ${personText} --- ${actionText}`;
         break;
-      default: 
+      default:
         return 'not found'
     }
 

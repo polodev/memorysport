@@ -3,7 +3,7 @@ import styles from '../utils/style.module.css'
 import MethodTable from '../components/MethodTable'
 
 /**
- * shape object holding index and letter instead of number and word 
+ * shape object holding index and letter instead of number and word
  * this is because we are using generic component
  * @type {Array}
  */
@@ -17,11 +17,11 @@ const shapes = [
 { index: 6, letter: "golf club, lasso, pipe" },
 { index: 7, letter: "Axe, scythe, boomerang" },
 { index: 8, letter: "hour glass, snowman" },
-{ index: 9, letter: "tadpole, flag" },
+{ index: 9, letter: "balloon, tadpole, flag" },
 ];
 export default () => <MethodTable title="Shape" arr={shapes} titles={['Number', 'Shape']} />
 export {
   shapes
 }
-  
+
 
