@@ -8,6 +8,10 @@
       "path---locititles-a0e39f21c11f6a62c5ab.js",
       "path---locititles-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "component---src-pages-englishletter-js": [
+      "component---src-pages-englishletter-js-d50ad40eba4635a43189.js",
+      "component---src-pages-englishletter-js-d50ad40eba4635a43189.js.map"
+    ],
     "component---src-pages-calculation-js": [
       "component---src-pages-calculation-js-52ec9e6d15960c1c55af.js",
       "component---src-pages-calculation-js-52ec9e6d15960c1c55af.js.map"
@@ -17,12 +21,16 @@
       "path---major-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-fe010580208e71ce52f3.js",
-      "component---src-pages-index-js-fe010580208e71ce52f3.js.map"
+      "component---src-pages-index-js-3cfb217b5d032eb8964c.js",
+      "component---src-pages-index-js-3cfb217b5d032eb8964c.js.map"
     ],
     "path---rhyme": [
       "path---rhyme-a0e39f21c11f6a62c5ab.js",
       "path---rhyme-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---englishletter": [
+      "path---englishletter-a0e39f21c11f6a62c5ab.js",
+      "path---englishletter-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---dominicquiz": [
       "path---dominicquiz-a0e39f21c11f6a62c5ab.js",
@@ -109,9 +117,9 @@
       "path---routine-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-78476ee7ed15c153c8a3.js",
+      "commons-f306636f4d7b7630e43c.js",
       "build-js-styles.css",
-      "commons-78476ee7ed15c153c8a3.js.map",
+      "commons-f306636f4d7b7630e43c.js.map",
       "build-js-styles.css.map"
     ],
     "path---nooks": [
@@ -143,9 +151,9 @@
       "component---src-pages-dominic-js-56122295b2c17f9bf6f6.js.map"
     ],
     "app": [
-      "app-6f6dcde6d468d1774662.js",
+      "app-1b04eb616765a9ba55b8.js",
       "build-js-styles.css",
-      "app-6f6dcde6d468d1774662.js.map",
+      "app-1b04eb616765a9ba55b8.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-rhyme-js": [
