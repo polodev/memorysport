@@ -1,4 +1,6 @@
 import React from 'react'
+require("prismjs/themes/prism-solarizedlight.css");
+
 import Link from 'gatsby-link'
 const styles = {
   list: {

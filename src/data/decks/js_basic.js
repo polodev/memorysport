@@ -7,9 +7,9 @@ const string_uppercase = {
 front: 'string upper case',
 back:
 `
-~~~
->> "hello".toUpperCase()
->> HELLO
+~~~js
+"hello".toUpperCase()
+// HELLO
 ~~~
 `
 }
@@ -17,9 +17,9 @@ const string_length = {
 front: `how to know string length in javascript`,
 back: 
 `
-~~~
->> "hello".length
->> 5
+~~~js
+"hello".length
+//5
 ~~~
 `
 }

@@ -5,10 +5,23 @@
 const php_standard_tag = {
   front: ` ~php~ standard tag `,
   back: `
-  ~~~
-  <?php ?>
-  ~~~
-  `
+~~~php
+namespace App;
+
+use Illuminate\Database\Eloquent\Model;
+
+class Flight extends Model
+{
+  /**
+   * The table associated with the model.
+   *
+   * @var string
+   */
+  protected $table = 'my_flights';
+} 
+
+~~~
+`
 }
 
 /**
@@ -18,7 +31,7 @@ const php_standard_tag = {
 const php_echo_tag = {
   front: `php echo tag`,
   back:`
-  ~~~
+  ~~~html
   <?= $var ?>
   ~~~
   `

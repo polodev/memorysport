@@ -2,6 +2,7 @@ import React from 'react'
 import php_basic from '../data/decks/php_basic'
 import js_basic from '../data/decks/js_basic'
 import FuzzySearch from 'fuzzy-search';
+import Cards from '../components/Cards';
  
  
 
@@ -44,6 +45,9 @@ class decks extends React.Component {
       isCardPage: true
     })
   }
+  _backToDeckPage = () => {
+    this.setState({isCardPage: false})
+  }
   _generateDeck = () => {
       const {filterKeyword} = this.state
       const searcher = new FuzzySearch(deckArr, ['title', 'tags']);
@@ -64,19 +68,31 @@ class decks extends React.Component {
     console.log(this.state)
     return (
       <div>
-        <h1 style={styles.textCenter}>All Deck</h1>
-        <p style={{textAlign: 'center'}}>
-          <input
-            style={{padding: 6, width: '50%', display: 'block', margin: '0 auto'}}
-            placeholder='search deck here'
-            type="text"
-            onChange={(e) => this.setState({filterKeyword: e.target.value})} />
-        </p>
-        <ul style={styles.ulStyle}>
-          {
-            this._generateDeck()
-          }
-        </ul>
+        {
+          this.state.isCardPage ?
+
+          <Cards
+            _backToDeckPage={this._backToDeckPage}
+            deck={this.state.selectedDeck}
+            />
+
+          : <div>
+            <h1 style={styles.textCenter}>All Deck</h1>
+            <p style={{textAlign: 'center'}}>
+              <input
+                style={{padding: 6, width: '50%', display: 'block', margin: '0 auto'}}
+                placeholder='search deck here'
+                type="text"
+                onChange={(e) => this.setState({filterKeyword: e.target.value})} />
+            </p>
+            <ul style={styles.ulStyle}>
+              {
+                this._generateDeck()
+              }
+            </ul>
+          </div>
+
+        }
       </div>
       )
   }
