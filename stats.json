@@ -8,6 +8,10 @@
       "path---locititles-a0e39f21c11f6a62c5ab.js",
       "path---locititles-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---decks": [
+      "path---decks-a0e39f21c11f6a62c5ab.js",
+      "path---decks-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-pages-englishletter-js": [
       "component---src-pages-englishletter-js-d50ad40eba4635a43189.js",
       "component---src-pages-englishletter-js-d50ad40eba4635a43189.js.map"
@@ -21,8 +25,8 @@
       "path---major-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-3cfb217b5d032eb8964c.js",
-      "component---src-pages-index-js-3cfb217b5d032eb8964c.js.map"
+      "component---src-pages-index-js-7fb6e6552d7d182692ac.js",
+      "component---src-pages-index-js-7fb6e6552d7d182692ac.js.map"
     ],
     "path---rhyme": [
       "path---rhyme-a0e39f21c11f6a62c5ab.js",
@@ -64,6 +68,10 @@
       "component---src-pages-locititles-js-5395cbb4f24038ec3cf5.js",
       "component---src-pages-locititles-js-5395cbb4f24038ec3cf5.js.map"
     ],
+    "component---src-pages-loci-timer-js": [
+      "component---src-pages-loci-timer-js-9374809bfa0d5ab9684b.js",
+      "component---src-pages-loci-timer-js-9374809bfa0d5ab9684b.js.map"
+    ],
     "component---src-pages-nooks-js": [
       "component---src-pages-nooks-js-4fca5357ddf28a63e863.js",
       "component---src-pages-nooks-js-4fca5357ddf28a63e863.js.map"
@@ -81,8 +89,8 @@
       "path---catlocicompact-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-7417823fe7717104cfec.js",
-      "component---src-layouts-index-js-7417823fe7717104cfec.js.map"
+      "component---src-layouts-index-js-15fd1ec5b05194fcf31f.js",
+      "component---src-layouts-index-js-15fd1ec5b05194fcf31f.js.map"
     ],
     "component---src-pages-dominichotel-js": [
       "component---src-pages-dominichotel-js-738b885769f3848f1cac.js",
@@ -113,14 +121,10 @@
       "path---routine-a0e39f21c11f6a62c5ab.js.map"
     ],
     "commons": [
-      "commons-0f4be377c9601f1b8a0c.js",
+      "commons-4ca7e07ef87fb977233a.js",
       "build-js-styles.css",
-      "commons-0f4be377c9601f1b8a0c.js.map",
+      "commons-4ca7e07ef87fb977233a.js.map",
       "build-js-styles.css.map"
-    ],
-    "path---locitimer": [
-      "path---locitimer-a0e39f21c11f6a62c5ab.js",
-      "path---locitimer-a0e39f21c11f6a62c5ab.js.map"
     ],
     "path---nooks": [
       "path---nooks-a0e39f21c11f6a62c5ab.js",
@@ -129,6 +133,10 @@
     "component---src-pages-pi-js": [
       "component---src-pages-pi-js-1542dc1ad0dbffd69409.js",
       "component---src-pages-pi-js-1542dc1ad0dbffd69409.js.map"
+    ],
+    "component---src-pages-decks-js": [
+      "component---src-pages-decks-js-3a5997f46538c6e42277.js",
+      "component---src-pages-decks-js-3a5997f46538c6e42277.js.map"
     ],
     "component---src-pages-dominiccompact-js": [
       "component---src-pages-dominiccompact-js-2c13e856675e55948fa9.js",
@@ -142,14 +150,18 @@
       "path---pi-a0e39f21c11f6a62c5ab.js",
       "path---pi-a0e39f21c11f6a62c5ab.js.map"
     ],
+    "path---loci-timer": [
+      "path---loci-timer-a0e39f21c11f6a62c5ab.js",
+      "path---loci-timer-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "component---src-pages-dominic-js": [
       "component---src-pages-dominic-js-56122295b2c17f9bf6f6.js",
       "component---src-pages-dominic-js-56122295b2c17f9bf6f6.js.map"
     ],
     "app": [
-      "app-c641c51e65351129eed0.js",
+      "app-6ca0c6a0f2042924f271.js",
       "build-js-styles.css",
-      "app-c641c51e65351129eed0.js.map",
+      "app-6ca0c6a0f2042924f271.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-rhyme-js": [
@@ -167,10 +179,6 @@
     "path---calculation": [
       "path---calculation-a0e39f21c11f6a62c5ab.js",
       "path---calculation-a0e39f21c11f6a62c5ab.js.map"
-    ],
-    "component---src-pages-locitimer-js": [
-      "component---src-pages-locitimer-js-9374809bfa0d5ab9684b.js",
-      "component---src-pages-locitimer-js-9374809bfa0d5ab9684b.js.map"
     ],
     "component---src-pages-routine-js": [
       "component---src-pages-routine-js-a4c7b5ce86dc3d212ede.js",
