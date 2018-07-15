@@ -14,8 +14,7 @@ const styles = {
     marginBottom: 40
   },
   link: {
-    fontSize: 30,
-    fontWeight: 700,
+    fontSize: 24
   }
 }
 
@@ -46,5 +45,6 @@ const ListLink = props =>
         <ListLink to="/locititles">locititles</ListLink>
         <ListLink to="/villagetitles">villagetitles</ListLink>
         <ListLink to="/englishletter">englishletter</ListLink>
+        <ListLink to="/decks">decks</ListLink>
       </ul>
     </div>
