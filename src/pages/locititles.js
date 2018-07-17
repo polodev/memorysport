@@ -26,6 +26,7 @@ import {
   hyderabadVillaWork,
   hyderabadVillaStay,
   bangalore,
+  village,
 } from '../data/catLociArray.js'
 const locis = [
   ...fatepurHome,
@@ -49,6 +50,7 @@ const locis = [
   ...hyderabadVillaWork,
   ...hyderabadVillaStay,
   ...bangalore,
+  ...village,
 ]
 
 const titles = locis.map(loci => loci.title)
