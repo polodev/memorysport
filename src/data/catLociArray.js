@@ -223,12 +223,13 @@ let fatepurRatanMama = [
       'south facing wall',
       'window in south facing wall',
       'west facing wall',
+      'window in west facing wall',
       'north facing wall',
       'door in north facing wall',
       'bed __pintu __dada __khat',
       'east facing wall',
       'window in east facing wall near pintu dada bed',
-      'bed __dadu __khat',
+      'bed __dadu __khat'
       'fan or ceiling',
     ],
   },
@@ -338,6 +339,7 @@ let fatepurTarun = [
     title: 'fatepurTarun: dadis room',
     nooks: [
       '### east facing wall in dadis room',
+      'alna in east facing wall',
       'south facing wall',
       'window in south facing wall',
       'west facing wall',
