@@ -2902,7 +2902,11 @@ const village = [
   nooks: [],
 },
 {
-  title: "shakil or malek kagu",
+  title: "malek kagu",
+  nooks: [],
+},
+{
+  title: "shakil - atik",
   nooks: [],
 },
 {
