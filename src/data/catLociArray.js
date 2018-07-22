@@ -229,7 +229,7 @@ let fatepurRatanMama = [
       'bed __pintu __dada __khat',
       'east facing wall',
       'window in east facing wall near pintu dada bed',
-      'bed __dadu __khat'
+      'bed __dadu __khat',
       'fan or ceiling',
     ],
   },
