@@ -25,8 +25,8 @@
       "path---major-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-pages-index-js": [
-      "component---src-pages-index-js-d116cf50ffb75ccf418f.js",
-      "component---src-pages-index-js-d116cf50ffb75ccf418f.js.map"
+      "component---src-pages-index-js-4c8c4ff3865e051780a4.js",
+      "component---src-pages-index-js-4c8c4ff3865e051780a4.js.map"
     ],
     "path---rhyme": [
       "path---rhyme-a0e39f21c11f6a62c5ab.js",
@@ -76,6 +76,10 @@
       "component---src-pages-nooks-js-4fca5357ddf28a63e863.js",
       "component---src-pages-nooks-js-4fca5357ddf28a63e863.js.map"
     ],
+    "path---numbers": [
+      "path---numbers-a0e39f21c11f6a62c5ab.js",
+      "path---numbers-a0e39f21c11f6a62c5ab.js.map"
+    ],
     "path---dominiccompact": [
       "path---dominiccompact-a0e39f21c11f6a62c5ab.js",
       "path---dominiccompact-a0e39f21c11f6a62c5ab.js.map"
@@ -89,8 +93,8 @@
       "path---catlocicompact-a0e39f21c11f6a62c5ab.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-15fd1ec5b05194fcf31f.js",
-      "component---src-layouts-index-js-15fd1ec5b05194fcf31f.js.map"
+      "component---src-layouts-index-js-1ceba29b1290fe62a21f.js",
+      "component---src-layouts-index-js-1ceba29b1290fe62a21f.js.map"
     ],
     "component---src-pages-dominichotel-js": [
       "component---src-pages-dominichotel-js-738b885769f3848f1cac.js",
@@ -158,10 +162,14 @@
       "component---src-pages-dominic-js-56122295b2c17f9bf6f6.js",
       "component---src-pages-dominic-js-56122295b2c17f9bf6f6.js.map"
     ],
+    "component---src-pages-numbers-js": [
+      "component---src-pages-numbers-js-145323313460fcf6dcb8.js",
+      "component---src-pages-numbers-js-145323313460fcf6dcb8.js.map"
+    ],
     "app": [
-      "app-6ca0c6a0f2042924f271.js",
+      "app-64626e3c8a7347c4b2e6.js",
       "build-js-styles.css",
-      "app-6ca0c6a0f2042924f271.js.map",
+      "app-64626e3c8a7347c4b2e6.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-pages-rhyme-js": [
