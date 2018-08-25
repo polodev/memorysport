@@ -27,7 +27,7 @@ const ListLink = props =>
     </Link>
   </li>
 
- export default () =>  
+ export default () =>
       <div style={{ marginBottom: `1.5rem` }}>
       <ul style={styles.listContainer}>
         <ListLink to="/routine">Routine</ListLink>
@@ -48,5 +48,6 @@ const ListLink = props =>
         <ListLink to="/villagetitles">villagetitles</ListLink>
         <ListLink to="/englishletter">englishletter</ListLink>
         <ListLink to="/decks">decks</ListLink>
+        <ListLink to="/numbers">numbers</ListLink>
       </ul>
     </div>
