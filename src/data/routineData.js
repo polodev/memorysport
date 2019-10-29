@@ -40,7 +40,7 @@ const r_vocabulary = {
   key: "vocabulary",
   time: "",
   duration: 1,
-  activity: "saifurs book or any other book",
+  activity: "Newspaper or Any kinda Book",
   note: ""
 }
 const r_math = {
@@ -90,20 +90,35 @@ const r_exercise = {
   key: 'exercise',
   time: "after every 30 minutes or one hour",
   duration: .5,
-  activity: "doing 100 push up 100 situp before 6pm",
+  activity: "doing 100 push up 100 situp before 9pm",
+  note: ""
+}
+const r_bimabd = {
+  key: 'Bimabd',
+  time: "before 2am",
+  duration: 2,
+  activity: "Completing trello task",
+  note: "Update to server"
+}
+const r_freelance = {
+  key: 'Freelance',
+  time: "before 2am",
+  duration: 2,
+  activity: "Prepare for Freelance work - searching and finding",
   note: ""
 }
 const routines = {
   date: 'July 1, 2018',
   arr: [
     r_exercise,
-    r_wordpress,
-    r_goHugo,
-    r_memoryPalace,
-    r_php_book_reading,
-    r_book_reading,
-    r_math,
-    r_memorysport_website,
+    r_bimabd,
+    r_freelance,
+    // r_wordpress,
+    // r_goHugo,
+    // r_memoryPalace,
+    // r_book_reading,
+    // r_math,
+    // r_memorysport_website,
     r_vocabulary,
     r_php_book_reading,
   ]
