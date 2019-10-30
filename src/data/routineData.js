@@ -85,18 +85,25 @@ const r_php_book_reading = {
   activity: "zend book reading",
   note: ""
 }
-
-const r_exercise = {
+const r_exercise_hidden = {
   key: 'exercise',
   time: "after every 30 minutes or one hour",
   duration: .5,
   activity: "doing 100 push up 100 situp before 9pm",
   note: ""
 }
+
+const r_exercise = {
+  key: 'exercise',
+  time: "anytime",
+  duration: .5,
+  activity: "long walk for 30 minutes",
+  note: ""
+}
 const r_bimabd = {
   key: 'Bimabd',
   time: "before 2am",
-  duration: 2,
+  duration: 3,
   activity: "Completing trello task",
   note: "Update to server"
 }
