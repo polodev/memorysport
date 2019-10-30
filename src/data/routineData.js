@@ -115,7 +115,7 @@ const r_freelance = {
   note: ""
 }
 const routines = {
-  date: 'July 1, 2018',
+  date: 'Oct 1, 2019',
   arr: [
     r_exercise,
     r_bimabd,

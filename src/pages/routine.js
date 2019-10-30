@@ -10,8 +10,8 @@ const styles = {
 
 export default () => 
   <div>
-    <h1 style={styles.heading}>Daily routine - Last updated {routineData.date}</h1>
-    <h2 style={styles.heading}>total time - { routineData.arr.map(item => item.duration).reduce((total, newItem) => total = total + newItem) }</h2>
+    <h1 style={styles.heading}>Daily routine (Outside Office) - Last updated {routineData.date}</h1>
+    <h2 style={styles.heading}>total time - { routineData.arr.map(item => item.duration).reduce((total, newItem) => total = total + newItem) } Hour</h2>
     <table>
       <tbody>
         <tr>
@@ -25,7 +25,7 @@ export default () =>
             return (
               <tr key={index}>
                 <td>{item.key} - {item.activity}</td>
-                <td>{item.duration}</td>
+                <td>{item.duration} Hour</td>
                 <td>{item.time}</td>
                 <td>{item.note}</td>
               </tr>
