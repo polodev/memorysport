@@ -39,7 +39,7 @@ const r_wordpress = {
 const r_vocabulary = {
   key: "vocabulary",
   time: "",
-  duration: 1,
+  duration: .5,
   activity: "Newspaper or Any kinda Book",
   note: ""
 }
