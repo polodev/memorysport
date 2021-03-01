@@ -15,7 +15,7 @@
     "gatsby-plugin-typography": "^1.7.18",
     "gatsby-remark-prismjs": "^2.0.4",
     "gatsby-transformer-remark": "^1.7.44",
-    "prismjs": "^1.15.0",
+    "prismjs": "^1.23.0",
     "react-markdown": "^3.3.4",
     "react-select": "^1.2.1",
     "typography": "^0.16.17",
