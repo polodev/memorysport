@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "fuzzy-search": "^2.1.0",
-    "gatsby": "^1.9.273",
+    "gatsby": "^5.3.3",
     "gatsby-link": "^1.6.40",
     "gatsby-plugin-typography": "^1.7.18",
     "gatsby-remark-prismjs": "^2.0.4",
