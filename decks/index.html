@@ -1,0 +1,109 @@
+<!doctype html><html lang=en><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><title>Spaced Repetition Decks | Memory Sport</title><meta name=description content="Memory Sport Training & Reference System - Mnemonic Palaces, Dominic PAO, Pegs, Pi, & Calculation Drills"><script src=https://cdn.tailwindcss.com></script>
+<script>tailwind.config={theme:{extend:{colors:{brand:{teal:"#0d9488",coral:"#f43f5e",amber:"#f59e0b",navy:"#0f172a"}}}}}</script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-solarizedlight.min.css><script src=https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js></script>
+<script src=https://cdn.jsdelivr.net/npm/marked/marked.min.js></script>
+<script src=/memorysport/js/memory-utils.js></script>
+<script defer src=https://cdn.jsdelivr.net/npm/alpinejs@3.14.3/dist/cdn.min.js></script><style>[x-cloak]{display:none!important}</style></head><body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col font-sans"><header class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm" x-data="{ mobileMenu: false }"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div class="flex justify-between h-16 items-center"><a href=/memorysport/ class="flex items-center gap-2 group"><div class="w-10 h-10 rounded-xl bg-teal-600 text-white flex items-center justify-center font-bold text-xl shadow-md group-hover:scale-105 transition-transform">🧠</div><div><span class="font-extrabold text-xl tracking-tight text-slate-900 group-hover:text-teal-600 transition-colors">Memory Sport</span>
+<span class="hidden sm:inline-block text-xs text-slate-400 font-medium ml-1.5 px-2 py-0.5 bg-slate-100 rounded-full">v2.0 Hugo</span></div></a><nav class="hidden md:flex items-center space-x-1 lg:space-x-2 text-sm font-medium"><a href=/memorysport/ class="px-3 py-2 rounded-lg hover:bg-slate-100 text-slate-700 hover:text-teal-700 transition">Home</a><div class=relative x-data="{ open: false, timeout: null }" @mouseenter="clearTimeout(timeout); open = true" @mouseleave="timeout = setTimeout(() => open = false, 200)" @click.outside="open = false"><button @click="open = !open" class="px-3 py-2 rounded-lg hover:bg-slate-100 text-slate-700 hover:text-teal-700 transition flex items-center gap-1 cursor-pointer select-none">
+<span>Dominic</span><svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180 text-teal-600' : 'text-slate-400'" fill="none" stroke="currentcolor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div x-show=open x-cloak x-transition:enter="transition ease-out duration-150" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" class="absolute left-0 top-full pt-1 w-52 z-50"><div class="bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 divide-y divide-slate-100"><div class=py-1><a href=/memorysport/dominic/ class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700 font-medium">Dominic PAO (00-99)</a>
+<a href=/memorysport/dominic-compact/ class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Dominic Compact</a>
+<a href=/memorysport/dominic-hotel/ class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Dominic Hotel (0-9999)</a></div><div class=py-1><a href=/memorysport/dominic-quiz/ class="block px-4 py-2 text-sm font-semibold text-teal-700 hover:bg-teal-50">⚡ Dominic Quiz & Tables</a></div></div></div></div><div class=relative x-data="{ open: false, timeout: null }" @mouseenter="clearTimeout(timeout); open = true" @mouseleave="timeout = setTimeout(() => open = false, 200)" @click.outside="open = false"><button @click="open = !open" class="px-3 py-2 rounded-lg hover:bg-slate-100 text-slate-700 hover:text-teal-700 transition flex items-center gap-1 cursor-pointer select-none">
+<span>Loci (Palaces)</span><svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180 text-teal-600' : 'text-slate-400'" fill="none" stroke="currentcolor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div x-show=open x-cloak x-transition:enter="transition ease-out duration-150" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" class="absolute left-0 top-full pt-1 w-56 z-50"><div class="bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 divide-y divide-slate-100"><div class=py-1><a href=/memorysport/cat-loci/ class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700 font-medium">Cat Loci (Palaces)</a>
+<a href=/memorysport/cat-loci-compact/ class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Cat Loci Compact</a>
+<a href=/memorysport/detail-loci/ class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Detail Loci (Stations)</a>
+<a href=/memorysport/village-loci/ class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Village Loci (145 Bari)</a>
+<a href=/memorysport/loci-titles/ class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Loci Titles & Mnemonics</a>
+<a href=/memorysport/nooks/ class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Nooks Explorer</a></div><div class=py-1><a href=/memorysport/loci-timer/ class="block px-4 py-2 text-sm font-semibold text-teal-700 bg-teal-50/60 hover:bg-teal-100">⏱️ Loci Speed Timer</a></div></div></div></div><div class=relative x-data="{ open: false, timeout: null }" @mouseenter="clearTimeout(timeout); open = true" @mouseleave="timeout = setTimeout(() => open = false, 200)" @click.outside="open = false"><button @click="open = !open" class="px-3 py-2 rounded-lg hover:bg-slate-100 text-slate-700 hover:text-teal-700 transition flex items-center gap-1 cursor-pointer select-none">
+<span>Pegs</span><svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180 text-teal-600' : 'text-slate-400'" fill="none" stroke="currentcolor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div x-show=open x-cloak x-transition:enter="transition ease-out duration-150" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" class="absolute left-0 top-full pt-1 w-52 z-50"><div class="bg-white rounded-xl shadow-xl border border-slate-200 py-1.5"><a href=/memorysport/pegs/#rhymes class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Number-Rhyme (1-10)</a>
+<a href=/memorysport/pegs/#shapes class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Number-Shape (0-9)</a>
+<a href=/memorysport/pegs/#major class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Major System (0-9)</a>
+<a href=/memorysport/pegs/#alphabet class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Alphabet Pegs (A-Z)</a></div></div></div><div class=relative x-data="{ open: false, timeout: null }" @mouseenter="clearTimeout(timeout); open = true" @mouseleave="timeout = setTimeout(() => open = false, 200)" @click.outside="open = false"><button @click="open = !open" class="px-3 py-2 rounded-lg hover:bg-slate-100 text-slate-700 hover:text-teal-700 transition flex items-center gap-1 cursor-pointer select-none">
+<span>Drills & Tools</span><svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180 text-teal-600' : 'text-slate-400'" fill="none" stroke="currentcolor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg></button><div x-show=open x-cloak x-transition:enter="transition ease-out duration-150" x-transition:enter-start="opacity-0 translate-y-1" x-transition:enter-end="opacity-100 translate-y-0" x-transition:leave="transition ease-in duration-100" x-transition:leave-start="opacity-100 translate-y-0" x-transition:leave-end="opacity-0 translate-y-1" class="absolute left-0 top-full pt-1 w-56 z-50"><div class="bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 divide-y divide-slate-100"><div class=py-1><a href=/memorysport/pi/ class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700 font-medium">🥧 Pi 4,400 PAO Drill</a>
+<a href=/memorysport/calculation/ class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700 font-medium">⚡ Mental Math Trainer</a>
+<a href=/memorysport/decks/ class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700 font-medium">🎴 Flashcard Decks</a></div><div class=py-1><a href=/memorysport/routine/ class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">📅 Daily Practice Routine</a></div></div></div></div></nav><div class="flex items-center md:hidden"><button @click="mobileMenu = !mobileMenu" class="p-2 rounded-lg text-slate-600 hover:bg-slate-100 focus:outline-none"><svg class="w-6 h-6" fill="none" stroke="currentcolor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/></svg></button></div></div></div><div x-show=mobileMenu x-cloak class="md:hidden border-t border-slate-200 bg-white px-4 pt-2 pb-4 space-y-1"><a href=/memorysport/ class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Home</a>
+<a href=/memorysport/dominic/ class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Dominic PAO</a>
+<a href=/memorysport/dominic-hotel/ class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Dominic Hotel</a>
+<a href=/memorysport/dominic-quiz/ class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Dominic Quiz</a>
+<a href=/memorysport/cat-loci/ class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Cat Loci</a>
+<a href=/memorysport/detail-loci/ class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Detail Loci</a>
+<a href=/memorysport/village-loci/ class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Village Loci</a>
+<a href=/memorysport/loci-timer/ class="block px-3 py-2 rounded-md text-base font-medium text-teal-700 bg-teal-50">⏱️ Loci Speed Timer</a>
+<a href=/memorysport/pegs/ class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Peg Systems</a>
+<a href=/memorysport/pi/ class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Pi 4,400 PAO</a>
+<a href=/memorysport/calculation/ class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Mental Math</a>
+<a href=/memorysport/decks/ class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Flashcard Decks</a>
+<a href=/memorysport/routine/ class="block px-3 py-2 rounded-md text-base font-medium text-slate-700 hover:bg-slate-100">Routine</a></div></header><main class="flex-grow max-w-7xl w-full mx-auto px-4 sm:px-6 lg:px-8 py-8"><div class=space-y-8 x-data='{
+  decks: [{"cards":[{"back":"\n~~~js\n\"hello\".toUpperCase()\n// HELLO\n~~~\n","front":"string upper case"},{"back":"\n~~~js\n\"hello\".length\n//5\n~~~\n","front":"how to know string length in javascript"}],"tags":"","title":"Basic javascript"},{"cards":[{"back":"\n~~~php\nnamespace App;\n\nuse IlluminateDatabaseEloquentModel;\n\nclass Flight extends Model\n{\n  /**\n   * The table associated with the model.\n   *\n   * @var string\n   */\n  protected $table = &#39;my_flights&#39;;\n} \n\n~~~\n","front":" ~php~ standard tag "},{"back":"\n  ~~~html\n  \u003c?= $var ?\u003e\n  ~~~\n  ","front":"php echo tag"}],"tags":"string function","title":"php essential"}],
+  selectedDeck: null,
+  activeCardIndex: 0,
+  isFlipped: false,
+  searchQuery: &#39;&#39;,
+
+  get filteredDecks() {
+    if (!this.searchQuery.trim()) return this.decks;
+    const q = this.searchQuery.toLowerCase().trim();
+    return this.decks.filter(d => 
+      d.title.toLowerCase().includes(q) ||
+      (d.tags && d.tags.toLowerCase().includes(q))
+    );
+  },
+
+  selectDeck(deck) {
+    this.selectedDeck = deck;
+    this.activeCardIndex = 0;
+    this.isFlipped = false;
+    this.$nextTick(() => {
+      if (window.Prism) Prism.highlightAll();
+    });
+  },
+
+  backToDecks() {
+    this.selectedDeck = null;
+  },
+
+  get currentCard() {
+    if (!this.selectedDeck || !this.selectedDeck.cards) return null;
+    return this.selectedDeck.cards[this.activeCardIndex] || null;
+  },
+
+  get renderedBack() {
+    if (!this.currentCard || !this.currentCard.back) return &#39;&#39;;
+    if (window.marked) {
+      return marked.parse(this.currentCard.back);
+    }
+    return this.currentCard.back;
+  },
+
+  flipCard() {
+    this.isFlipped = !this.isFlipped;
+    this.$nextTick(() => {
+      if (window.Prism) Prism.highlightAll();
+    });
+  },
+
+  nextCard() {
+    if (!this.selectedDeck) return;
+    this.isFlipped = false;
+    this.activeCardIndex = (this.activeCardIndex + 1) % this.selectedDeck.cards.length;
+    this.$nextTick(() => {
+      if (window.Prism) Prism.highlightAll();
+    });
+  },
+
+  prevCard() {
+    if (!this.selectedDeck) return;
+    this.isFlipped = false;
+    this.activeCardIndex = (this.activeCardIndex - 1 + this.selectedDeck.cards.length) % this.selectedDeck.cards.length;
+    this.$nextTick(() => {
+      if (window.Prism) Prism.highlightAll();
+    });
+  }
+}'><div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4"><div><h1 class="text-3xl font-extrabold text-slate-900">🎴 Spaced Repetition Decks</h1><p class="text-slate-500 text-sm mt-1">Study flashcards with Markdown code syntax highlighting</p></div><template x-if=selectedDeck><button @click=backToDecks() class="px-3 py-1.5 rounded-lg border border-slate-300 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition self-start">
+← Back to All Decks</button></template></div><div x-show=!selectedDeck class=space-y-6><div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200"><div class="relative w-full max-w-md"><input type=text x-model=searchQuery placeholder="Search decks by title or tag..." class="w-full pl-10 pr-4 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm"><svg class="w-5 h-5 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentcolor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5A7 7 0 113 10a7 7 0 0114 0z"/></svg></div></div><div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6"><template x-for="(deck, idx) in filteredDecks" :key=idx><div @click=selectDeck(deck) class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:border-teal-500 hover:shadow-md transition cursor-pointer flex flex-col justify-between group"><div><div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition-transform">📚</div><h2 class="text-lg font-bold text-slate-900 group-hover:text-teal-600 transition" x-text=deck.title></h2><p class="text-xs text-slate-400 mt-1" x-text="(deck.cards ? deck.cards.length : 0) + ' cards'"></p></div><div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between"><span class="text-xs font-semibold text-teal-600">Study Deck →</span></div></div></template></div></div><div x-show=selectedDeck x-cloak class="max-w-2xl mx-auto space-y-6"><div class="flex items-center justify-between text-xs font-semibold text-slate-500"><span class="font-bold text-slate-900 text-base" x-text="selectedDeck ? selectedDeck.title : ''"></span>
+<span>Card <strong class=text-teal-700 x-text="(activeCardIndex + 1)"></strong> of <span x-text="selectedDeck && selectedDeck.cards ? selectedDeck.cards.length : 0"></span></span></div><div @click=flipCard() class="min-h-[260px] bg-white rounded-3xl p-8 shadow-md border-2 border-slate-200 hover:border-teal-400 cursor-pointer transition select-none flex flex-col justify-between"><div class="text-xs uppercase font-bold tracking-wider text-slate-400 flex items-center justify-between"><span x-text="isFlipped ? 'Answer / Solution (Back)' : 'Question / Prompt (Front)'"></span>
+<span class="text-[11px] font-normal text-slate-400 italic">Click card to flip 🔄</span></div><div class=my-6><div x-show=!isFlipped class="text-2xl font-black text-slate-900 text-center" x-text="currentCard ? currentCard.front : ''"></div><div x-show=isFlipped x-cloak class="prose prose-slate max-w-none text-sm" x-html=renderedBack></div></div><div class="text-center text-xs text-slate-400"><span x-show=!isFlipped>Tap anywhere to reveal answer</span>
+<span x-show=isFlipped>Tap anywhere to see prompt again</span></div></div><div class="flex items-center justify-between gap-4"><button @click=prevCard() class="py-3 px-6 rounded-xl bg-white border border-slate-200 hover:bg-slate-50 font-bold text-sm text-slate-700 shadow-sm transition">
+← Previous</button>
+<button @click=flipCard() class="py-3 px-6 rounded-xl bg-slate-100 hover:bg-slate-200 font-bold text-sm text-slate-700 transition">
+Flip Card 🔄</button>
+<button @click=nextCard() class="py-3 px-6 rounded-xl bg-teal-600 hover:bg-teal-700 font-bold text-sm text-white shadow-md transition">
+Next Card →</button></div></div></div></main><footer class="bg-white border-t border-slate-200 mt-12 py-8 text-center text-sm text-slate-500"><div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><p class="font-medium text-slate-700 mb-1">Memory Sport Training & Practice System</p><p class="text-xs text-slate-400">Rewritten with <strong class=text-slate-600>Hugo + Alpine.js + Tailwind CSS CDN</strong> • 0 Node.js • 0 Vulnerabilities • 0 GitHub Actions Credits</p></div></footer></body></html>

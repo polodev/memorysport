@@ -1,0 +1,30 @@
+[
+  {
+    "title": "Basic javascript",
+    "tags": "",
+    "cards": [
+      {
+        "front": "string upper case",
+        "back": "\n~~~js\n\"hello\".toUpperCase()\n// HELLO\n~~~\n"
+      },
+      {
+        "front": "how to know string length in javascript",
+        "back": "\n~~~js\n\"hello\".length\n//5\n~~~\n"
+      }
+    ]
+  },
+  {
+    "title": "php essential",
+    "tags": "string function",
+    "cards": [
+      {
+        "front": " ~php~ standard tag ",
+        "back": "\n~~~php\nnamespace App;\n\nuse IlluminateDatabaseEloquentModel;\n\nclass Flight extends Model\n{\n  /**\n   * The table associated with the model.\n   *\n   * @var string\n   */\n  protected $table = 'my_flights';\n} \n\n~~~\n"
+      },
+      {
+        "front": "php echo tag",
+        "back": "\n  ~~~html\n  <?= $var ?>\n  ~~~\n  "
+      }
+    ]
+  }
+]
