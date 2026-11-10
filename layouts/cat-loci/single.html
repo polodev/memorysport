@@ -33,6 +33,24 @@
       }
       return null;
     }).filter(Boolean);
+  },
+
+  getLeftNooks(nooks) {
+    if (!nooks || nooks.length === 0) return [];
+    const mid = Math.ceil(nooks.length / 2);
+    return nooks.slice(0, mid).map((nook, i) => ({
+      text: nook.replace(/^.*###\s*/, ''),
+      num: i + 1
+    }));
+  },
+
+  getRightNooks(nooks) {
+    if (!nooks || nooks.length === 0) return [];
+    const mid = Math.ceil(nooks.length / 2);
+    return nooks.slice(mid).map((nook, i) => ({
+      text: nook.replace(/^.*###\s*/, ''),
+      num: mid + i + 1
+    }));
   }
 }">
 
@@ -101,15 +119,28 @@
           <span class="text-xs font-semibold px-2.5 py-1 bg-slate-100 rounded-lg text-slate-600" x-text="(room.nooks ? room.nooks.length : 0) + ' nooks'"></span>
         </div>
 
-        <!-- Nooks List -->
-        <ul class="grid grid-cols-1 sm:grid-cols-2 gap-2 text-sm">
-          <template x-for="(nook, nIdx) in (room.nooks || [])" :key="nIdx">
-            <li class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 hover:bg-teal-50/50 hover:border-teal-200 transition flex items-start gap-2.5">
-              <span class="font-mono text-xs font-bold text-teal-600 mt-0.5" x-text="(nIdx + 1) + '.'"></span>
-              <span class="text-slate-700 font-medium" x-text="nook.replace(/^.*###\s*/, '')"></span>
-            </li>
-          </template>
-        </ul>
+        <!-- Nooks List: Column-Flow (1, 2, 3 on Left Column, then continues on Right Column) -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3 text-sm">
+          <!-- Left Column (1 to mid) -->
+          <ul class="space-y-2">
+            <template x-for="item in getLeftNooks(room.nooks)" :key="item.num">
+              <li class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 hover:bg-teal-50/50 hover:border-teal-200 transition flex items-start gap-2.5">
+                <span class="font-mono text-xs font-bold text-teal-600 mt-0.5" x-text="item.num + '.'"></span>
+                <span class="text-slate-700 font-medium" x-text="item.text"></span>
+              </li>
+            </template>
+          </ul>
+
+          <!-- Right Column (mid+1 to end) -->
+          <ul class="space-y-2">
+            <template x-for="item in getRightNooks(room.nooks)" :key="item.num">
+              <li class="p-2.5 rounded-xl bg-slate-50 border border-slate-100 hover:bg-teal-50/50 hover:border-teal-200 transition flex items-start gap-2.5">
+                <span class="font-mono text-xs font-bold text-teal-600 mt-0.5" x-text="item.num + '.'"></span>
+                <span class="text-slate-700 font-medium" x-text="item.text"></span>
+              </li>
+            </template>
+          </ul>
+        </div>
       </div>
     </template>
   </div>
