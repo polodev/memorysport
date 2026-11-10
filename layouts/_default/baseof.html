@@ -64,61 +64,157 @@
           <a href="{{ "" | relURL }}" class="px-3 py-2 rounded-lg hover:bg-slate-100 text-slate-700 hover:text-teal-700 transition">Home</a>
           
           <!-- Dominic Dropdown -->
-          <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
-            <button class="px-3 py-2 rounded-lg hover:bg-slate-100 text-slate-700 hover:text-teal-700 transition flex items-center gap-1">
+          <div
+            class="relative"
+            x-data="{ open: false, timeout: null }"
+            @mouseenter="clearTimeout(timeout); open = true"
+            @mouseleave="timeout = setTimeout(() => open = false, 200)"
+            @click.outside="open = false"
+          >
+            <button
+              @click="open = !open"
+              class="px-3 py-2 rounded-lg hover:bg-slate-100 text-slate-700 hover:text-teal-700 transition flex items-center gap-1 cursor-pointer select-none"
+            >
               <span>Dominic</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              <svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180 text-teal-600' : 'text-slate-400'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div x-show="open" x-cloak class="absolute left-0 mt-1 w-48 bg-white rounded-xl shadow-lg border border-slate-100 py-2 z-50">
-              <a href="{{ "dominic/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Dominic PAO (00-99)</a>
-              <a href="{{ "dominic-compact/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Dominic Compact</a>
-              <a href="{{ "dominic-hotel/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Dominic Hotel (0-9999)</a>
-              <a href="{{ "dominic-quiz/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Dominic Quiz & Tables</a>
+            <div
+              x-show="open"
+              x-cloak
+              x-transition:enter="transition ease-out duration-150"
+              x-transition:enter-start="opacity-0 translate-y-1"
+              x-transition:enter-end="opacity-100 translate-y-0"
+              x-transition:leave="transition ease-in duration-100"
+              x-transition:leave-start="opacity-100 translate-y-0"
+              x-transition:leave-end="opacity-0 translate-y-1"
+              class="absolute left-0 top-full pt-1 w-52 z-50"
+            >
+              <div class="bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 divide-y divide-slate-100">
+                <div class="py-1">
+                  <a href="{{ "dominic/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700 font-medium">Dominic PAO (00-99)</a>
+                  <a href="{{ "dominic-compact/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Dominic Compact</a>
+                  <a href="{{ "dominic-hotel/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Dominic Hotel (0-9999)</a>
+                </div>
+                <div class="py-1">
+                  <a href="{{ "dominic-quiz/" | relURL }}" class="block px-4 py-2 text-sm font-semibold text-teal-700 hover:bg-teal-50">⚡ Dominic Quiz & Tables</a>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Loci Dropdown -->
-          <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
-            <button class="px-3 py-2 rounded-lg hover:bg-slate-100 text-slate-700 hover:text-teal-700 transition flex items-center gap-1">
+          <div
+            class="relative"
+            x-data="{ open: false, timeout: null }"
+            @mouseenter="clearTimeout(timeout); open = true"
+            @mouseleave="timeout = setTimeout(() => open = false, 200)"
+            @click.outside="open = false"
+          >
+            <button
+              @click="open = !open"
+              class="px-3 py-2 rounded-lg hover:bg-slate-100 text-slate-700 hover:text-teal-700 transition flex items-center gap-1 cursor-pointer select-none"
+            >
               <span>Loci (Palaces)</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              <svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180 text-teal-600' : 'text-slate-400'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div x-show="open" x-cloak class="absolute left-0 mt-1 w-52 bg-white rounded-xl shadow-lg border border-slate-100 py-2 z-50">
-              <a href="{{ "cat-loci/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Cat Loci (Palaces)</a>
-              <a href="{{ "cat-loci-compact/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Cat Loci Compact</a>
-              <a href="{{ "detail-loci/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Detail Loci (Stations)</a>
-              <a href="{{ "village-loci/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Village Loci (145 Bari)</a>
-              <a href="{{ "loci-titles/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Loci Titles & Mnemonics</a>
-              <a href="{{ "nooks/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Nooks Explorer</a>
-              <a href="{{ "loci-timer/" | relURL }}" class="block px-4 py-2 text-sm font-semibold text-teal-700 bg-teal-50 hover:bg-teal-100">⏱️ Loci Speed Timer</a>
+            <div
+              x-show="open"
+              x-cloak
+              x-transition:enter="transition ease-out duration-150"
+              x-transition:enter-start="opacity-0 translate-y-1"
+              x-transition:enter-end="opacity-100 translate-y-0"
+              x-transition:leave="transition ease-in duration-100"
+              x-transition:leave-start="opacity-100 translate-y-0"
+              x-transition:leave-end="opacity-0 translate-y-1"
+              class="absolute left-0 top-full pt-1 w-56 z-50"
+            >
+              <div class="bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 divide-y divide-slate-100">
+                <div class="py-1">
+                  <a href="{{ "cat-loci/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700 font-medium">Cat Loci (Palaces)</a>
+                  <a href="{{ "cat-loci-compact/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Cat Loci Compact</a>
+                  <a href="{{ "detail-loci/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Detail Loci (Stations)</a>
+                  <a href="{{ "village-loci/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Village Loci (145 Bari)</a>
+                  <a href="{{ "loci-titles/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Loci Titles & Mnemonics</a>
+                  <a href="{{ "nooks/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Nooks Explorer</a>
+                </div>
+                <div class="py-1">
+                  <a href="{{ "loci-timer/" | relURL }}" class="block px-4 py-2 text-sm font-semibold text-teal-700 bg-teal-50/60 hover:bg-teal-100">⏱️ Loci Speed Timer</a>
+                </div>
+              </div>
             </div>
           </div>
 
           <!-- Pegs Dropdown -->
-          <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
-            <button class="px-3 py-2 rounded-lg hover:bg-slate-100 text-slate-700 hover:text-teal-700 transition flex items-center gap-1">
+          <div
+            class="relative"
+            x-data="{ open: false, timeout: null }"
+            @mouseenter="clearTimeout(timeout); open = true"
+            @mouseleave="timeout = setTimeout(() => open = false, 200)"
+            @click.outside="open = false"
+          >
+            <button
+              @click="open = !open"
+              class="px-3 py-2 rounded-lg hover:bg-slate-100 text-slate-700 hover:text-teal-700 transition flex items-center gap-1 cursor-pointer select-none"
+            >
               <span>Pegs</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              <svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180 text-teal-600' : 'text-slate-400'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div x-show="open" x-cloak class="absolute left-0 mt-1 w-48 bg-white rounded-xl shadow-lg border border-slate-100 py-2 z-50">
-              <a href="{{ "pegs/#rhymes" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Number-Rhyme (1-10)</a>
-              <a href="{{ "pegs/#shapes" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Number-Shape (0-9)</a>
-              <a href="{{ "pegs/#major" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Major System (0-9)</a>
-              <a href="{{ "pegs/#alphabet" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Alphabet Pegs (A-Z)</a>
+            <div
+              x-show="open"
+              x-cloak
+              x-transition:enter="transition ease-out duration-150"
+              x-transition:enter-start="opacity-0 translate-y-1"
+              x-transition:enter-end="opacity-100 translate-y-0"
+              x-transition:leave="transition ease-in duration-100"
+              x-transition:leave-start="opacity-100 translate-y-0"
+              x-transition:leave-end="opacity-0 translate-y-1"
+              class="absolute left-0 top-full pt-1 w-52 z-50"
+            >
+              <div class="bg-white rounded-xl shadow-xl border border-slate-200 py-1.5">
+                <a href="{{ "pegs/#rhymes" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Number-Rhyme (1-10)</a>
+                <a href="{{ "pegs/#shapes" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Number-Shape (0-9)</a>
+                <a href="{{ "pegs/#major" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Major System (0-9)</a>
+                <a href="{{ "pegs/#alphabet" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">Alphabet Pegs (A-Z)</a>
+              </div>
             </div>
           </div>
 
           <!-- Practice / Drills -->
-          <div class="relative" x-data="{ open: false }" @mouseenter="open = true" @mouseleave="open = false">
-            <button class="px-3 py-2 rounded-lg hover:bg-slate-100 text-slate-700 hover:text-teal-700 transition flex items-center gap-1">
+          <div
+            class="relative"
+            x-data="{ open: false, timeout: null }"
+            @mouseenter="clearTimeout(timeout); open = true"
+            @mouseleave="timeout = setTimeout(() => open = false, 200)"
+            @click.outside="open = false"
+          >
+            <button
+              @click="open = !open"
+              class="px-3 py-2 rounded-lg hover:bg-slate-100 text-slate-700 hover:text-teal-700 transition flex items-center gap-1 cursor-pointer select-none"
+            >
               <span>Drills & Tools</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              <svg class="w-4 h-4 transition-transform duration-200" :class="open ? 'rotate-180 text-teal-600' : 'text-slate-400'" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
             </button>
-            <div x-show="open" x-cloak class="absolute left-0 mt-1 w-52 bg-white rounded-xl shadow-lg border border-slate-100 py-2 z-50">
-              <a href="{{ "pi/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">🥧 Pi 4,400 PAO Drill</a>
-              <a href="{{ "calculation/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">⚡ Mental Math Trainer</a>
-              <a href="{{ "decks/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">🎴 Flashcard Decks</a>
-              <a href="{{ "routine/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">📅 Daily Practice Routine</a>
+            <div
+              x-show="open"
+              x-cloak
+              x-transition:enter="transition ease-out duration-150"
+              x-transition:enter-start="opacity-0 translate-y-1"
+              x-transition:enter-end="opacity-100 translate-y-0"
+              x-transition:leave="transition ease-in duration-100"
+              x-transition:leave-start="opacity-100 translate-y-0"
+              x-transition:leave-end="opacity-0 translate-y-1"
+              class="absolute left-0 top-full pt-1 w-56 z-50"
+            >
+              <div class="bg-white rounded-xl shadow-xl border border-slate-200 py-1.5 divide-y divide-slate-100">
+                <div class="py-1">
+                  <a href="{{ "pi/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700 font-medium">🥧 Pi 4,400 PAO Drill</a>
+                  <a href="{{ "calculation/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700 font-medium">⚡ Mental Math Trainer</a>
+                  <a href="{{ "decks/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700 font-medium">🎴 Flashcard Decks</a>
+                </div>
+                <div class="py-1">
+                  <a href="{{ "routine/" | relURL }}" class="block px-4 py-2 text-sm text-slate-700 hover:bg-teal-50 hover:text-teal-700">📅 Daily Practice Routine</a>
+                </div>
+              </div>
             </div>
           </div>
         </nav>
