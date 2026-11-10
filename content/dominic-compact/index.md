@@ -1,0 +1,3 @@
+---
+title: "Dominic Compact Table"
+---

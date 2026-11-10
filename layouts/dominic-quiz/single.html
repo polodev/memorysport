@@ -1,0 +1,229 @@
+{{ define "main" }}
+<div class="space-y-10" x-data="{
+  paoData: {{ .Site.Data.dominic.pao | jsonify }},
+  currentPAO: null,
+  showAnswer: false,
+  promptType: 'number', // 'number' or 'person'
+  
+  // Timer drill
+  timerIntervalSeconds: 3,
+  isTimerRunning: false,
+  timerId: null,
+
+  // Hundred grids
+  naturalHundred: [],
+  randomHundred: [],
+
+  nextCard() {
+    this.showAnswer = false;
+    const randNum = window.MemoryUtils.getRandomNumber(0, 100);
+    const numStr = randNum.toString().padStart(2, '0');
+    this.currentPAO = window.MemoryUtils.gettingObjectByNumber(this.paoData, numStr) || this.paoData[0];
+    this.promptType = Math.random() > 0.5 ? 'number' : 'person';
+  },
+
+  toggleAnswer() {
+    this.showAnswer = !this.showAnswer;
+  },
+
+  startTimer() {
+    if (this.isTimerRunning) {
+      clearInterval(this.timerId);
+      this.isTimerRunning = false;
+      return;
+    }
+    this.isTimerRunning = true;
+    this.nextCard();
+    this.timerId = setInterval(() => {
+      this.nextCard();
+    }, this.timerIntervalSeconds * 1000);
+  },
+
+  updateTimerInterval() {
+    if (this.isTimerRunning) {
+      clearInterval(this.timerId);
+      this.timerId = setInterval(() => {
+        this.nextCard();
+      }, this.timerIntervalSeconds * 1000);
+    }
+  },
+
+  regenerateRandomHundred() {
+    const natural = window.MemoryUtils.generateNatural100();
+    const shuffled = window.MemoryUtils.shuffleArray(natural);
+    this.randomHundred = window.MemoryUtils.chunkArray(shuffled, 10);
+  },
+
+  init() {
+    this.naturalHundred = window.MemoryUtils.chunkArray(window.MemoryUtils.generateNatural100(), 10);
+    this.regenerateRandomHundred();
+    this.nextCard();
+  }
+}">
+
+  <div class="border-b border-slate-200 pb-4">
+    <h1 class="text-3xl font-extrabold text-slate-900">Dominic Recall Quiz & Tables</h1>
+    <p class="text-slate-500 text-sm mt-1">Interactive flash drills for number-to-person and person-to-number associations</p>
+  </div>
+
+  <!-- Interactive Flashcard Quiz Section -->
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <!-- Manual Card Flash Drill -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-100">
+          <h2 class="text-lg font-bold text-slate-900">🎯 Flash Drill (Click to Reveal)</h2>
+          <span class="text-xs font-semibold px-2 py-0.5 bg-teal-50 text-teal-700 rounded-md">Self-Paced</span>
+        </div>
+
+        <!-- The Flashcard -->
+        <div
+          @click="toggleAnswer()"
+          class="my-4 min-h-[140px] rounded-2xl border-2 border-dashed border-teal-300 bg-teal-50/40 p-6 flex flex-col items-center justify-center cursor-pointer hover:bg-teal-50 hover:border-teal-500 transition select-none"
+        >
+          <div class="text-xs uppercase tracking-wider font-bold text-teal-600 mb-2" x-text="promptType === 'number' ? 'What person is this number?' : 'What number is this person?'"></div>
+          <div class="text-4xl font-black text-slate-900 tracking-tight" x-text="currentPAO ? (promptType === 'number' ? currentPAO.number : currentPAO.person) : '...'"></div>
+          <div class="text-xs text-slate-400 mt-3 font-medium">Click card to reveal answer</div>
+        </div>
+
+        <!-- Answer Reveal Box -->
+        <div x-show="showAnswer" x-cloak class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-sm space-y-1.5 transition">
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-slate-700">Number:</span>
+            <span class="font-mono font-bold text-teal-700 text-base" x-text="currentPAO ? currentPAO.number + ' (' + currentPAO.letter + ')' : ''"></span>
+          </div>
+          <div class="flex items-center justify-between">
+            <span class="font-bold text-slate-700">Person:</span>
+            <span class="font-semibold text-slate-900" x-text="currentPAO ? currentPAO.person : ''"></span>
+          </div>
+          <div class="flex items-start justify-between">
+            <span class="font-bold text-slate-700">Action:</span>
+            <span class="text-slate-600 text-right" x-text="currentPAO ? (currentPAO.fullAction || currentPAO.action) : ''"></span>
+          </div>
+          <template x-if="currentPAO && currentPAO.object">
+            <div class="flex items-center justify-between">
+              <span class="font-bold text-slate-700">Object:</span>
+              <span class="text-slate-600" x-text="currentPAO.object"></span>
+            </div>
+          </template>
+        </div>
+      </div>
+
+      <!-- Action Button -->
+      <div class="mt-6 flex gap-3">
+        <button
+          @click="nextCard()"
+          class="flex-1 py-3 px-6 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-bold shadow-md transition"
+        >
+          Next Card →
+        </button>
+      </div>
+    </div>
+
+    <!-- Speed Timer Auto Drill -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col justify-between">
+      <div>
+        <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-100">
+          <h2 class="text-lg font-bold text-slate-900">⏱️ Auto Speed Drill</h2>
+          <span class="text-xs font-semibold px-2 py-0.5 rounded-md" :class="isTimerRunning ? 'bg-emerald-100 text-emerald-800' : 'bg-slate-100 text-slate-600'" x-text="isTimerRunning ? 'ACTIVE' : 'IDLE'"></span>
+        </div>
+
+        <p class="text-xs text-slate-500 mb-4">
+          Test your rapid recognition speed. Numbers automatically advance at your chosen interval.
+        </p>
+
+        <!-- Interval Selector -->
+        <div class="mb-4">
+          <label class="block text-xs font-bold uppercase text-slate-500 mb-1">Interval Speed (seconds)</label>
+          <select
+            x-model="timerIntervalSeconds"
+            @change="updateTimerInterval()"
+            class="w-full px-4 py-2 rounded-xl border border-slate-300 text-sm font-semibold focus:outline-none focus:ring-2 focus:ring-teal-500"
+          >
+            <option value="1">1 second (Mastery)</option>
+            <option value="2">2 seconds (Fast)</option>
+            <option value="3">3 seconds (Medium)</option>
+            <option value="5">5 seconds (Learning)</option>
+            <option value="10">10 seconds (Relaxed)</option>
+          </select>
+        </div>
+
+        <!-- Timer Display Box -->
+        <div class="my-4 min-h-[100px] rounded-2xl bg-slate-900 text-white p-6 flex flex-col items-center justify-center shadow-inner">
+          <div class="text-xs uppercase tracking-wider text-slate-400 mb-1 font-semibold">Active Flashcard</div>
+          <div class="text-4xl font-mono font-black tracking-tight text-teal-400" x-text="currentPAO ? (promptType === 'number' ? currentPAO.number : currentPAO.person) : '—'"></div>
+        </div>
+      </div>
+
+      <!-- Play/Pause Button -->
+      <div class="mt-4">
+        <button
+          @click="startTimer()"
+          class="w-full py-3 px-6 rounded-xl font-bold shadow-md transition text-white"
+          :class="isTimerRunning ? 'bg-rose-600 hover:bg-rose-700' : 'bg-teal-600 hover:bg-teal-700'"
+          x-text="isTimerRunning ? 'Pause Auto Drill ⏸️' : 'Start Auto Drill ▶️'"
+        ></button>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- 100 Tables Section -->
+  <div class="space-y-6">
+
+    <!-- Random Hundred Matrix -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-4 pb-2 border-b border-slate-100">
+        <div>
+          <h2 class="text-lg font-bold text-slate-900">Random 100 Matrix (Shuffled 00-99)</h2>
+          <p class="text-xs text-slate-500">Scan row by row to practice rapid mnemonic conversion</p>
+        </div>
+        <button
+          @click="regenerateRandomHundred()"
+          class="px-4 py-2 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-800 text-xs font-bold transition flex items-center gap-1.5 self-start"
+        >
+          <span>🎲 Reshuffle Numbers</span>
+        </button>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-center border-collapse text-sm">
+          <tbody>
+            <template x-for="(row, rIndex) in randomHundred" :key="rIndex">
+              <tr class="border-b border-slate-100">
+                <template x-for="(cell, cIndex) in row" :key="cIndex">
+                  <td class="py-2.5 px-3 font-mono font-bold text-slate-800 hover:bg-teal-100/60 hover:text-teal-900 rounded-lg cursor-pointer transition" x-text="cell"></td>
+                </template>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Natural Hundred Matrix -->
+    <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+      <div class="mb-4 pb-2 border-b border-slate-100">
+        <h2 class="text-lg font-bold text-slate-900">Natural 100 Matrix (00 to 99 in Order)</h2>
+      </div>
+
+      <div class="overflow-x-auto">
+        <table class="w-full text-center border-collapse text-sm">
+          <tbody>
+            <template x-for="(row, rIndex) in naturalHundred" :key="rIndex">
+              <tr class="border-b border-slate-100">
+                <template x-for="(cell, cIndex) in row" :key="cIndex">
+                  <td class="py-2.5 px-3 font-mono font-semibold text-slate-700 hover:bg-slate-100 rounded-lg cursor-pointer transition" x-text="cell"></td>
+                </template>
+              </tr>
+            </template>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+{{ end }}

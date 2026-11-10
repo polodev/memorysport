@@ -1,0 +1,47 @@
+{{ define "main" }}
+<div class="space-y-8" x-data="{
+  routine: {{ .Site.Data.routine | jsonify }},
+  get totalHours() {
+    return (this.routine.items || []).reduce((acc, item) => acc + (parseFloat(item.duration) || 0), 0);
+  }
+}">
+
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
+    <div>
+      <h1 class="text-3xl font-extrabold text-slate-900">📅 Daily Practice Routine</h1>
+      <p class="text-slate-500 text-sm mt-1">Outside Office Schedule • Last updated <span class="font-semibold text-slate-700" x-text="routine.date"></span></p>
+    </div>
+    <div class="px-4 py-2 rounded-xl bg-teal-50 border border-teal-200 text-teal-800 font-bold text-sm">
+      ⏱️ Total Planned: <span x-text="totalHours"></span> Hours
+    </div>
+  </div>
+
+  <div class="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border-collapse text-sm">
+        <thead>
+          <tr class="bg-slate-50 border-b border-slate-200 text-slate-500 font-semibold text-xs uppercase tracking-wider">
+            <th class="py-3 px-4">Key</th>
+            <th class="py-3 px-4">Activity Description</th>
+            <th class="py-3 px-4 text-center">Duration</th>
+            <th class="py-3 px-4">Time Window</th>
+            <th class="py-3 px-4">Notes</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100">
+          <template x-for="(item, idx) in (routine.items || [])" :key="idx">
+            <tr class="hover:bg-slate-50 transition">
+              <td class="py-3 px-4 font-mono font-bold text-teal-700 whitespace-nowrap" x-text="item.key"></td>
+              <td class="py-3 px-4 font-semibold text-slate-900" x-text="item.activity"></td>
+              <td class="py-3 px-4 text-center font-bold text-slate-700 whitespace-nowrap" x-text="item.duration + ' Hours'"></td>
+              <td class="py-3 px-4 text-slate-600 text-xs" x-text="item.time || '—'"></td>
+              <td class="py-3 px-4 text-slate-500 text-xs" x-text="item.note || '—'"></td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+{{ end }}

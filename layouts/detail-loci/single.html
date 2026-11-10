@@ -1,0 +1,86 @@
+{{ define "main" }}
+<div class="space-y-8" x-data="{
+  detailData: {{ .Site.Data.detailloci | jsonify }},
+  selectedPalace: 'fatepurHome',
+
+  get palaceKeys() {
+    return Object.keys(this.detailData);
+  },
+
+  formatName(key) {
+    return key.replace(/([A-Z0-9])/g, ' $1').replace(/^./, str => str.toUpperCase());
+  },
+
+  get processedStations() {
+    const rawList = this.detailData[this.selectedPalace] || [];
+    const stations = [];
+    let counter = 1;
+
+    for (const item of rawList) {
+      if (item === '<br>') continue;
+      const isNewRoom = item.includes('##');
+      const cleanText = item.replace(/##/g, '').trim();
+      stations.push({
+        index: counter++,
+        text: cleanText,
+        isNewRoom
+      });
+    }
+    return stations;
+  }
+}">
+
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
+    <div>
+      <h1 class="text-3xl font-extrabold text-slate-900">Detail Loci (Step-by-Step Paths)</h1>
+      <p class="text-slate-500 text-sm mt-1">Sequential memory journey stations with room transitions</p>
+    </div>
+    <a href="{{ "cat-loci/" | relURL }}" class="px-3 py-1.5 rounded-lg border border-slate-300 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition">
+      Cat Loci Palaces
+    </a>
+  </div>
+
+  <!-- Palace Selector -->
+  <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div class="w-full sm:w-80">
+      <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1.5">Select Memory Journey</label>
+      <select
+        x-model="selectedPalace"
+        class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-slate-900 font-bold text-base focus:outline-none focus:ring-2 focus:ring-teal-500"
+      >
+        <template x-for="key in palaceKeys" :key="key">
+          <option :value="key" x-text="formatName(key)"></option>
+        </template>
+      </select>
+    </div>
+    <div class="text-xs font-semibold px-4 py-2 bg-teal-50 text-teal-800 rounded-xl">
+      📍 <span class="font-bold text-sm" x-text="processedStations.length"></span> Total Stations
+    </div>
+  </div>
+
+  <!-- Stations List -->
+  <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+    <div class="flex items-center justify-between pb-3 mb-4 border-b border-slate-100">
+      <h2 class="text-lg font-bold text-slate-900" x-text="formatName(selectedPalace)"></h2>
+      <span class="text-xs text-slate-400">Highlighted cards mark a new room or area boundary</span>
+    </div>
+
+    <div class="space-y-2">
+      <template x-for="st in processedStations" :key="st.index">
+        <div
+          class="p-3.5 rounded-xl border transition flex items-center gap-4"
+          :class="st.isNewRoom ? 'bg-amber-50/60 border-amber-300 shadow-sm font-semibold' : 'bg-slate-50 border-slate-100 hover:border-teal-300'"
+        >
+          <span
+            class="w-10 text-center font-mono font-bold text-xs py-1 rounded-lg"
+            :class="st.isNewRoom ? 'bg-amber-500 text-white' : 'bg-white text-teal-700 border border-slate-200'"
+            x-text="st.index"
+          ></span>
+          <span class="text-slate-800 text-sm" :class="st.isNewRoom ? 'font-bold text-amber-900' : 'font-medium'" x-text="st.text"></span>
+        </div>
+      </template>
+    </div>
+  </div>
+
+</div>
+{{ end }}

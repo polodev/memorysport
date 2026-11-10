@@ -1,0 +1,40 @@
+{
+  "date": "Oct 1, 2019",
+  "items": [
+    {
+      "key": "exercise",
+      "time": "anytime",
+      "duration": 0.5,
+      "activity": "long walk for 30 minutes",
+      "note": ""
+    },
+    {
+      "key": "Bimabd",
+      "time": "before 2am",
+      "duration": 3,
+      "activity": "Completing trello task",
+      "note": "Update to server"
+    },
+    {
+      "key": "Freelance",
+      "time": "before 2am",
+      "duration": 2,
+      "activity": "Prepare for Freelance work - searching and finding",
+      "note": ""
+    },
+    {
+      "key": "vocabulary",
+      "time": "",
+      "duration": 0.5,
+      "activity": "Newspaper or Any kinda Book",
+      "note": ""
+    },
+    {
+      "key": "zend prep",
+      "time": "night",
+      "duration": 0.5,
+      "activity": "zend book reading",
+      "note": ""
+    }
+  ]
+}

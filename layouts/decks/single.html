@@ -1,0 +1,178 @@
+{{ define "main" }}
+<div class="space-y-8" x-data="{
+  decks: {{ .Site.Data.decks | jsonify }},
+  selectedDeck: null,
+  activeCardIndex: 0,
+  isFlipped: false,
+  searchQuery: '',
+
+  get filteredDecks() {
+    if (!this.searchQuery.trim()) return this.decks;
+    const q = this.searchQuery.toLowerCase().trim();
+    return this.decks.filter(d => 
+      d.title.toLowerCase().includes(q) ||
+      (d.tags && d.tags.toLowerCase().includes(q))
+    );
+  },
+
+  selectDeck(deck) {
+    this.selectedDeck = deck;
+    this.activeCardIndex = 0;
+    this.isFlipped = false;
+    this.$nextTick(() => {
+      if (window.Prism) Prism.highlightAll();
+    });
+  },
+
+  backToDecks() {
+    this.selectedDeck = null;
+  },
+
+  get currentCard() {
+    if (!this.selectedDeck || !this.selectedDeck.cards) return null;
+    return this.selectedDeck.cards[this.activeCardIndex] || null;
+  },
+
+  get renderedBack() {
+    if (!this.currentCard || !this.currentCard.back) return '';
+    if (window.marked) {
+      return marked.parse(this.currentCard.back);
+    }
+    return this.currentCard.back;
+  },
+
+  flipCard() {
+    this.isFlipped = !this.isFlipped;
+    this.$nextTick(() => {
+      if (window.Prism) Prism.highlightAll();
+    });
+  },
+
+  nextCard() {
+    if (!this.selectedDeck) return;
+    this.isFlipped = false;
+    this.activeCardIndex = (this.activeCardIndex + 1) % this.selectedDeck.cards.length;
+    this.$nextTick(() => {
+      if (window.Prism) Prism.highlightAll();
+    });
+  },
+
+  prevCard() {
+    if (!this.selectedDeck) return;
+    this.isFlipped = false;
+    this.activeCardIndex = (this.activeCardIndex - 1 + this.selectedDeck.cards.length) % this.selectedDeck.cards.length;
+    this.$nextTick(() => {
+      if (window.Prism) Prism.highlightAll();
+    });
+  }
+}">
+
+  <!-- Header -->
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
+    <div>
+      <h1 class="text-3xl font-extrabold text-slate-900">🎴 Spaced Repetition Decks</h1>
+      <p class="text-slate-500 text-sm mt-1">Study flashcards with Markdown code syntax highlighting</p>
+    </div>
+    <template x-if="selectedDeck">
+      <button
+        @click="backToDecks()"
+        class="px-3 py-1.5 rounded-lg border border-slate-300 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition self-start"
+      >
+        ← Back to All Decks
+      </button>
+    </template>
+  </div>
+
+  <!-- Deck Selection Mode -->
+  <div x-show="!selectedDeck" class="space-y-6">
+    <!-- Search Bar -->
+    <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200">
+      <div class="relative w-full max-w-md">
+        <input
+          type="text"
+          x-model="searchQuery"
+          placeholder="Search decks by title or tag..."
+          class="w-full pl-10 pr-4 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm"
+        />
+        <svg class="w-5 h-5 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+      </div>
+    </div>
+
+    <!-- Decks Grid -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <template x-for="(deck, idx) in filteredDecks" :key="idx">
+        <div
+          @click="selectDeck(deck)"
+          class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:border-teal-500 hover:shadow-md transition cursor-pointer flex flex-col justify-between group"
+        >
+          <div>
+            <div class="w-10 h-10 rounded-xl bg-teal-50 text-teal-600 flex items-center justify-center text-xl mb-3 group-hover:scale-110 transition-transform">
+              📚
+            </div>
+            <h2 class="text-lg font-bold text-slate-900 group-hover:text-teal-600 transition" x-text="deck.title"></h2>
+            <p class="text-xs text-slate-400 mt-1" x-text="(deck.cards ? deck.cards.length : 0) + ' cards'"></p>
+          </div>
+          <div class="mt-4 pt-3 border-t border-slate-100 flex items-center justify-between">
+            <span class="text-xs font-semibold text-teal-600">Study Deck →</span>
+          </div>
+        </div>
+      </template>
+    </div>
+  </div>
+
+  <!-- Study Flashcard Mode -->
+  <div x-show="selectedDeck" x-cloak class="max-w-2xl mx-auto space-y-6">
+    <div class="flex items-center justify-between text-xs font-semibold text-slate-500">
+      <span class="font-bold text-slate-900 text-base" x-text="selectedDeck ? selectedDeck.title : ''"></span>
+      <span>Card <strong class="text-teal-700" x-text="(activeCardIndex + 1)"></strong> of <span x-text="selectedDeck && selectedDeck.cards ? selectedDeck.cards.length : 0"></span></span>
+    </div>
+
+    <!-- The Flashcard -->
+    <div
+      @click="flipCard()"
+      class="min-h-[260px] bg-white rounded-3xl p-8 shadow-md border-2 border-slate-200 hover:border-teal-400 cursor-pointer transition select-none flex flex-col justify-between"
+    >
+      <div class="text-xs uppercase font-bold tracking-wider text-slate-400 flex items-center justify-between">
+        <span x-text="isFlipped ? 'Answer / Solution (Back)' : 'Question / Prompt (Front)'"></span>
+        <span class="text-[11px] font-normal text-slate-400 italic">Click card to flip 🔄</span>
+      </div>
+
+      <!-- Card Content -->
+      <div class="my-6">
+        <!-- Front -->
+        <div x-show="!isFlipped" class="text-2xl font-black text-slate-900 text-center" x-text="currentCard ? currentCard.front : ''"></div>
+        <!-- Back (Markdown rendered) -->
+        <div x-show="isFlipped" x-cloak class="prose prose-slate max-w-none text-sm" x-html="renderedBack"></div>
+      </div>
+
+      <div class="text-center text-xs text-slate-400">
+        <span x-show="!isFlipped">Tap anywhere to reveal answer</span>
+        <span x-show="isFlipped">Tap anywhere to see prompt again</span>
+      </div>
+    </div>
+
+    <!-- Navigation Controls -->
+    <div class="flex items-center justify-between gap-4">
+      <button
+        @click="prevCard()"
+        class="py-3 px-6 rounded-xl bg-white border border-slate-200 hover:bg-slate-50 font-bold text-sm text-slate-700 shadow-sm transition"
+      >
+        ← Previous
+      </button>
+      <button
+        @click="flipCard()"
+        class="py-3 px-6 rounded-xl bg-slate-100 hover:bg-slate-200 font-bold text-sm text-slate-700 transition"
+      >
+        Flip Card 🔄
+      </button>
+      <button
+        @click="nextCard()"
+        class="py-3 px-6 rounded-xl bg-teal-600 hover:bg-teal-700 font-bold text-sm text-white shadow-md transition"
+      >
+        Next Card →
+      </button>
+    </div>
+  </div>
+
+</div>
+{{ end }}

@@ -1,0 +1,163 @@
+{{ define "main" }}
+<div class="space-y-8 max-w-3xl mx-auto" x-data="{
+  palaces: {{ .Site.Data.catloci | jsonify }},
+  selectedPalaceKey: 'all',
+  intervalSeconds: 2.5,
+  currentIndex: 0,
+  isRunning: false,
+  timerId: null,
+
+  stationsList: [],
+
+  updateStations() {
+    const list = [];
+    if (this.selectedPalaceKey === 'all') {
+      for (const [key, rooms] of Object.entries(this.palaces)) {
+        if (!rooms) continue;
+        for (const room of rooms) {
+          list.push({ palace: key, title: room.title });
+        }
+      }
+    } else {
+      const rooms = this.palaces[this.selectedPalaceKey] || [];
+      for (const room of rooms) {
+        list.push({ palace: this.selectedPalaceKey, title: room.title });
+      }
+    }
+    this.stationsList = list;
+    this.currentIndex = 0;
+  },
+
+  get currentStation() {
+    return this.stationsList[this.currentIndex] || { title: 'No stations' };
+  },
+
+  toggleTimer() {
+    if (this.isRunning) {
+      clearInterval(this.timerId);
+      this.isRunning = false;
+      return;
+    }
+    this.isRunning = true;
+    this.startInterval();
+  },
+
+  startInterval() {
+    clearInterval(this.timerId);
+    this.timerId = setInterval(() => {
+      this.nextStation();
+    }, this.intervalSeconds * 1000);
+  },
+
+  nextStation() {
+    if (this.stationsList.length === 0) return;
+    this.currentIndex = (this.currentIndex + 1) % this.stationsList.length;
+  },
+
+  prevStation() {
+    if (this.stationsList.length === 0) return;
+    this.currentIndex = (this.currentIndex - 1 + this.stationsList.length) % this.stationsList.length;
+  },
+
+  resetTimer() {
+    clearInterval(this.timerId);
+    this.isRunning = false;
+    this.currentIndex = 0;
+  },
+
+  init() {
+    this.updateStations();
+  }
+}">
+
+  <div class="text-center space-y-2 border-b border-slate-200 pb-4">
+    <h1 class="text-3xl font-extrabold text-slate-900">⏱️ Loci Speed Trainer</h1>
+    <p class="text-slate-500 text-sm">Train your mental eye to travel through memory stations at competitive speed</p>
+  </div>
+
+  <!-- Settings Controls -->
+  <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 grid grid-cols-1 sm:grid-cols-2 gap-4">
+    <div>
+      <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Select Palace</label>
+      <select
+        x-model="selectedPalaceKey"
+        @change="updateStations(); if (isRunning) startInterval();"
+        class="w-full px-4 py-2.5 rounded-xl border border-slate-300 font-semibold text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
+      >
+        <option value="all">🌟 All Palaces Combined</option>
+        <template x-for="key in Object.keys(palaces)" :key="key">
+          <option :value="key" x-text="key.replace(/([A-Z0-9])/g, ' $1').replace(/^./, str => str.toUpperCase())"></option>
+        </template>
+      </select>
+    </div>
+
+    <div>
+      <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Speed Interval (seconds)</label>
+      <select
+        x-model="intervalSeconds"
+        @change="if (isRunning) startInterval();"
+        class="w-full px-4 py-2.5 rounded-xl border border-slate-300 font-semibold text-slate-800 text-sm focus:outline-none focus:ring-2 focus:ring-teal-500"
+      >
+        <option value="1">1.0s (Elite Speed)</option>
+        <option value="1.5">1.5s</option>
+        <option value="2">2.0s (Fast)</option>
+        <option value="2.5">2.5s (Standard)</option>
+        <option value="3">3.0s</option>
+        <option value="5">5.0s (Practice)</option>
+        <option value="10">10.0s (Relaxed)</option>
+      </select>
+    </div>
+  </div>
+
+  <!-- Large Stage Card -->
+  <div class="bg-slate-900 rounded-3xl p-8 sm:p-12 text-white shadow-xl text-center space-y-6">
+    <div class="flex items-center justify-between text-xs text-slate-400 uppercase font-semibold">
+      <span>Station <strong class="text-white text-sm" x-text="currentIndex + 1"></strong> of <span x-text="stationsList.length"></span></span>
+      <span class="px-2.5 py-1 rounded-full text-xs font-bold" :class="isRunning ? 'bg-emerald-500/20 text-emerald-400' : 'bg-slate-800 text-slate-400'" x-text="isRunning ? 'ACTIVE' : 'PAUSED'"></span>
+    </div>
+
+    <!-- Active Station Name -->
+    <div class="min-h-[120px] flex items-center justify-center">
+      <h2 class="text-2xl sm:text-4xl font-black text-teal-300 tracking-tight leading-tight" x-text="currentStation.title"></h2>
+    </div>
+
+    <!-- Progress Bar -->
+    <div class="w-full bg-slate-800 rounded-full h-2 overflow-hidden">
+      <div
+        class="bg-teal-500 h-full rounded-full transition-all duration-300"
+        :style="'width: ' + ((currentIndex + 1) / stationsList.length * 100) + '%'"
+      ></div>
+    </div>
+  </div>
+
+  <!-- Player Controls -->
+  <div class="flex items-center justify-center gap-3">
+    <button
+      @click="prevStation()"
+      class="px-5 py-3 rounded-xl bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 font-bold text-sm shadow-sm transition"
+    >
+      ⏮️ Prev
+    </button>
+    <button
+      @click="toggleTimer()"
+      class="flex-1 max-w-xs py-3.5 px-8 rounded-xl font-bold text-white shadow-lg transition text-base"
+      :class="isRunning ? 'bg-rose-600 hover:bg-rose-700' : 'bg-teal-600 hover:bg-teal-700'"
+      x-text="isRunning ? 'Pause ⏸️' : 'Start Walkthrough ▶️'"
+    ></button>
+    <button
+      @click="nextStation()"
+      class="px-5 py-3 rounded-xl bg-white border border-slate-200 hover:bg-slate-50 text-slate-700 font-bold text-sm shadow-sm transition"
+    >
+      Next ⏭️
+    </button>
+    <button
+      @click="resetTimer()"
+      class="px-4 py-3 rounded-xl bg-slate-100 hover:bg-slate-200 text-slate-600 font-semibold text-xs transition"
+      title="Reset to Station 1"
+    >
+      Reset
+    </button>
+  </div>
+
+</div>
+{{ end }}

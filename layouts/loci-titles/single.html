@@ -1,0 +1,120 @@
+{{ define "main" }}
+<div class="space-y-8" x-data="{
+  palaces: {{ .Site.Data.catloci | jsonify }},
+  dominicPAO: {{ .Site.Data.dominic.pao | jsonify }},
+  shapes: {{ .Site.Data.pegs.shapes | jsonify }},
+  rhymes: {{ .Site.Data.pegs.rhymes | jsonify }},
+  search: '',
+  showQuizOnly: false,
+  quizIndex: 0,
+  revealed: false,
+
+  titlesList: [],
+
+  init() {
+    const list = [];
+    let counter = 1;
+    for (const [key, rooms] of Object.entries(this.palaces)) {
+      if (!rooms) continue;
+      for (const room of rooms) {
+        const mnem = window.MemoryUtils.generatingDominic(this.dominicPAO, this.shapes, this.rhymes, counter);
+        list.push({
+          number: counter++,
+          palace: key,
+          title: room.title,
+          mnemonic: mnem
+        });
+      }
+    }
+    this.titlesList = list;
+  },
+
+  get filteredList() {
+    if (!this.search.trim()) return this.titlesList;
+    const q = this.search.toLowerCase().trim();
+    return this.titlesList.filter(item => 
+      item.title.toLowerCase().includes(q) ||
+      item.number.toString().includes(q) ||
+      item.mnemonic.toLowerCase().includes(q)
+    );
+  },
+
+  get currentQuizItem() {
+    return this.titlesList[this.quizIndex] || null;
+  },
+
+  nextQuiz() {
+    this.revealed = false;
+    this.quizIndex = window.MemoryUtils.getRandomNumber(0, this.titlesList.length);
+  }
+}">
+
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
+    <div>
+      <h1 class="text-3xl font-extrabold text-slate-900">Loci Titles & Dominic Pegs</h1>
+      <p class="text-slate-500 text-sm mt-1">Each memory palace location mapped with its corresponding Dominic, Shape, and Rhyme peg</p>
+    </div>
+    <div class="flex gap-2">
+      <button
+        @click="showQuizOnly = !showQuizOnly"
+        class="px-3.5 py-1.5 rounded-xl font-bold text-xs transition"
+        :class="showQuizOnly ? 'bg-teal-600 text-white' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'"
+        x-text="showQuizOnly ? 'View Full List' : '🎯 Interactive Quiz Mode'"
+      ></button>
+    </div>
+  </div>
+
+  <!-- Quiz Box (if toggled) -->
+  <div x-show="showQuizOnly" x-cloak class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 max-w-xl mx-auto space-y-4 text-center">
+    <div class="text-xs uppercase font-bold text-teal-600 tracking-wider">Loci Peg Quiz</div>
+    <div class="p-6 rounded-2xl bg-teal-50 border border-teal-200 cursor-pointer" @click="revealed = !revealed">
+      <div class="text-xs text-slate-400 mb-1">Station #<span x-text="currentQuizItem ? currentQuizItem.number : ''"></span></div>
+      <h2 class="text-xl font-black text-slate-900 mb-3" x-text="currentQuizItem ? currentQuizItem.title : ''"></h2>
+      <div class="text-xs text-slate-500 font-medium">Click to reveal mnemonic</div>
+    </div>
+
+    <div x-show="revealed" x-cloak class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-slate-800 font-bold text-base">
+      <span x-text="currentQuizItem ? currentQuizItem.mnemonic : ''"></span>
+    </div>
+
+    <button
+      @click="nextQuiz()"
+      class="w-full py-2.5 px-6 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-sm shadow-md transition"
+    >
+      Next Random Station →
+    </button>
+  </div>
+
+  <!-- Search Filter -->
+  <div x-show="!showQuizOnly" class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200 flex items-center justify-between gap-4">
+    <div class="relative w-full max-w-md">
+      <input
+        type="text"
+        x-model="search"
+        placeholder="Search title or number..."
+        class="w-full pl-10 pr-4 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm"
+      />
+      <svg class="w-5 h-5 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+    </div>
+    <span class="text-xs text-slate-500 font-medium">
+      <strong class="text-slate-900" x-text="filteredList.length"></strong> Titles
+    </span>
+  </div>
+
+  <!-- Full List -->
+  <div x-show="!showQuizOnly" class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+    <div class="space-y-2">
+      <template x-for="item in filteredList" :key="item.number">
+        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 hover:border-teal-400 hover:bg-teal-50/20 transition flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-sm">
+          <div class="flex items-center gap-3">
+            <span class="w-10 text-center font-mono font-bold text-xs py-1 rounded-lg bg-white border border-slate-200 text-teal-700" x-text="item.number"></span>
+            <span class="font-bold text-slate-800" x-text="item.title"></span>
+          </div>
+          <span class="font-medium text-teal-700 text-xs sm:text-sm bg-teal-50 px-3 py-1 rounded-lg border border-teal-100 self-start sm:self-auto" x-text="item.mnemonic"></span>
+        </div>
+      </template>
+    </div>
+  </div>
+
+</div>
+{{ end }}

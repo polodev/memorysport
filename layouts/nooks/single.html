@@ -1,0 +1,95 @@
+{{ define "main" }}
+<div class="space-y-6" x-data="{
+  palaces: {{ .Site.Data.catloci | jsonify }},
+  dominicPAO: {{ .Site.Data.dominic.pao | jsonify }},
+  shapes: {{ .Site.Data.pegs.shapes | jsonify }},
+  rhymes: {{ .Site.Data.pegs.rhymes | jsonify }},
+  search: '',
+  allNooks: [],
+
+  init() {
+    const list = [];
+    let counter = 1;
+    for (const [key, rooms] of Object.entries(this.palaces)) {
+      if (!rooms) continue;
+      for (const room of rooms) {
+        if (!room.nooks) continue;
+        for (const nook of room.nooks) {
+          const cleanNook = nook.replace(/^.*###\s*/, '').trim();
+          const mnem = window.MemoryUtils.generatingDominic(this.dominicPAO, this.shapes, this.rhymes, counter);
+          list.push({
+            number: counter++,
+            palace: key,
+            room: room.title,
+            nook: cleanNook,
+            mnemonic: mnem
+          });
+        }
+      }
+    }
+    this.allNooks = list;
+  },
+
+  get filteredNooks() {
+    if (!this.search.trim()) return this.allNooks;
+    const q = this.search.toLowerCase().trim();
+    return this.allNooks.filter(item => 
+      item.nook.toLowerCase().includes(q) ||
+      item.room.toLowerCase().includes(q) ||
+      item.number.toString().includes(q) ||
+      item.mnemonic.toLowerCase().includes(q)
+    );
+  }
+}">
+
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
+    <div>
+      <h1 class="text-3xl font-extrabold text-slate-900">Nooks Explorer</h1>
+      <p class="text-slate-500 text-sm mt-1">Every individual nook and station across all memory palaces mapped with mnemonic pegs</p>
+    </div>
+    <div class="flex gap-2">
+      <a href="{{ "cat-loci/" | relURL }}" class="px-3 py-1.5 rounded-lg border border-slate-300 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition">
+        Palaces
+      </a>
+      <a href="{{ "loci-titles/" | relURL }}" class="px-3 py-1.5 rounded-lg border border-slate-300 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition">
+        Titles
+      </a>
+    </div>
+  </div>
+
+  <!-- Search Filter -->
+  <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200 flex items-center justify-between gap-4">
+    <div class="relative w-full max-w-md">
+      <input
+        type="text"
+        x-model="search"
+        placeholder="Search nook, room, or number..."
+        class="w-full pl-10 pr-4 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm"
+      />
+      <svg class="w-5 h-5 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+    </div>
+    <span class="text-xs text-slate-500 font-medium">
+      Showing <strong class="text-slate-900" x-text="filteredNooks.length"></strong> of <span x-text="allNooks.length"></span>
+    </span>
+  </div>
+
+  <!-- Nooks List -->
+  <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+    <div class="space-y-2">
+      <template x-for="item in filteredNooks" :key="item.number">
+        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 hover:border-teal-400 hover:bg-teal-50/20 transition flex flex-col sm:flex-row sm:items-center justify-between gap-2 text-sm">
+          <div class="flex items-center gap-3">
+            <span class="w-12 text-center font-mono font-bold text-xs py-1 rounded-lg bg-white border border-slate-200 text-teal-700 shadow-sm" x-text="item.number"></span>
+            <div>
+              <span class="font-bold text-slate-900" x-text="item.nook"></span>
+              <span class="text-xs text-slate-400 ml-2 block sm:inline" x-text="'(' + item.room + ')'"></span>
+            </div>
+          </div>
+          <span class="font-medium text-teal-700 text-xs sm:text-sm bg-teal-50 px-3 py-1 rounded-lg border border-teal-100 self-start sm:self-auto" x-text="item.mnemonic"></span>
+        </div>
+      </template>
+    </div>
+  </div>
+
+</div>
+{{ end }}

@@ -1,0 +1,8 @@
+baseURL = "https://polodev.github.io/memorysport/"
+title = "Memory Sport"
+languageCode = "en-us"
+relativeURLs = false
+canonifyURLs = false
+
+[params]
+  description = "Memory Sport Training & Reference System - Mnemonic Palaces, Dominic PAO, Pegs, Pi, & Calculation Drills"

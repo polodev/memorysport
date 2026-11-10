@@ -1,0 +1,76 @@
+{{ define "main" }}
+<div class="space-y-6" x-data="{
+  houses: {{ .Site.Data.villageloci | jsonify }},
+  search: '',
+
+  get processedHouses() {
+    return this.houses.map((house, idx) => {
+      const isHeader = house.includes('##') || house.includes('===');
+      const cleanName = house.replace(/##/g, '').trim();
+      return {
+        number: idx + 1,
+        raw: house,
+        name: cleanName,
+        isHeader
+      };
+    });
+  },
+
+  get filteredHouses() {
+    if (!this.search.trim()) return this.processedHouses;
+    const q = this.search.toLowerCase().trim();
+    return this.processedHouses.filter(h => 
+      h.name.toLowerCase().includes(q) || h.number.toString().includes(q)
+    );
+  }
+}">
+
+  <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 border-b border-slate-200 pb-4">
+    <div>
+      <h1 class="text-3xl font-extrabold text-slate-900">Village Loci (145 Bari)</h1>
+      <p class="text-slate-500 text-sm mt-1">Village houses & landmarks memory sequence</p>
+    </div>
+    <div class="flex gap-2">
+      <a href="{{ "loci-titles/" | relURL }}" class="px-3 py-1.5 rounded-lg border border-slate-300 text-xs font-semibold text-slate-700 hover:bg-slate-100 transition">
+        Loci Titles & Pegs
+      </a>
+    </div>
+  </div>
+
+  <!-- Search Filter -->
+  <div class="bg-white rounded-2xl p-4 shadow-sm border border-slate-200 flex items-center justify-between gap-4">
+    <div class="relative w-full max-w-md">
+      <input
+        type="text"
+        x-model="search"
+        placeholder="Search house or station number..."
+        class="w-full pl-10 pr-4 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500 text-sm"
+      />
+      <svg class="w-5 h-5 text-slate-400 absolute left-3 top-2.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+    </div>
+    <span class="text-xs text-slate-500 font-medium whitespace-nowrap">
+      Showing <strong class="text-slate-900" x-text="filteredHouses.length"></strong> of <span x-text="houses.length"></span>
+    </span>
+  </div>
+
+  <!-- Houses List -->
+  <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+      <template x-for="h in filteredHouses" :key="h.number">
+        <div
+          class="p-3 rounded-xl border transition flex items-center gap-3"
+          :class="h.isHeader ? 'bg-amber-50 border-amber-300 sm:col-span-2 lg:col-span-3 font-bold text-amber-900' : 'bg-slate-50 border-slate-200 hover:border-teal-400'"
+        >
+          <span
+            class="w-10 text-center font-mono font-bold text-xs py-1 rounded-lg"
+            :class="h.isHeader ? 'bg-amber-500 text-white' : 'bg-white text-teal-700 border border-slate-200'"
+            x-text="h.number"
+          ></span>
+          <span class="text-sm font-medium text-slate-800" x-text="h.name"></span>
+        </div>
+      </template>
+    </div>
+  </div>
+
+</div>
+{{ end }}

@@ -1,0 +1,108 @@
+{{ define "main" }}
+<div class="space-y-6" x-data="{
+  paoData: {{ .Site.Data.dominic.pao | jsonify }},
+  shapesData: {{ .Site.Data.pegs.shapes | jsonify }},
+  rhymesData: {{ .Site.Data.pegs.rhymes | jsonify }},
+  minNumber: '0',
+  maxNumber: '20',
+  results: [],
+  errorMessage: '',
+  
+  generate() {
+    this.errorMessage = '';
+    const min = parseInt(this.minNumber, 10);
+    const max = parseInt(this.maxNumber, 10);
+    
+    if (isNaN(min) || isNaN(max)) {
+      this.errorMessage = 'Please enter valid numbers for Min and Max.';
+      return;
+    }
+    if (min > max) {
+      this.errorMessage = 'Min number must be less than or equal to Max number.';
+      return;
+    }
+    if (min < 0 || max > 9999) {
+      this.errorMessage = 'Supports numbers between 0 and 9999.';
+      return;
+    }
+    if (max - min > 500) {
+      this.errorMessage = 'Please choose a range of 500 numbers or fewer at a time.';
+      return;
+    }
+
+    const list = [];
+    for (let i = min; i <= max; i++) {
+      const mnemonic = window.MemoryUtils.generatingDominic(this.paoData, this.shapesData, this.rhymesData, i);
+      list.push({ number: i, mnemonic });
+    }
+    this.results = list;
+  },
+
+  init() {
+    this.generate();
+  }
+}">
+
+  <div class="border-b border-slate-200 pb-4">
+    <h1 class="text-3xl font-extrabold text-slate-900">Dominic Hotel (Mnemonic Generator)</h1>
+    <p class="text-slate-500 text-sm mt-1">Generate Person-Action associations for any custom range of numbers (0 to 9999)</p>
+  </div>
+
+  <!-- Generator Form Controls -->
+  <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200 space-y-4">
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-end">
+      <div>
+        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Min Number</label>
+        <input
+          type="number"
+          min="0"
+          max="9999"
+          x-model="minNumber"
+          class="w-full px-4 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500 text-base font-semibold"
+        />
+      </div>
+      <div>
+        <label class="block text-xs font-bold uppercase tracking-wider text-slate-500 mb-1">Max Number</label>
+        <input
+          type="number"
+          min="0"
+          max="9999"
+          x-model="maxNumber"
+          class="w-full px-4 py-2 rounded-xl border border-slate-300 focus:outline-none focus:ring-2 focus:ring-teal-500 text-base font-semibold"
+        />
+      </div>
+      <div>
+        <button
+          @click="generate()"
+          class="w-full py-2.5 px-6 rounded-xl bg-teal-600 hover:bg-teal-700 text-white font-bold text-sm shadow-md transition"
+        >
+          Generate Mnemonics 🚀
+        </button>
+      </div>
+    </div>
+
+    <!-- Error notice -->
+    <template x-if="errorMessage">
+      <div class="p-3 rounded-xl bg-rose-50 border border-rose-200 text-rose-700 text-xs font-semibold" x-text="errorMessage"></div>
+    </template>
+  </div>
+
+  <!-- Results List -->
+  <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+    <div class="flex items-center justify-between mb-4 pb-2 border-b border-slate-100">
+      <h2 class="text-lg font-bold text-slate-800">Generated Sequence</h2>
+      <span class="text-xs font-semibold px-2.5 py-1 bg-slate-100 rounded-lg text-slate-600" x-text="results.length + ' numbers'"></span>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
+      <template x-for="item in results" :key="item.number">
+        <div class="p-3 rounded-xl bg-slate-50 border border-slate-200 hover:border-teal-400 hover:bg-teal-50/30 transition flex items-center gap-3">
+          <span class="w-16 text-center font-mono font-bold text-base bg-white border border-slate-200 rounded-lg py-1 px-2 text-teal-700 shadow-sm" x-text="item.number"></span>
+          <span class="text-sm font-medium text-slate-700" x-text="item.mnemonic"></span>
+        </div>
+      </template>
+    </div>
+  </div>
+
+</div>
+{{ end }}

@@ -1,0 +1,137 @@
+{{ define "main" }}
+<div class="space-y-8" x-data="{
+  activeTab: 'rhymes',
+  pegs: {{ .Site.Data.pegs | jsonify }},
+
+  init() {
+    const hash = window.location.hash.replace('#', '');
+    if (['rhymes', 'shapes', 'major', 'alphabet'].includes(hash)) {
+      this.activeTab = hash;
+    }
+  }
+}">
+
+  <div class="border-b border-slate-200 pb-4">
+    <h1 class="text-3xl font-extrabold text-slate-900">Mnemonic Peg Systems</h1>
+    <p class="text-slate-500 text-sm mt-1">Foundational peg lists: Number-Rhymes, Number-Shapes, Major System, and Alphabet Associations</p>
+  </div>
+
+  <!-- Tabs Navigation -->
+  <div class="flex flex-wrap gap-2 border-b border-slate-200 pb-2">
+    <button
+      @click="activeTab = 'rhymes'; window.location.hash = 'rhymes'"
+      class="px-5 py-2.5 rounded-xl font-bold text-sm transition"
+      :class="activeTab === 'rhymes' ? 'bg-amber-500 text-white shadow-md' : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'"
+    >
+      🔔 Number-Rhyme (1-10)
+    </button>
+    <button
+      @click="activeTab = 'shapes'; window.location.hash = 'shapes'"
+      class="px-5 py-2.5 rounded-xl font-bold text-sm transition"
+      :class="activeTab === 'shapes' ? 'bg-amber-500 text-white shadow-md' : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'"
+    >
+      🦢 Number-Shape (0-9)
+    </button>
+    <button
+      @click="activeTab = 'major'; window.location.hash = 'major'"
+      class="px-5 py-2.5 rounded-xl font-bold text-sm transition"
+      :class="activeTab === 'major' ? 'bg-amber-500 text-white shadow-md' : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'"
+    >
+      🔤 Major System (0-9)
+    </button>
+    <button
+      @click="activeTab = 'alphabet'; window.location.hash = 'alphabet'"
+      class="px-5 py-2.5 rounded-xl font-bold text-sm transition"
+      :class="activeTab === 'alphabet' ? 'bg-amber-500 text-white shadow-md' : 'bg-white text-slate-600 hover:bg-slate-100 border border-slate-200'"
+    >
+      🅰️ Alphabet Pegs (A-Z)
+    </button>
+  </div>
+
+  <!-- Tab 1: Number-Rhymes -->
+  <div x-show="activeTab === 'rhymes'" x-cloak class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+    <div class="mb-4 pb-2 border-b border-slate-100">
+      <h2 class="text-xl font-bold text-slate-900">Number-Rhyme System (1 to 10)</h2>
+      <p class="text-xs text-slate-500">Classic auditory rhyme associations for numbers 1 to 10</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+      <template x-for="item in pegs.rhymes" :key="item.number">
+        <div class="p-4 rounded-xl bg-amber-50/50 border border-amber-200 text-center">
+          <div class="w-10 h-10 mx-auto rounded-full bg-amber-500 text-white font-mono font-bold text-lg flex items-center justify-center mb-2 shadow-sm" x-text="item.number"></div>
+          <div class="text-base font-black text-slate-900 capitalize" x-text="item.mnemonic"></div>
+        </div>
+      </template>
+    </div>
+  </div>
+
+  <!-- Tab 2: Number-Shapes -->
+  <div x-show="activeTab === 'shapes'" x-cloak class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+    <div class="mb-4 pb-2 border-b border-slate-100">
+      <h2 class="text-xl font-bold text-slate-900">Number-Shape System (0 to 9)</h2>
+      <p class="text-xs text-slate-500">Visual shape resemblance associations</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+      <template x-for="item in pegs.shapes" :key="item.number">
+        <div class="p-4 rounded-xl bg-blue-50/50 border border-blue-200 text-center">
+          <div class="w-10 h-10 mx-auto rounded-full bg-blue-600 text-white font-mono font-bold text-lg flex items-center justify-center mb-2 shadow-sm" x-text="item.number"></div>
+          <div class="text-sm font-bold text-slate-800" x-text="item.mnemonic"></div>
+        </div>
+      </template>
+    </div>
+  </div>
+
+  <!-- Tab 3: Major System -->
+  <div x-show="activeTab === 'major'" x-cloak class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+    <div class="mb-4 pb-2 border-b border-slate-100">
+      <h2 class="text-xl font-bold text-slate-900">Major System Consonant Map (0 to 9)</h2>
+      <p class="text-xs text-slate-500">The world standard phonetic number system</p>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-3">
+      <template x-for="item in pegs.major" :key="item.index">
+        <div class="p-4 rounded-xl bg-slate-50 border border-slate-200 text-center">
+          <div class="w-10 h-10 mx-auto rounded-full bg-teal-600 text-white font-mono font-bold text-lg flex items-center justify-center mb-2 shadow-sm" x-text="item.index"></div>
+          <div class="text-base font-black text-slate-900" x-text="item.letter"></div>
+        </div>
+      </template>
+    </div>
+  </div>
+
+  <!-- Tab 4: Alphabet Pegs (A-Z) -->
+  <div x-show="activeTab === 'alphabet'" x-cloak class="bg-white rounded-2xl p-6 shadow-sm border border-slate-200">
+    <div class="mb-4 pb-2 border-b border-slate-100">
+      <h2 class="text-xl font-bold text-slate-900">English Alphabet Pegs (A to Z)</h2>
+      <p class="text-xs text-slate-500">26 letters mapped to Person, Action, Object, and mnemonic alternatives</p>
+    </div>
+    <div class="overflow-x-auto">
+      <table class="w-full text-left border-collapse text-sm">
+        <thead>
+          <tr class="bg-slate-50 border-b border-slate-200 text-slate-500 font-semibold text-xs uppercase tracking-wider">
+            <th class="py-3 px-4">Letter / #</th>
+            <th class="py-3 px-4">Person</th>
+            <th class="py-3 px-4">Action</th>
+            <th class="py-3 px-4">Object</th>
+            <th class="py-3 px-4">Alternatives</th>
+          </tr>
+        </thead>
+        <tbody class="divide-y divide-slate-100">
+          <template x-for="item in pegs.letters" :key="item.letter">
+            <tr class="hover:bg-slate-50 transition">
+              <td class="py-2.5 px-4 font-mono font-bold text-teal-700">
+                <span class="text-lg uppercase" x-text="item.letter"></span>
+                <span class="text-xs text-slate-400 ml-1" x-text="'(' + item.number + ')'"></span>
+              </td>
+              <td class="py-2.5 px-4 font-bold text-slate-900 capitalize" x-text="item.person"></td>
+              <td class="py-2.5 px-4 text-slate-700 capitalize" x-text="item.action"></td>
+              <td class="py-2.5 px-4 text-slate-700 capitalize" x-text="item.object"></td>
+              <td class="py-2.5 px-4 text-xs text-slate-500">
+                <span x-text="(item.alternative_objects || []).join(', ')"></span>
+              </td>
+            </tr>
+          </template>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+</div>
+{{ end }}
